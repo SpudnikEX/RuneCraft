@@ -1,0 +1,3 @@
+suppress diamond crafting
+drop table for ores (ores and gems)
+for mod: creating new ores, modifying existing ones
