@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "runecraft:uncut_diamond"
+  },
+  "result": "runecraft:diamond",
+  "count": 1
+}
