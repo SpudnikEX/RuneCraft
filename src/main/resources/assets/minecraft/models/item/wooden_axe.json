@@ -1,0 +1,17 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "item/wooden_axe"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [30, 90, 0],
+			"translation": [0, 6, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, 35],
+			"translation": [0, 0, -4]
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "item/wooden_shovel"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [135, -90, 0],
+			"translation": [0, 1.5, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, -180],
+			"translation": [0, 0, -3]
+		}
+	}
+}
