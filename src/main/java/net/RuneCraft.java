@@ -72,9 +72,9 @@ public class RuneCraft implements ModInitializer{
     }
 
     void registerBlock(String namespace, String itemPath, Item item, String blockPath, Block block){
-        Registry.register(Registry.ITEM, new Identifier(namespace, itemPath),item);
+        Registry.register(Registry.ITEM, new Identifier(namespace, itemPath), item);
         Registry.register(Registry.BLOCK, new Identifier(namespace,blockPath), block);
-        Registry.register(Registry.ITEM, new Identifier(namespace,blockPath),new BlockItem(block,new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(namespace,blockPath), new BlockItem(block,new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
     }
 
     void generateOre(String namespace, String blockPath){
