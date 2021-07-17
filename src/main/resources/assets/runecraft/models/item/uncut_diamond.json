@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "runecraft:item/uncut_diamond"
+    "layer0": "runecraft:item/gem/uncut_diamond"
   }
 }

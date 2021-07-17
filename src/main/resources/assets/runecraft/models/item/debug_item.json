@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "runecraft:item/debug_item"
+    "layer0": "runecraft:item/ore/debug_item"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "runecraft:item/tin_ore"
+    "layer0": "runecraft:item/ore/tin_ore"
   }
 }

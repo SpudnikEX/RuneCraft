@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "runecraft:item/copper_ore"
+    "layer0": "runecraft:item/ore/copper_ore"
   }
 }
