@@ -31,13 +31,4 @@ bin/
 # fabric
 
 run/
-.github/workflows/build.yml
-build.gradle
-gradle.properties
-settings.gradle
-LICENSE
-gradlew.bat
-gradlew
-gradle/wrapper/gradle-wrapper.properties
-gradle/wrapper/gradle-wrapper.jar
-README.md
+
