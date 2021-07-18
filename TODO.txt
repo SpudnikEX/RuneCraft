@@ -1,1 +1,37 @@
-Test
+TODO:
+entity drops
+
+
+Format how items are added 
+	update items for vanilla items (resource pack)
+	new items are added in the mod
+
+Register item
+	after registering, convention as follows > runecraft:item
+	When registering, path specifies item when used in recipies and loot tables, not model or texture path
+
+Blockstates
+	If item will have blockstates for different actions
+
+Model
+	*** Model folder cannot be reorganized ***
+
+	block
+		For blocks in the world, need to setup texture pointer
+			follows convention runecraft:path to texture from texture folder
+				runecraft:block/copper_ore_block
+	model
+		For items held in hand, can override block inventory items
+			follows same convention as above
+				For blocks in inventory
+					runecraft:block/tin_ore_block
+				For item in inventory
+					runecraft:item/ore/tin_ore
+
+Textures
+	*** Texture folder can be reorganized, will need to update model .json's
+
+
+Loot tables
+	uses registered item names (FROM REGISTERED ITEM)
+		runecraft:item

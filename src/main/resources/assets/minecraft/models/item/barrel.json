@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "runecraft:item/blockitem/oak_planks"
+    "layer0": "runecraft:item/blockitem/barrel"
   }
 }
