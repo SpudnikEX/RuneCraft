@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "net.RuneCraft"
+    ],
+    "client": [
+      "net.RuneCraftClient"
     ]
   },
   "mixins": [

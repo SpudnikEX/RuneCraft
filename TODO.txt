@@ -35,3 +35,17 @@ Textures
 Loot tables
 	uses registered item names (FROM REGISTERED ITEM)
 		runecraft:item
+		
+		
+Notes for Intellij
+	C = class, can be extended. public static methods can be called on Class.method();
+   |C| = abstract class, sued as a base class?
+	I = interface, can be attached to classes for more functionality
+	m = methods, in classes
+	
+Notes on creating armor models ***
+	when registering, if wanting vanilla armor models, use = ArmorItem,
+		else for custom armor models, create (Custom)Armor.java and (Custom)ArmorModel.java
+		(Custom)Armor.java needs correct .png pathing
+		A new material needs to be registered in the materials enum that has the same name as armor layers
+			"leather" for the material id, "leather_layer_1".png, "leather_layer_2".png, "leather_model".png

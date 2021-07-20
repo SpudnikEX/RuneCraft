@@ -10,8 +10,8 @@ import net.minecraft.util.registry.Registry;
 
 public class RegisterFood {
 
-    public static final Item RAW_MEAT = new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(EdibleComponent.RAW_MEAT));
-    public static final Item COOKED_MEAT = new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(EdibleComponent.COOKED_MEAT));
+    public static final Item RAW_MEAT = new Item(new FabricItemSettings().group(RuneCraft.FOOD).food(EdibleComponent.RAW_MEAT));
+    public static final Item COOKED_MEAT = new Item(new FabricItemSettings().group(RuneCraft.FOOD).food(EdibleComponent.COOKED_MEAT));
 
     public static void register(){
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "cooked_meat"), COOKED_MEAT);

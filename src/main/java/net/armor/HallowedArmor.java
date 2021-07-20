@@ -15,6 +15,7 @@ public class HallowedArmor extends ArmorItem {
     private BipedEntityModel<LivingEntity> model;
     public final EquipmentSlot type;
 
+
     public HallowedArmor(ArmorMaterial mat, EquipmentSlot type,  Settings props) {
         super(mat, type, props);
         this.type = type;
@@ -35,6 +36,6 @@ public class HallowedArmor extends ArmorItem {
 
     @NotNull
     public final String getArmorTexture(ItemStack stack, EquipmentSlot slot) {
-        return "runecraft:textures/models/armor/bronze_armor_model.png";
+        return "textures/models/armor/hallowed_model.png";
     }
 }

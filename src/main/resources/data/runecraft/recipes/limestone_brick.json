@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "runecraft:chisel"
+    },
+    {
+      "item": "runecraft:limestone"
+    }
+  ],
+  "result": {
+    "item": "runecraft:limestone_brick"
+  }
+}

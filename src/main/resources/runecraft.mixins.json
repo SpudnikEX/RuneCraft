@@ -4,6 +4,7 @@
   "package": "net.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "InspectorMixin"
   ],
   "client": [
     "ExampleMixin"

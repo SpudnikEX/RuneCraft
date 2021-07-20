@@ -10,6 +10,6 @@ public class RegisterPaintings {
 
     public static void register(){
         //Registry.register(Registry.PAINTING_MOTIVE, "Lumbridge", LUMBRIDGE);
-        Registry.register(Registry.PAINTING_MOTIVE,new Identifier(RuneCraft.MOD_ID,"Lumbridge"),LUMBRIDGE);
+        //Registry.register(Registry.PAINTING_MOTIVE,new Identifier(RuneCraft.MOD_ID,"Lumbridge"),LUMBRIDGE);
     }
 }
