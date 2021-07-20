@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "runecraft:block/adamantite_ore_block"
+    }
+  }
+}

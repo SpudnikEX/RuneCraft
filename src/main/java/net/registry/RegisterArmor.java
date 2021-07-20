@@ -15,7 +15,7 @@ import net.minecraft.util.registry.Registry;
  */
 public class RegisterArmor {
 
-    // Create class for string directory, Material entry, register new item, register with renderer, create .json entry for each item
+    // Create armor class and change string directory, create Material entry, register new item below, register with renderer below, create .json entry for each item
 
     public static final ArmorItem ADAMANTITE_HELMET = new AdamantiteArmor(RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
     public static final ArmorItem ADAMANTITE_CHESTPLATE = new AdamantiteArmor(RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));

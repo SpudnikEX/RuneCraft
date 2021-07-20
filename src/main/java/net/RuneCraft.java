@@ -40,6 +40,7 @@ public class RuneCraft implements ModInitializer{
     public static final ItemGroup ORES = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "ores")).icon(() -> new ItemStack(RegisterOres.COPPER_ORE)).build();
     public static final ItemGroup FOOD = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "food")).icon(() -> new ItemStack(RegisterFood.COOKED_MEAT)).build();
     public static final ItemGroup TOOLS = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "tools")).icon(() -> new ItemStack(RegisterTools.CHISEL)).build();
+    public static final ItemGroup MATERIALS = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "materials")).icon(() -> new ItemStack(RegisterMaterials.BRONZE_BAR)).build();
 
 
     // Debug Item
@@ -54,7 +55,6 @@ public class RuneCraft implements ModInitializer{
         RegisterArmor.register();
         RegisterBlocks.register();
         RegisterFood.register();
-        RegisterItems.register();
         RegisterMaterials.register();
         RegisterOres.register();
         RegisterTools.register();
