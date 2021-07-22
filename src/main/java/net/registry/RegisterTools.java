@@ -7,7 +7,7 @@ import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.tools.PickaxeBase;
+import net.item.tool.PickaxeBase;
 
 public class RegisterTools {
 

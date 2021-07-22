@@ -1,12 +1,9 @@
 package net;
 
-import net.armor.HallowedArmor;
+import net.client.model.ItemModelProvider;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
-import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderingRegistry;
-import net.minecraft.client.render.entity.feature.CapeFeatureRenderer;
-import net.minecraft.client.render.entity.feature.FeatureRenderer;
-import net.minecraft.util.Identifier;
+import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
+import net.fabricmc.fabric.api.client.model.ModelResourceProvider;
 import net.registry.RegisterArmor;
 
 public class RuneCraftClient implements ClientModInitializer {
@@ -16,6 +13,7 @@ public class RuneCraftClient implements ClientModInitializer {
     public void onInitializeClient() {
         RegisterArmor.render();
 
+        ModelLoadingRegistry.INSTANCE.registerResourceProvider(resourceManager -> new ItemModelProvider());
         /*
          * Registers our Cube Entity's renderer, which provides a model and texture for the entity.
          *

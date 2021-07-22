@@ -24,6 +24,9 @@ public class RegisterMaterials {
 
     // Misc
     public static final Item LIMESTONE_BRICK = new Item(new FabricItemSettings().group(RuneCraft.MATERIALS));
+    public static final Item COWHIDE = new Item(new FabricItemSettings().group(RuneCraft.MATERIALS));
+    public static final Item LEATHER = new Item(new FabricItemSettings().group(RuneCraft.MATERIALS));
+    public static final Item HARD_LEATHER = new Item(new FabricItemSettings().group(RuneCraft.MATERIALS));
 
     // Gems
     public static final Item DIAMOND = new Item(new FabricItemSettings().group(RuneCraft.MATERIALS));
@@ -44,6 +47,9 @@ public class RegisterMaterials {
 
         // Misc
         Registry.register(Registry.ITEM,new Identifier(RuneCraft.MOD_ID,"limestone_brick"),LIMESTONE_BRICK);
+        Registry.register(Registry.ITEM,new Identifier(RuneCraft.MOD_ID,"cowhide"),COWHIDE);
+        Registry.register(Registry.ITEM,new Identifier(RuneCraft.MOD_ID,"leather"),LEATHER);
+        Registry.register(Registry.ITEM,new Identifier(RuneCraft.MOD_ID,"hard_leather"),HARD_LEATHER);
 
         // Gems
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID,"diamond"),DIAMOND);

@@ -1,8 +1,8 @@
 package net.registry;
 
 import net.RuneCraft;
-//import net.armor.BronzeArmorModel;
-import net.armor.*;
+//import net.item.armor.BronzeArmorModel;
+import net.item.armor.*;
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderingRegistry;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
