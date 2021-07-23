@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "runecraft:models/armor/guthans/guthans_helmet"
+    "layer0": "runecraft:item/armor/guthans/guthans_helmet"
   }
 }

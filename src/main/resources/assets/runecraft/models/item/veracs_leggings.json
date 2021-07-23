@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "runecraft:models/armor/veracs/veracs_plateskirt"
+    "layer0": "runecraft:item/armor/veracs/veracs_plateskirt"
   }
 }

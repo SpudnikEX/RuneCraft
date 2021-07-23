@@ -94,12 +94,6 @@ public class RegisterArmor {
 
 
     public static void register(){
-        //Registry.register(Registry.ITEM,new Identifier(RuneCraft.MOD_ID,"bronze_helmet"),BRONZE_HELMET);
-
-        //Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "hallowed_helmet"), HALLOWED_HELMET);
-        //Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "hallowed_chestplate"), HALLOWED_CHESTPLATE);
-        //Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "hallowed_leggings"), HALLOWED_LEGGINGS);
-        //Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "hallowed_boots"), HALLOWED_BOOTS);
 
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "adamantite_helmet"), ADAMANTITE_HELMET);
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "adamantite_chestplate"), ADAMANTITE_CHESTPLATE);

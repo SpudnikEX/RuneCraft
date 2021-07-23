@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "runecraft:models/armor/dharoks/dharoks_platelegs"
+    "layer0": "runecraft:item/armor/dharoks/dharoks_platelegs"
   }
 }
