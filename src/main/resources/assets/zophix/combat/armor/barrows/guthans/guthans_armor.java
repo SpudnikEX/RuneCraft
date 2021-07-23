@@ -325,10 +325,10 @@ public armor() {
 		RIGHTLEG.setPivot(-1.9F, 12.0F, 0.0F);
 		RIGHTLEG.setTextureOffset(10, 34).addCuboid(-1.55F, 1.5F, -1.05F, 3.0F, 4.0F, 2.0F, 1.1F, true);
 		RIGHTLEG.setTextureOffset(2, 53).addCuboid(-2.1F, 0.45F, -1.5F, 4.0F, -1.0F, 3.0F, 1.01F, true);
-		RIGHTLEG.setTextureOffset(5, 31).addCuboid(-2.5F, 7.8F, -2.5F, 5.0F, 1.0F, 5.0F, 0.0F, false);
-		RIGHTLEG.setTextureOffset(7, 34).addCuboid(-2.5F, 8.7F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, false);
-		RIGHTLEG.setTextureOffset(8, 33).addCuboid(-2.1F, 9.3F, -2.1F, 4.0F, 1.0F, 4.0F, 0.0F, false);
-		RIGHTLEG.setTextureOffset(29, 56).addCuboid(-2.5F, 7.55F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, false);
+		RIGHTLEG.setTextureOffset(5, 31).addCuboid(-2.5F, 8.0F, -2.5F, 5.0F, 1.0F, 5.0F, 0.0F, false);
+		RIGHTLEG.setTextureOffset(7, 34).addCuboid(-2.5F, 8.9F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, false);
+		RIGHTLEG.setTextureOffset(8, 33).addCuboid(-2.1F, 9.5F, -2.1F, 4.0F, 1.0F, 4.0F, 0.0F, false);
+		RIGHTLEG.setTextureOffset(29, 56).addCuboid(-2.5F, 7.75F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, false);
 
 		RightLeg3_r1 = new ModelPart(this);
 		RightLeg3_r1.setPivot(-2.0524F, 5.0258F, -0.25F);
@@ -346,10 +346,10 @@ public armor() {
 		LEFTLEG.setPivot(1.9F, 12.0F, 0.0F);
 		LEFTLEG.setTextureOffset(10, 34).addCuboid(-1.45F, 1.5F, -1.05F, 3.0F, 4.0F, 2.0F, 1.1F, false);
 		LEFTLEG.setTextureOffset(2, 53).addCuboid(-1.9F, 0.45F, -1.5F, 4.0F, -1.0F, 3.0F, 1.01F, false);
-		LEFTLEG.setTextureOffset(5, 31).addCuboid(-2.5F, 7.8F, -2.5F, 5.0F, 1.0F, 5.0F, 0.0F, true);
-		LEFTLEG.setTextureOffset(7, 34).addCuboid(-2.5F, 8.7F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, true);
-		LEFTLEG.setTextureOffset(8, 33).addCuboid(-2.1F, 9.3F, -2.1F, 4.0F, 1.0F, 4.0F, 0.0F, true);
-		LEFTLEG.setTextureOffset(29, 56).addCuboid(-2.5F, 7.55F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, true);
+		LEFTLEG.setTextureOffset(5, 31).addCuboid(-2.5F, 8.0F, -2.5F, 5.0F, 1.0F, 5.0F, 0.0F, true);
+		LEFTLEG.setTextureOffset(7, 34).addCuboid(-2.5F, 8.9F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, true);
+		LEFTLEG.setTextureOffset(8, 33).addCuboid(-2.1F, 9.5F, -2.1F, 4.0F, 1.0F, 4.0F, 0.0F, true);
+		LEFTLEG.setTextureOffset(29, 56).addCuboid(-2.5F, 7.75F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, true);
 
 		LeftLeg3_r1 = new ModelPart(this);
 		LeftLeg3_r1.setPivot(2.0524F, 5.0258F, -0.25F);
@@ -365,13 +365,13 @@ public armor() {
 
 		RIGHTFOOT = new ModelPart(this);
 		RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
-		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.7F, 11.3F, -1.3F, 3.0F, 0.0F, 2.0F, 1.1F, false);
-		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.6F, 11.6F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
+		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
+		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
 
 		LEFTFOOT = new ModelPart(this);
 		LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
-		LEFTFOOT.setTextureOffset(6, 58).addCuboid(-1.35F, 11.3F, -1.3F, 3.0F, 0.0F, 2.0F, 1.1F, false);
-		LEFTFOOT.setTextureOffset(6, 58).addCuboid(-1.25F, 11.6F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
+		LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
+		LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
 }
 @Override
 public void setAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){

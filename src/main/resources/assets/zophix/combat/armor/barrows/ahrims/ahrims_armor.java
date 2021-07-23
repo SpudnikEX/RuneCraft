@@ -199,121 +199,121 @@ public armor() {
 
 		RIGHTLEG = new ModelPart(this);
 		RIGHTLEG.setPivot(-1.9F, 12.0F, 0.0F);
-		RIGHTLEG.setTextureOffset(18, 32).addCuboid(-3.25F, 9.3F, -2.25F, 6.0F, 1.0F, 4.0F, 0.0F, false);
-		RIGHTLEG.setTextureOffset(5, 32).addCuboid(-2.25F, 9.3F, -3.25F, 4.0F, 1.0F, 6.0F, 0.0F, false);
-		RIGHTLEG.setTextureOffset(6, 53).addCuboid(-1.6F, 0.55F, -1.5F, 3.0F, -1.0F, 3.0F, 1.01F, true);
+		RIGHTLEG.setTextureOffset(18, 32).addCuboid(-3.25F, 9.6F, -2.25F, 6.0F, 1.0F, 4.0F, 0.0F, false);
+		RIGHTLEG.setTextureOffset(5, 32).addCuboid(-2.25F, 9.6F, -3.25F, 4.0F, 1.0F, 6.0F, 0.0F, false);
+		RIGHTLEG.setTextureOffset(6, 53).addCuboid(-1.6F, 0.65F, -1.5F, 3.0F, -1.0F, 3.0F, 1.01F, true);
 
 		RightRobe10_r1 = new ModelPart(this);
-		RightRobe10_r1.setPivot(2.4621F, 9.8F, 2.4722F);
+		RightRobe10_r1.setPivot(2.4621F, 10.1F, 2.4722F);
 		RIGHTLEG.addChild(RightRobe10_r1);
 		setRotationAngle(RightRobe10_r1, 0.0F, 0.7854F, 0.0F);
 		RightRobe10_r1.setTextureOffset(18, 32).addCuboid(-0.7F, -0.5F, -0.4F, 1.0F, 1.0F, 0.0F, 0.0F, false);
 
 		RightRobe9_r1 = new ModelPart(this);
-		RightRobe9_r1.setPivot(2.4621F, 9.8F, -2.4722F);
+		RightRobe9_r1.setPivot(2.4621F, 10.1F, -2.4722F);
 		RIGHTLEG.addChild(RightRobe9_r1);
 		setRotationAngle(RightRobe9_r1, 0.0F, -0.7854F, 0.0F);
 		RightRobe9_r1.setTextureOffset(18, 32).addCuboid(-0.7F, -0.5F, -0.4F, 1.0F, 1.0F, 0.0F, 0.0F, false);
 
 		RightRobe8_r1 = new ModelPart(this);
-		RightRobe8_r1.setPivot(-2.4621F, 9.8F, 2.4722F);
+		RightRobe8_r1.setPivot(-2.4621F, 10.1F, 2.4722F);
 		RIGHTLEG.addChild(RightRobe8_r1);
 		setRotationAngle(RightRobe8_r1, 0.0F, -0.7854F, 0.0F);
 		RightRobe8_r1.setTextureOffset(18, 32).addCuboid(-0.7F, -0.5F, -0.4F, 1.0F, 1.0F, 0.0F, 0.0F, false);
 
 		RightRobe7_r1 = new ModelPart(this);
-		RightRobe7_r1.setPivot(-2.4621F, 9.8F, -2.4722F);
+		RightRobe7_r1.setPivot(-2.4621F, 10.1F, -2.4722F);
 		RIGHTLEG.addChild(RightRobe7_r1);
 		setRotationAngle(RightRobe7_r1, 0.0F, 0.7854F, 0.0F);
 		RightRobe7_r1.setTextureOffset(18, 32).addCuboid(-0.7F, -0.5F, -0.4F, 1.0F, 1.0F, 0.0F, 0.0F, false);
 
 		RightRobe4_r1 = new ModelPart(this);
-		RightRobe4_r1.setPivot(0.0F, 4.9043F, 1.8616F);
+		RightRobe4_r1.setPivot(0.0F, 5.2043F, 1.8616F);
 		RIGHTLEG.addChild(RightRobe4_r1);
 		setRotationAngle(RightRobe4_r1, 0.0873F, 0.0F, 0.0F);
 		RightRobe4_r1.setTextureOffset(18, 32).addCuboid(-1.25F, -3.5F, 0.0F, 2.0F, 7.0F, 0.0F, 1.0F, false);
 
 		RightRobe3_r1 = new ModelPart(this);
-		RightRobe3_r1.setPivot(0.0F, 4.9043F, -1.8616F);
+		RightRobe3_r1.setPivot(0.0F, 5.2043F, -1.8616F);
 		RIGHTLEG.addChild(RightRobe3_r1);
 		setRotationAngle(RightRobe3_r1, -0.0873F, 0.0F, 0.0F);
 		RightRobe3_r1.setTextureOffset(18, 32).addCuboid(-1.25F, -3.5F, 0.0F, 2.0F, 7.0F, 0.0F, 1.0F, false);
 
 		RightRobe2_r1 = new ModelPart(this);
-		RightRobe2_r1.setPivot(1.8616F, 4.9043F, 0.0F);
+		RightRobe2_r1.setPivot(1.8616F, 5.2043F, 0.0F);
 		RIGHTLEG.addChild(RightRobe2_r1);
 		setRotationAngle(RightRobe2_r1, 0.0F, 0.0F, -0.0873F);
 		RightRobe2_r1.setTextureOffset(18, 32).addCuboid(0.0F, -3.5F, -1.25F, 0.0F, 7.0F, 2.0F, 1.0F, true);
 
 		RightRobe1_r1 = new ModelPart(this);
-		RightRobe1_r1.setPivot(-1.8616F, 4.9043F, 0.0F);
+		RightRobe1_r1.setPivot(-1.8616F, 5.2043F, 0.0F);
 		RIGHTLEG.addChild(RightRobe1_r1);
 		setRotationAngle(RightRobe1_r1, 0.0F, 0.0F, 0.0873F);
 		RightRobe1_r1.setTextureOffset(18, 32).addCuboid(0.0F, -3.5F, -1.25F, 0.0F, 7.0F, 2.0F, 1.0F, false);
 
 		LEFTLEG = new ModelPart(this);
 		LEFTLEG.setPivot(1.9F, 12.0F, 0.0F);
-		LEFTLEG.setTextureOffset(5, 32).addCuboid(-3.25F, 9.3F, -2.25F, 6.0F, 1.0F, 4.0F, 0.0F, false);
-		LEFTLEG.setTextureOffset(6, 32).addCuboid(-2.25F, 9.3F, -3.25F, 4.0F, 1.0F, 6.0F, 0.0F, false);
-		LEFTLEG.setTextureOffset(6, 53).addCuboid(-1.4F, 0.55F, -1.5F, 3.0F, -1.0F, 3.0F, 1.01F, false);
+		LEFTLEG.setTextureOffset(5, 32).addCuboid(-3.25F, 9.6F, -2.25F, 6.0F, 1.0F, 4.0F, 0.0F, false);
+		LEFTLEG.setTextureOffset(6, 32).addCuboid(-2.25F, 9.6F, -3.25F, 4.0F, 1.0F, 6.0F, 0.0F, false);
+		LEFTLEG.setTextureOffset(6, 53).addCuboid(-1.4F, 0.65F, -1.5F, 3.0F, -1.0F, 3.0F, 1.01F, false);
 
 		LeftRobe10_r1 = new ModelPart(this);
-		LeftRobe10_r1.setPivot(-2.4621F, 9.8F, 2.4722F);
+		LeftRobe10_r1.setPivot(-2.4621F, 10.1F, 2.4722F);
 		LEFTLEG.addChild(LeftRobe10_r1);
 		setRotationAngle(LeftRobe10_r1, 0.0F, -0.7854F, 0.0F);
 		LeftRobe10_r1.setTextureOffset(16, 32).addCuboid(-0.7F, -0.5F, -0.4F, 1.0F, 1.0F, 0.0F, 0.0F, false);
 
 		LeftRobe9_r1 = new ModelPart(this);
-		LeftRobe9_r1.setPivot(-2.4621F, 9.8F, -2.4722F);
+		LeftRobe9_r1.setPivot(-2.4621F, 10.1F, -2.4722F);
 		LEFTLEG.addChild(LeftRobe9_r1);
 		setRotationAngle(LeftRobe9_r1, 0.0F, 0.7854F, 0.0F);
 		LeftRobe9_r1.setTextureOffset(16, 32).addCuboid(-0.7F, -0.5F, -0.4F, 1.0F, 1.0F, 0.0F, 0.0F, false);
 
 		LeftRobe8_r1 = new ModelPart(this);
-		LeftRobe8_r1.setPivot(2.4621F, 9.8F, 2.4722F);
+		LeftRobe8_r1.setPivot(2.4621F, 10.1F, 2.4722F);
 		LEFTLEG.addChild(LeftRobe8_r1);
 		setRotationAngle(LeftRobe8_r1, 0.0F, 0.7854F, 0.0F);
 		LeftRobe8_r1.setTextureOffset(16, 32).addCuboid(-0.7F, -0.5F, -0.4F, 1.0F, 1.0F, 0.0F, 0.0F, false);
 
 		LeftRobe7_r1 = new ModelPart(this);
-		LeftRobe7_r1.setPivot(2.4621F, 9.8F, -2.4722F);
+		LeftRobe7_r1.setPivot(2.4621F, 10.1F, -2.4722F);
 		LEFTLEG.addChild(LeftRobe7_r1);
 		setRotationAngle(LeftRobe7_r1, 0.0F, -0.7854F, 0.0F);
 		LeftRobe7_r1.setTextureOffset(16, 32).addCuboid(-0.7F, -0.5F, -0.4F, 1.0F, 1.0F, 0.0F, 0.0F, false);
 
 		LeftRobe4_r1 = new ModelPart(this);
-		LeftRobe4_r1.setPivot(0.0F, 4.9043F, 1.8616F);
+		LeftRobe4_r1.setPivot(0.0F, 5.2043F, 1.8616F);
 		LEFTLEG.addChild(LeftRobe4_r1);
 		setRotationAngle(LeftRobe4_r1, 0.0873F, 0.0F, 0.0F);
 		LeftRobe4_r1.setTextureOffset(16, 32).addCuboid(-1.25F, -3.5F, 0.0F, 2.0F, 7.0F, 0.0F, 1.0F, false);
 
 		LeftRobe3_r1 = new ModelPart(this);
-		LeftRobe3_r1.setPivot(0.0F, 4.9043F, -1.8616F);
+		LeftRobe3_r1.setPivot(0.0F, 5.2043F, -1.8616F);
 		LEFTLEG.addChild(LeftRobe3_r1);
 		setRotationAngle(LeftRobe3_r1, -0.0873F, 0.0F, 0.0F);
 		LeftRobe3_r1.setTextureOffset(16, 32).addCuboid(-1.25F, -3.5F, 0.0F, 2.0F, 7.0F, 0.0F, 1.0F, false);
 
 		LeftRobe2_r1 = new ModelPart(this);
-		LeftRobe2_r1.setPivot(-1.8616F, 4.9043F, 0.0F);
+		LeftRobe2_r1.setPivot(-1.8616F, 5.2043F, 0.0F);
 		LEFTLEG.addChild(LeftRobe2_r1);
 		setRotationAngle(LeftRobe2_r1, 0.0F, 0.0F, 0.0873F);
 		LeftRobe2_r1.setTextureOffset(16, 32).addCuboid(0.0F, -3.5F, -1.25F, 0.0F, 7.0F, 2.0F, 1.0F, true);
 
 		LeftRobe1_r1 = new ModelPart(this);
-		LeftRobe1_r1.setPivot(1.8616F, 4.9043F, 0.0F);
+		LeftRobe1_r1.setPivot(1.8616F, 5.2043F, 0.0F);
 		LEFTLEG.addChild(LeftRobe1_r1);
 		setRotationAngle(LeftRobe1_r1, 0.0F, 0.0F, -0.0873F);
 		LeftRobe1_r1.setTextureOffset(16, 32).addCuboid(0.0F, -3.5F, -1.25F, 0.0F, 7.0F, 2.0F, 1.0F, false);
 
 		RIGHTFOOT = new ModelPart(this);
 		RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
-		RIGHTFOOT.setTextureOffset(4, 59).addCuboid(-1.7F, 11.3F, -1.3F, 3.0F, 0.0F, 2.0F, 1.1F, false);
-		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.6F, 11.6F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
+		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
+		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
 
 		LEFTFOOT = new ModelPart(this);
 		LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
-		LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.35F, 11.3F, -1.3F, 3.0F, 0.0F, 2.0F, 1.1F, false);
-		LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.25F, 11.6F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
+		LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
+		LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
 }
 @Override
 public void setAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){

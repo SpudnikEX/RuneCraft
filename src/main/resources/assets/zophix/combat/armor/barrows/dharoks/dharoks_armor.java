@@ -491,13 +491,13 @@ public armor() {
 
 		RIGHTFOOT = new ModelPart(this);
 		RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
-		RIGHTFOOT.setTextureOffset(5, 58).addCuboid(-1.7F, 11.3F, -1.3F, 3.0F, 0.0F, 2.0F, 1.1F, false);
-		RIGHTFOOT.setTextureOffset(5, 58).addCuboid(-1.6F, 11.6F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
+		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
+		RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
 
 		LEFTFOOT = new ModelPart(this);
 		LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
-		LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.35F, 11.3F, -1.3F, 3.0F, 0.0F, 2.0F, 1.1F, false);
-		LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.25F, 11.6F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
+		LEFTFOOT.setTextureOffset(3, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
+		LEFTFOOT.setTextureOffset(3, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
 }
 @Override
 public void setAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
