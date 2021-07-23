@@ -20,33 +20,48 @@ public enum RunecraftArmorMaterials implements ArmorMaterial {
     // Name will direct to minecraft:textures/models/armor/name_layer_1 & name_layer_2
 
     ADAMANTITE("adamantite", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+        return Ingredient.ofItems(RegisterMaterials.ADAMANTITE_BAR);
     }),
     BRONZE("bronze", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
     }),
     DRAGON("dragon", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+        return Ingredient.ofItems(RegisterMaterials.DRAGON_BAR);
     }),
     GOLD("gold", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+        return Ingredient.ofItems(RegisterMaterials.GOLD_BAR);
     }),
     IRON("iron", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+        return Ingredient.ofItems(RegisterMaterials.IRON_BAR);
     }),
     MITHRIL("mithril", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+        return Ingredient.ofItems(RegisterMaterials.MITHRIL_BAR);
     }),
     RUNITE("runite", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+        return Ingredient.ofItems(RegisterMaterials.RUNITE_BAR);
     }),
     SILVER("silver", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+        return Ingredient.ofItems(RegisterMaterials.SILVER_BAR);
     }),
     STEEL("steel", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.STEEL_BAR);
+    }),
+    AHRIMS("ahrims", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
     }),
-    HALLOW("hallowed", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
+    DHAROKS("dharoks", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    GUTHANS("guthans", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    KHARILS("kharils", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    TORAGS("torags", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    VERACS("veracs", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
     });
 

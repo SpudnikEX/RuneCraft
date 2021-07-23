@@ -58,22 +58,22 @@ public class RuneCraftArmorItem extends ArmorItem {
                 return new DragonArmorModel(slot);
             }
             case AHRIMS -> {
-                return new PlateArmorModel(slot);
+                return new AhrimsArmorModel(slot);
             }
             case DHAROKS -> {
-                return new PlateArmorModel(slot);
+                return new DharoksArmorModel(slot);
             }
             case GUTHANS -> {
-                return new PlateArmorModel(slot);
+                return new GuthansArmorModel(slot);
             }
             case KHARILS -> {
-                return new PlateArmorModel(slot);
+                return new KharilsArmorModel(slot);
             }
             case TORAGS -> {
-                return new PlateArmorModel(slot);
+                return new ToragsArmorModel(slot);
             }
             case VERACS -> {
-                return new PlateArmorModel(slot);
+                return new VeracsArmorModel(slot);
             }
             default -> {
                 return new RunecraftArmorModel(slot);

@@ -17,55 +17,80 @@ public class RegisterArmor {
 
     // Create armor class and change string directory, create Material entry, register new item below, register with renderer below, create .json entry for each item
 
-    public static final ArmorItem ADAMANTITE_HELMET = new AdamantiteArmor(RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem ADAMANTITE_CHESTPLATE = new AdamantiteArmor(RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem ADAMANTITE_LEGGINGS = new AdamantiteArmor(RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem ADAMANTITE_BOOTS = new AdamantiteArmor(RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem ADAMANTITE_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem ADAMANTITE_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem ADAMANTITE_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem ADAMANTITE_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
     public static final ArmorItem BRONZE_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.BRONZE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
     public static final ArmorItem BRONZE_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.BRONZE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
     public static final ArmorItem BRONZE_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.BRONZE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
     public static final ArmorItem BRONZE_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.BRONZE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem DRAGON_HELMET = new DragonArmor(RunecraftArmorMaterials.DRAGON, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem DRAGON_CHESTPLATE = new DragonArmor(RunecraftArmorMaterials.DRAGON, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem DRAGON_LEGGINGS = new DragonArmor(RunecraftArmorMaterials.DRAGON, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem DRAGON_BOOTS = new DragonArmor(RunecraftArmorMaterials.DRAGON, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem DRAGON_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.DRAGON, RunecraftArmorMaterials.DRAGON, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem DRAGON_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.DRAGON,RunecraftArmorMaterials.DRAGON, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem DRAGON_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.DRAGON, RunecraftArmorMaterials.DRAGON, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem DRAGON_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.DRAGON, RunecraftArmorMaterials.DRAGON, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem GOLD_HELMET = new GoldArmor(RunecraftArmorMaterials.GOLD, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem GOLD_CHESTPLATE = new GoldArmor(RunecraftArmorMaterials.GOLD, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem GOLD_LEGGINGS = new GoldArmor(RunecraftArmorMaterials.GOLD, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem GOLD_BOOTS = new GoldArmor(RunecraftArmorMaterials.GOLD, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GOLD_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.GOLD, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GOLD_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.GOLD, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GOLD_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.GOLD, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GOLD_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.GOLD, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem IRON_HELMET = new IronArmor(RunecraftArmorMaterials.IRON, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem IRON_CHESTPLATE = new IronArmor(RunecraftArmorMaterials.IRON, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem IRON_LEGGINGS = new IronArmor(RunecraftArmorMaterials.IRON, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem IRON_BOOTS = new IronArmor(RunecraftArmorMaterials.IRON, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem IRON_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.IRON, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem IRON_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.IRON, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem IRON_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.IRON, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem IRON_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.IRON, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem MITHRIL_HELMET = new MithrilArmor(RunecraftArmorMaterials.MITHRIL, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem MITHRIL_CHESTPLATE = new MithrilArmor(RunecraftArmorMaterials.MITHRIL, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem MITHRIL_LEGGINGS = new MithrilArmor(RunecraftArmorMaterials.MITHRIL, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem MITHRIL_BOOTS = new MithrilArmor(RunecraftArmorMaterials.MITHRIL, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem MITHRIL_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.MITHRIL, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem MITHRIL_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.MITHRIL, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem MITHRIL_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.MITHRIL, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem MITHRIL_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.MITHRIL, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem RUNITE_HELMET = new RuniteArmor(RunecraftArmorMaterials.RUNITE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem RUNITE_CHESTPLATE = new RuniteArmor(RunecraftArmorMaterials.RUNITE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem RUNITE_LEGGINGS = new RuniteArmor(RunecraftArmorMaterials.RUNITE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem RUNITE_BOOTS = new RuniteArmor(RunecraftArmorMaterials.RUNITE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem RUNITE_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.RUNITE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem RUNITE_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.RUNITE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem RUNITE_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.RUNITE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem RUNITE_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.RUNITE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem SILVER_HELMET = new SilverArmor(RunecraftArmorMaterials.SILVER, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem SILVER_CHESTPLATE = new SilverArmor(RunecraftArmorMaterials.SILVER, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem SILVER_LEGGINGS = new SilverArmor(RunecraftArmorMaterials.SILVER, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem SILVER_BOOTS = new SilverArmor(RunecraftArmorMaterials.SILVER, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SILVER_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.SILVER, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SILVER_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.SILVER, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SILVER_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.SILVER, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SILVER_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.SILVER, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem STEEL_HELMET = new SteelArmor(RunecraftArmorMaterials.STEEL, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem STEEL_CHESTPLATE = new SteelArmor(RunecraftArmorMaterials.STEEL, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem STEEL_LEGGINGS = new SteelArmor(RunecraftArmorMaterials.STEEL, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem STEEL_BOOTS = new SteelArmor(RunecraftArmorMaterials.STEEL, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem STEEL_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.STEEL, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem STEEL_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.STEEL, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem STEEL_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.STEEL, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem STEEL_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.STEEL, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem HALLOWED_HELMET = new HallowedArmor(RunecraftArmorMaterials.HALLOW, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem HALLOWED_CHESTPLATE = new HallowedArmor(RunecraftArmorMaterials.HALLOW, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem HALLOWED_LEGGINGS = new HallowedArmor(RunecraftArmorMaterials.HALLOW, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem HALLOWED_BOOTS = new HallowedArmor(RunecraftArmorMaterials.HALLOW, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem AHRIMS_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.AHRIMS, RunecraftArmorMaterials.AHRIMS, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem AHRIMS_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.AHRIMS, RunecraftArmorMaterials.AHRIMS, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem AHRIMS_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.AHRIMS, RunecraftArmorMaterials.AHRIMS, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem AHRIMS_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.AHRIMS, RunecraftArmorMaterials.AHRIMS, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem DHAROKS_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.DHAROKS, RunecraftArmorMaterials.DHAROKS, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem DHAROKS_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.DHAROKS, RunecraftArmorMaterials.DHAROKS, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem DHAROKS_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.DHAROKS, RunecraftArmorMaterials.DHAROKS, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem DHAROKS_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.DHAROKS, RunecraftArmorMaterials.DHAROKS, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem GUTHANS_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.GUTHANS, RunecraftArmorMaterials.GUTHANS, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GUTHANS_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.GUTHANS, RunecraftArmorMaterials.GUTHANS, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GUTHANS_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.GUTHANS, RunecraftArmorMaterials.GUTHANS, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GUTHANS_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.GUTHANS, RunecraftArmorMaterials.GUTHANS, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem KHARILS_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.KHARILS, RunecraftArmorMaterials.KHARILS, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem KHARILS_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.KHARILS, RunecraftArmorMaterials.KHARILS, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem KHARILS_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.KHARILS, RunecraftArmorMaterials.KHARILS, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem KHARILS_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.KHARILS, RunecraftArmorMaterials.KHARILS, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem TORAGS_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.TORAGS, RunecraftArmorMaterials.TORAGS, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem TORAGS_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.TORAGS, RunecraftArmorMaterials.TORAGS, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem TORAGS_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.TORAGS, RunecraftArmorMaterials.TORAGS, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem TORAGS_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.TORAGS, RunecraftArmorMaterials.TORAGS, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem VERACS_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.VERACS, RunecraftArmorMaterials.VERACS, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem VERACS_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.VERACS, RunecraftArmorMaterials.VERACS, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem VERACS_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.VERACS, RunecraftArmorMaterials.VERACS, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem VERACS_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.VERACS, RunecraftArmorMaterials.VERACS, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
 
     public static void register(){
@@ -121,6 +146,35 @@ public class RegisterArmor {
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "steel_leggings"), STEEL_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "steel_boots"), STEEL_BOOTS);
 
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "ahrims_helmet"), AHRIMS_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "ahrims_chestplate"), AHRIMS_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "ahrims_leggings"), AHRIMS_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "ahrims_boots"), AHRIMS_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "dharoks_helmet"), DHAROKS_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "dharoks_chestplate"), DHAROKS_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "dharoks_leggings"), DHAROKS_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "dharoks_boots"), DHAROKS_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "guthans_helmet"), GUTHANS_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "guthans_chestplate"), GUTHANS_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "guthans_leggings"), GUTHANS_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "guthans_boots"), GUTHANS_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "torags_helmet"), TORAGS_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "torags_chestplate"), TORAGS_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "torags_leggings"), TORAGS_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "torags_boots"), TORAGS_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "kharils_helmet"), KHARILS_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "kharils_chestplate"), KHARILS_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "kharils_leggings"), KHARILS_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "kharils_boots"), KHARILS_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "veracs_helmet"), VERACS_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "veracs_chestplate"), VERACS_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "veracs_leggings"), VERACS_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "veracs_boots"), VERACS_BOOTS);
     }
 
     // If this is not called, armor will get rendered as normal armor with re-texure!
@@ -128,19 +182,9 @@ public class RegisterArmor {
         // Parameters for model provider
         // BipedEntityModel<LivingEntity> getArmorModel(LivingEntity entity, ItemStack stack, EquipmentSlot slot, BipedEntityModel<LivingEntity> defaultModel);
 
-        ArmorRenderingRegistry.ModelProvider modelProvider = (entity, stack, slot, original) -> ((HallowedArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        ArmorRenderingRegistry.TextureProvider textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((HallowedArmor) stack.getItem()).getArmorTexture(stack, slot));
-        ArmorRenderingRegistry.registerModel(modelProvider, HALLOWED_HELMET);
-        ArmorRenderingRegistry.registerTexture(textureProvider, HALLOWED_HELMET);
-        ArmorRenderingRegistry.registerModel(modelProvider, HALLOWED_CHESTPLATE);
-        ArmorRenderingRegistry.registerTexture(textureProvider, HALLOWED_CHESTPLATE);
-        ArmorRenderingRegistry.registerModel(modelProvider, HALLOWED_LEGGINGS);
-        ArmorRenderingRegistry.registerTexture(textureProvider, HALLOWED_LEGGINGS);
-        ArmorRenderingRegistry.registerModel(modelProvider, HALLOWED_BOOTS);
-        ArmorRenderingRegistry.registerTexture(textureProvider, HALLOWED_BOOTS);
+        ArmorRenderingRegistry.ModelProvider modelProvider = (entity, stack, slot, original) -> ((RuneCraftArmorItem) stack.getItem()).getArmorModel(entity, stack, slot, original);
+        ArmorRenderingRegistry.TextureProvider textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((RuneCraftArmorItem) stack.getItem()).getArmorTexture(stack, slot));
 
-        modelProvider = (entity, stack, slot, original) -> ((AdamantiteArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((AdamantiteArmor) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, ADAMANTITE_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, ADAMANTITE_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, ADAMANTITE_CHESTPLATE);
@@ -150,8 +194,6 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, ADAMANTITE_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, ADAMANTITE_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((RuneCraftArmorItem) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((RuneCraftArmorItem) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, BRONZE_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, BRONZE_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, BRONZE_CHESTPLATE);
@@ -161,8 +203,6 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, BRONZE_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, BRONZE_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((DragonArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((DragonArmor) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, DRAGON_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, DRAGON_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, DRAGON_CHESTPLATE);
@@ -172,8 +212,6 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, DRAGON_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, DRAGON_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((GoldArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((GoldArmor) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, GOLD_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, GOLD_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, GOLD_CHESTPLATE);
@@ -183,8 +221,6 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, GOLD_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, GOLD_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((IronArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((IronArmor) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, IRON_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, IRON_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, IRON_CHESTPLATE);
@@ -194,8 +230,6 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, IRON_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, IRON_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((MithrilArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((MithrilArmor) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, MITHRIL_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, MITHRIL_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, MITHRIL_CHESTPLATE);
@@ -205,8 +239,6 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, MITHRIL_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, MITHRIL_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((RuniteArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((RuniteArmor) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, RUNITE_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, RUNITE_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, RUNITE_CHESTPLATE);
@@ -216,8 +248,6 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, RUNITE_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, RUNITE_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((SilverArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((SilverArmor) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, SILVER_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, SILVER_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, SILVER_CHESTPLATE);
@@ -227,8 +257,6 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, SILVER_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, SILVER_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((SteelArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((SteelArmor) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, STEEL_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, STEEL_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, STEEL_CHESTPLATE);
@@ -237,5 +265,59 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerTexture(textureProvider, STEEL_LEGGINGS);
         ArmorRenderingRegistry.registerModel(modelProvider, STEEL_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, STEEL_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, AHRIMS_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, AHRIMS_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, AHRIMS_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, AHRIMS_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, AHRIMS_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, AHRIMS_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, AHRIMS_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, AHRIMS_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, DHAROKS_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, DHAROKS_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, DHAROKS_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, DHAROKS_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, DHAROKS_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, DHAROKS_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, DHAROKS_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, DHAROKS_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, GUTHANS_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, GUTHANS_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, GUTHANS_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, GUTHANS_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, GUTHANS_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, GUTHANS_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, GUTHANS_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, GUTHANS_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, KHARILS_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, KHARILS_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, KHARILS_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, KHARILS_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, KHARILS_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, KHARILS_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, KHARILS_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, KHARILS_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, TORAGS_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, TORAGS_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, TORAGS_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, TORAGS_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, TORAGS_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, TORAGS_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, TORAGS_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, TORAGS_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, VERACS_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, VERACS_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, VERACS_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, VERACS_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, VERACS_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, VERACS_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, VERACS_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, VERACS_BOOTS);
     }
 }

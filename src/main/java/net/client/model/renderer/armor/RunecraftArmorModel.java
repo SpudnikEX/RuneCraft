@@ -30,7 +30,7 @@ public class RunecraftArmorModel<T extends LivingEntity> extends BipedEntityMode
         GUTHANS,
         KHARILS,
         TORAGS,
-        VERACS
+        VERACS;
     }
 
     public RunecraftArmorModel(EquipmentSlot slot) {
