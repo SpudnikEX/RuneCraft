@@ -42,8 +42,11 @@ public class RuneCraftArmorItem extends ArmorItem {
 
     @NotNull
     public final String getArmorTexture(ItemStack stack, EquipmentSlot slot) {
-        String path = "runecraft:textures/item/armor/";
-        return path + material.getName() + "/" + material.getName() + "_model.png";
+        String path = "runecraft:textures/models/armor/";
+        if(material != null && material.getName() != null)
+            return path + material.getName() + "/" + material.getName() + "_model.png";
+        else
+            return "minecraft:textures/models/armor/iron_layer_1"; // fallback
     }
 
     protected RunecraftArmorModel getType(EquipmentSlot slot){
