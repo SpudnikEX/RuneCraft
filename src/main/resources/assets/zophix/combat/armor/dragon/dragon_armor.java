@@ -35,12 +35,14 @@ private final ModelPart PlayerHead;
 	private final ModelPart HelmetLeftTooth1_r1;
 	private final ModelPart HelmetLeftToothMount3_r1;
 	private final ModelPart HelmetLeftToothMount2_r1;
+	private final ModelPart HelmetLeftToothMount2_r2;
 	private final ModelPart HelmetLeftToothMount1_r1;
 	private final ModelPart HelmetRightTooth3_r1;
 	private final ModelPart HelmetRightTooth2_r1;
 	private final ModelPart HelmetRightTooth1_r1;
 	private final ModelPart HelmetRightToothMount3_r1;
 	private final ModelPart HelmetRightToothMount2_r1;
+	private final ModelPart HelmetRightToothMount2_r2;
 	private final ModelPart HelmetRightToothMount1_r1;
 	private final ModelPart HelmetLeftside6_r1;
 	private final ModelPart HelmetLeftside5_r1;
@@ -54,8 +56,6 @@ private final ModelPart PlayerHead;
 	private final ModelPart Helmetrightside3_r1;
 	private final ModelPart Helmetrightside2_r1;
 	private final ModelPart Helmetrightside1_r1;
-	private final ModelPart HelmetFaceguard8_r1;
-	private final ModelPart HelmetFaceguard7_r1;
 	private final ModelPart HelmetFaceguard6_r1;
 	private final ModelPart HelmetFaceguard5_r1;
 	private final ModelPart HelmetFaceguard4_r1;
@@ -79,43 +79,38 @@ public armor() {
 		PlayerHead = new ModelPart(this);
 		PlayerHead.setPivot(0.0F, 0.0F, 0.0F);
 		PlayerHead.setTextureOffset(32, 48).addCuboid(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
-		PlayerHead.setTextureOffset(32, 48).addCuboid(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.5F, false);
 
 		PlayerBody = new ModelPart(this);
 		PlayerBody.setPivot(0.0F, 0.0F, 0.0F);
 		PlayerBody.setTextureOffset(40, 48).addCuboid(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.0F, false);
-		PlayerBody.setTextureOffset(40, 48).addCuboid(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.25F, false);
 
 		PlayerRightArm = new ModelPart(this);
 		PlayerRightArm.setPivot(-5.0F, 2.0F, 0.0F);
 		PlayerRightArm.setTextureOffset(48, 48).addCuboid(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
-		PlayerRightArm.setTextureOffset(48, 48).addCuboid(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.25F, false);
 
 		PlayerLeftArm = new ModelPart(this);
 		PlayerLeftArm.setPivot(5.0F, 2.0F, 0.0F);
 		PlayerLeftArm.setTextureOffset(48, 48).addCuboid(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
-		PlayerLeftArm.setTextureOffset(48, 48).addCuboid(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.25F, false);
 
 		PlayerRightLeg = new ModelPart(this);
 		PlayerRightLeg.setPivot(-1.9F, 13.0F, 0.0F);
 		PlayerRightLeg.setTextureOffset(48, 48).addCuboid(-2.0F, -1.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
-		PlayerRightLeg.setTextureOffset(48, 48).addCuboid(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.25F, false);
 
 		PlayerLeftLeg = new ModelPart(this);
 		PlayerLeftLeg.setPivot(1.9F, 12.0F, 0.0F);
 		PlayerLeftLeg.setTextureOffset(48, 48).addCuboid(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
-		PlayerLeftLeg.setTextureOffset(48, 48).addCuboid(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.25F, false);
 
 		HEAD = new ModelPart(this);
 		HEAD.setPivot(0.0F, 0.0F, 0.0F);
-		HEAD.setTextureOffset(5, 3).addCuboid(0.0F, -8.2F, -4.1F, 5.0F, 1.0F, 7.0F, 0.0F, false);
+		HEAD.setTextureOffset(5, 5).addCuboid(0.0F, -8.2F, -4.1F, 5.0F, 1.0F, 7.0F, 0.0F, false);
 		HEAD.setTextureOffset(6, 17).addCuboid(3.8F, -5.2F, -3.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
 		HEAD.setTextureOffset(5, 17).addCuboid(-5.6F, -5.2F, -4.0F, 2.0F, 2.0F, 2.0F, 0.0F, false);
-		HEAD.setTextureOffset(5, 3).addCuboid(-4.9F, -8.2F, -4.1F, 5.0F, 1.0F, 7.0F, 0.0F, false);
-		HEAD.setTextureOffset(5, 3).addCuboid(-0.7815F, -8.2F, 2.841F, 5.0F, 1.0F, 2.0F, 0.0F, false);
-		HEAD.setTextureOffset(5, 3).addCuboid(-3.982F, -8.2F, 2.8021F, 4.0F, 1.0F, 2.0F, 0.0F, false);
-		HEAD.setTextureOffset(10, 2).addCuboid(-0.6141F, -7.917F, 3.9153F, 5.0F, 8.0F, 1.0F, 0.0F, false);
-		HEAD.setTextureOffset(11, 2).addCuboid(-4.3141F, -7.917F, 3.9153F, 5.0F, 8.0F, 1.0F, 0.0F, false);
+		HEAD.setTextureOffset(6, 5).addCuboid(-4.9F, -8.2F, -4.1F, 5.0F, 1.0F, 7.0F, 0.0F, false);
+		HEAD.setTextureOffset(5, 3).addCuboid(0.0185F, -8.2F, 2.841F, 4.0F, 1.0F, 2.0F, 0.0F, false);
+		HEAD.setTextureOffset(5, 3).addCuboid(-3.882F, -8.2F, 2.8021F, 4.0F, 1.0F, 2.0F, 0.0F, false);
+		HEAD.setTextureOffset(10, 2).addCuboid(0.3859F, -7.917F, 3.9153F, 4.0F, 8.0F, 1.0F, 0.0F, false);
+		HEAD.setTextureOffset(10, 2).addCuboid(-0.5141F, -7.917F, 3.9153F, 1.0F, 8.0F, 1.0F, 0.0F, false);
+		HEAD.setTextureOffset(11, 2).addCuboid(-4.4141F, -7.917F, 3.9153F, 4.0F, 8.0F, 1.0F, 0.0F, false);
 		HEAD.setTextureOffset(3, 3).addCuboid(-3.5F, 0.15F, -3.0F, 7.0F, -1.0F, 6.0F, 1.0F, false);
 		HEAD.setTextureOffset(30, 43).addCuboid(-6.6F, -4.7F, -3.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 		HEAD.setTextureOffset(31, 44).addCuboid(5.8F, -4.7F, -2.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
@@ -145,13 +140,13 @@ public armor() {
 		HelmetLeftFeather3_r1.setTextureOffset(2, 57).addCuboid(-0.5F, -0.5F, -2.0F, 1.0F, 1.0F, 4.0F, 0.0F, false);
 
 		HelmetLeftFeather2_r1 = new ModelPart(this);
-		HelmetLeftFeather2_r1.setPivot(3.2657F, -8.3244F, 7.2419F);
+		HelmetLeftFeather2_r1.setPivot(3.2657F, -8.0244F, 7.2419F);
 		HEAD.addChild(HelmetLeftFeather2_r1);
 		setRotationAngle(HelmetLeftFeather2_r1, -0.3316F, -0.2094F, 0.0F);
 		HelmetLeftFeather2_r1.setTextureOffset(2, 57).addCuboid(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, 0.0F, false);
 
 		HelmetLeftFeather1_r1 = new ModelPart(this);
-		HelmetLeftFeather1_r1.setPivot(3.4636F, -8.5449F, 6.3107F);
+		HelmetLeftFeather1_r1.setPivot(3.4636F, -8.2449F, 6.3107F);
 		HEAD.addChild(HelmetLeftFeather1_r1);
 		setRotationAngle(HelmetLeftFeather1_r1, 0.2094F, -0.2094F, 0.0F);
 		HelmetLeftFeather1_r1.setTextureOffset(2, 57).addCuboid(-0.5F, -0.5F, -2.0F, 1.0F, 1.0F, 4.0F, 0.0F, false);
@@ -169,64 +164,64 @@ public armor() {
 		HelmetLeftFeatherMount2_r1.setTextureOffset(5, 17).addCuboid(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
 
 		HelmetLeftFeatherMount1_r1 = new ModelPart(this);
-		HelmetLeftFeatherMount1_r1.setPivot(4.0024F, -7.9026F, 3.7759F);
+		HelmetLeftFeatherMount1_r1.setPivot(4.0024F, -7.6026F, 3.7759F);
 		HEAD.addChild(HelmetLeftFeatherMount1_r1);
 		setRotationAngle(HelmetLeftFeatherMount1_r1, 0.3491F, -0.2094F, 0.0F);
 		HelmetLeftFeatherMount1_r1.setTextureOffset(6, 17).addCuboid(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
 
 		HelmetRightFeather6_r1 = new ModelPart(this);
-		HelmetRightFeather6_r1.setPivot(-3.4083F, -0.2908F, 6.6233F);
+		HelmetRightFeather6_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeather6_r1);
 		setRotationAngle(HelmetRightFeather6_r1, -1.0472F, 0.2094F, 0.0F);
-		HelmetRightFeather6_r1.setTextureOffset(2, 59).addCuboid(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, 0.0F, false);
+		HelmetRightFeather6_r1.setTextureOffset(2, 59).addCuboid(-4.9171F, -1.7096F, 5.5174F, 1.0F, 1.0F, 2.0F, 0.0F, false);
 
 		HelmetRightFeather5_r1 = new ModelPart(this);
-		HelmetRightFeather5_r1.setPivot(-3.501F, -1.2077F, 6.1876F);
+		HelmetRightFeather5_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeather5_r1);
 		setRotationAngle(HelmetRightFeather5_r1, -0.5934F, 0.2094F, 0.0F);
-		HelmetRightFeather5_r1.setTextureOffset(2, 57).addCuboid(-0.5F, -0.5F, -2.0F, 1.0F, 1.0F, 4.0F, 0.0F, false);
+		HelmetRightFeather5_r1.setTextureOffset(2, 57).addCuboid(-4.9171F, 0.7589F, 3.5061F, 1.0F, 1.0F, 4.0F, 0.0F, false);
 
 		HelmetRightFeather4_r1 = new ModelPart(this);
-		HelmetRightFeather4_r1.setPivot(-3.2215F, -3.5995F, 7.5025F);
+		HelmetRightFeather4_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeather4_r1);
 		setRotationAngle(HelmetRightFeather4_r1, -0.8727F, 0.2094F, 0.0F);
-		HelmetRightFeather4_r1.setTextureOffset(2, 59).addCuboid(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, 0.0F, false);
+		HelmetRightFeather4_r1.setTextureOffset(2, 59).addCuboid(-4.9171F, -3.3748F, 3.6716F, 1.0F, 1.0F, 2.0F, 0.0F, false);
 
 		HelmetRightFeather3_r1 = new ModelPart(this);
-		HelmetRightFeather3_r1.setPivot(-3.3503F, -4.3966F, 6.8962F);
+		HelmetRightFeather3_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeather3_r1);
 		setRotationAngle(HelmetRightFeather3_r1, -0.4014F, 0.2094F, 0.0F);
-		HelmetRightFeather3_r1.setTextureOffset(2, 57).addCuboid(-0.5F, -0.5F, -2.0F, 1.0F, 1.0F, 4.0F, 0.0F, false);
+		HelmetRightFeather3_r1.setTextureOffset(2, 57).addCuboid(-4.9171F, -1.4321F, 2.5856F, 1.0F, 1.0F, 4.0F, 0.0F, false);
 
 		HelmetRightFeather2_r1 = new ModelPart(this);
-		HelmetRightFeather2_r1.setPivot(-3.157F, -7.9928F, 7.2724F);
+		HelmetRightFeather2_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeather2_r1);
 		setRotationAngle(HelmetRightFeather2_r1, -0.3316F, 0.2094F, 0.0F);
-		HelmetRightFeather2_r1.setTextureOffset(2, 57).addCuboid(-0.5F, -0.5F, -1.0F, 1.0F, 1.0F, 2.0F, 0.0F, false);
+		HelmetRightFeather2_r1.setTextureOffset(2, 57).addCuboid(-4.8062F, -4.6432F, 2.8545F, 1.0F, 1.0F, 2.0F, 0.0F, false);
 
 		HelmetRightFeather1_r1 = new ModelPart(this);
-		HelmetRightFeather1_r1.setPivot(-3.3549F, -8.2133F, 6.3413F);
+		HelmetRightFeather1_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeather1_r1);
 		setRotationAngle(HelmetRightFeather1_r1, 0.2094F, 0.2094F, 0.0F);
-		HelmetRightFeather1_r1.setTextureOffset(2, 57).addCuboid(-0.5F, -0.5F, -2.0F, 1.0F, 1.0F, 4.0F, 0.0F, false);
+		HelmetRightFeather1_r1.setTextureOffset(2, 57).addCuboid(-4.8062F, -2.4798F, 2.5526F, 1.0F, 1.0F, 4.0F, 0.0F, false);
 
 		HelmetRightFeatherMount2_r1 = new ModelPart(this);
-		HelmetRightFeatherMount2_r1.setPivot(-3.8239F, -5.3369F, 4.6156F);
+		HelmetRightFeatherMount2_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeatherMount2_r1);
 		setRotationAngle(HelmetRightFeatherMount2_r1, -0.2618F, 0.2094F, 0.0F);
-		HelmetRightFeatherMount2_r1.setTextureOffset(5, 17).addCuboid(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
+		HelmetRightFeatherMount2_r1.setTextureOffset(5, 17).addCuboid(-5.4062F, -1.0903F, 0.6774F, 2.0F, 1.0F, 3.0F, 0.0F, false);
 
 		HelmetRightFeatherMount3_r1 = new ModelPart(this);
-		HelmetRightFeatherMount3_r1.setPivot(-3.9295F, -2.5279F, 4.1191F);
+		HelmetRightFeatherMount3_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeatherMount3_r1);
 		setRotationAngle(HelmetRightFeatherMount3_r1, -0.4363F, 0.2094F, 0.0F);
-		HelmetRightFeatherMount3_r1.setTextureOffset(5, 17).addCuboid(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
+		HelmetRightFeatherMount3_r1.setTextureOffset(5, 17).addCuboid(-5.4062F, 1.3008F, 1.2689F, 2.0F, 1.0F, 3.0F, 0.0F, false);
 
 		HelmetRightFeatherMount1_r1 = new ModelPart(this);
-		HelmetRightFeatherMount1_r1.setPivot(-3.7465F, -7.8601F, 4.4989F);
+		HelmetRightFeatherMount1_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightFeatherMount1_r1);
 		setRotationAngle(HelmetRightFeatherMount1_r1, 0.3491F, 0.2094F, 0.0F);
-		HelmetRightFeatherMount1_r1.setTextureOffset(5, 17).addCuboid(-1.0F, -0.5F, -1.5F, 2.0F, 1.0F, 3.0F, 0.0F, false);
+		HelmetRightFeatherMount1_r1.setTextureOffset(5, 17).addCuboid(-5.3062F, -2.1392F, 1.393F, 2.0F, 1.0F, 3.0F, 0.0F, false);
 
 		HelmetLeftTooth3_r1 = new ModelPart(this);
 		HelmetLeftTooth3_r1.setPivot(5.6977F, -6.586F, 3.8574F);
@@ -258,6 +253,12 @@ public armor() {
 		setRotationAngle(HelmetLeftToothMount2_r1, -0.2164F, 0.0283F, 0.1278F);
 		HelmetLeftToothMount2_r1.setTextureOffset(5, 3).addCuboid(-1.0F, -2.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
 
+		HelmetLeftToothMount2_r2 = new ModelPart(this);
+		HelmetLeftToothMount2_r2.setPivot(3.9035F, -6.6154F, 7.4847F);
+		HEAD.addChild(HelmetLeftToothMount2_r2);
+		setRotationAngle(HelmetLeftToothMount2_r2, 0.2174F, -0.0189F, 0.0852F);
+		HelmetLeftToothMount2_r2.setTextureOffset(5, 3).addCuboid(-1.0F, -2.0F, -12.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+
 		HelmetLeftToothMount1_r1 = new ModelPart(this);
 		HelmetLeftToothMount1_r1.setPivot(4.2522F, -7.692F, -3.2169F);
 		HEAD.addChild(HelmetLeftToothMount1_r1);
@@ -265,40 +266,46 @@ public armor() {
 		HelmetLeftToothMount1_r1.setTextureOffset(5, 3).addCuboid(-1.0F, -2.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
 
 		HelmetRightTooth3_r1 = new ModelPart(this);
-		HelmetRightTooth3_r1.setPivot(-5.6011F, -6.6043F, 3.8757F);
+		HelmetRightTooth3_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightTooth3_r1);
 		setRotationAngle(HelmetRightTooth3_r1, -0.7681F, -0.1841F, -0.1872F);
-		HelmetRightTooth3_r1.setTextureOffset(30, 43).addCuboid(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		HelmetRightTooth3_r1.setTextureOffset(30, 43).addCuboid(-5.2574F, -4.4519F, 0.2841F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 
 		HelmetRightTooth2_r1 = new ModelPart(this);
-		HelmetRightTooth2_r1.setPivot(-5.0014F, -9.2382F, 0.8133F);
+		HelmetRightTooth2_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightTooth2_r1);
 		setRotationAngle(HelmetRightTooth2_r1, -0.2164F, -0.0283F, -0.1278F);
-		HelmetRightTooth2_r1.setTextureOffset(30, 43).addCuboid(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		HelmetRightTooth2_r1.setTextureOffset(30, 43).addCuboid(-4.9966F, -4.7918F, -2.0092F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 
 		HelmetRightTooth1_r1 = new ModelPart(this);
-		HelmetRightTooth1_r1.setPivot(-4.3704F, -10.1319F, -2.6759F);
+		HelmetRightTooth1_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightTooth1_r1);
 		setRotationAngle(HelmetRightTooth1_r1, -0.2174F, -0.0189F, -0.0852F);
-		HelmetRightTooth1_r1.setTextureOffset(30, 43).addCuboid(-0.5F, -0.5F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+		HelmetRightTooth1_r1.setTextureOffset(30, 43).addCuboid(-4.6408F, -4.6536F, -5.6092F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 
 		HelmetRightToothMount3_r1 = new ModelPart(this);
-		HelmetRightToothMount3_r1.setPivot(-4.9541F, -4.8968F, 2.1682F);
+		HelmetRightToothMount3_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightToothMount3_r1);
 		setRotationAngle(HelmetRightToothMount3_r1, -0.7681F, -0.1841F, -0.1872F);
-		HelmetRightToothMount3_r1.setTextureOffset(5, 3).addCuboid(-1.0F, -2.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+		HelmetRightToothMount3_r1.setTextureOffset(5, 3).addCuboid(-5.7574F, -3.4519F, -0.2159F, 2.0F, 4.0F, 2.0F, 0.0F, false);
 
 		HelmetRightToothMount2_r1 = new ModelPart(this);
-		HelmetRightToothMount2_r1.setPivot(-4.6751F, -6.8183F, 0.2769F);
+		HelmetRightToothMount2_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightToothMount2_r1);
 		setRotationAngle(HelmetRightToothMount2_r1, -0.2164F, -0.0283F, -0.1278F);
-		HelmetRightToothMount2_r1.setTextureOffset(5, 3).addCuboid(-1.0F, -2.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+		HelmetRightToothMount2_r1.setTextureOffset(5, 3).addCuboid(-5.4966F, -3.7918F, -2.5092F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+
+		HelmetRightToothMount2_r2 = new ModelPart(this);
+		HelmetRightToothMount2_r2.setPivot(0.3656F, -4.2536F, 2.7788F);
+		HEAD.addChild(HelmetRightToothMount2_r2);
+		setRotationAngle(HelmetRightToothMount2_r2, 0.2174F, 0.0189F, -0.0852F);
+		HelmetRightToothMount2_r2.setTextureOffset(5, 3).addCuboid(-5.1408F, -3.6536F, -6.8908F, 2.0F, 4.0F, 2.0F, 0.0F, false);
 
 		HelmetRightToothMount1_r1 = new ModelPart(this);
-		HelmetRightToothMount1_r1.setPivot(-4.1525F, -7.7005F, -3.215F);
+		HelmetRightToothMount1_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetRightToothMount1_r1);
 		setRotationAngle(HelmetRightToothMount1_r1, -0.2174F, -0.0189F, -0.0852F);
-		HelmetRightToothMount1_r1.setTextureOffset(5, 3).addCuboid(-1.0F, -2.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+		HelmetRightToothMount1_r1.setTextureOffset(5, 3).addCuboid(-5.1408F, -3.6536F, -6.1092F, 2.0F, 4.0F, 2.0F, 0.0F, false);
 
 		HelmetLeftside6_r1 = new ModelPart(this);
 		HelmetLeftside6_r1.setPivot(4.5613F, -1.947F, 3.1829F);
@@ -337,161 +344,148 @@ public armor() {
 		HelmetLeftside1_r1.setTextureOffset(8, 3).addCuboid(-0.5F, -1.0F, -3.0F, 1.0F, 2.0F, 6.0F, 0.0F, false);
 
 		Helmetrightside6_r1 = new ModelPart(this);
-		Helmetrightside6_r1.setPivot(-4.5078F, -1.8877F, 3.1916F);
+		Helmetrightside6_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(Helmetrightside6_r1);
 		setRotationAngle(Helmetrightside6_r1, -0.0254F, 0.3482F, -0.0743F);
-		Helmetrightside6_r1.setTextureOffset(13, 4).addCuboid(-0.5F, -2.0F, -1.5F, 1.0F, 4.0F, 3.0F, 0.0F, false);
+		Helmetrightside6_r1.setTextureOffset(13, 4).addCuboid(-5.5613F, 1.097F, -1.4512F, 1.0F, 4.0F, 3.0F, 0.0F, false);
 
 		Helmetrightside5_r1 = new ModelPart(this);
-		Helmetrightside5_r1.setPivot(-4.6378F, -4.848F, 3.2389F);
+		Helmetrightside5_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(Helmetrightside5_r1);
 		setRotationAngle(Helmetrightside5_r1, 0.0F, 0.3491F, 0.0F);
-		Helmetrightside5_r1.setTextureOffset(12, 4).addCuboid(-0.5F, -1.0F, -1.5F, 1.0F, 2.0F, 3.0F, 0.0F, false);
+		Helmetrightside5_r1.setTextureOffset(12, 4).addCuboid(-5.4712F, -0.5177F, -1.4512F, 1.0F, 2.0F, 3.0F, 0.0F, false);
 
 		Helmetrightside4_r1 = new ModelPart(this);
-		Helmetrightside4_r1.setPivot(-4.5733F, -6.8106F, 3.2154F);
+		Helmetrightside4_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(Helmetrightside4_r1);
 		setRotationAngle(Helmetrightside4_r1, 0.0254F, 0.3482F, 0.0743F);
-		Helmetrightside4_r1.setTextureOffset(12, 4).addCuboid(-0.5F, -1.0F, -1.5F, 1.0F, 2.0F, 3.0F, 0.0F, false);
+		Helmetrightside4_r1.setTextureOffset(12, 4).addCuboid(-5.494F, -2.1348F, -1.4512F, 1.0F, 2.0F, 3.0F, 0.0F, false);
 
 		Helmetrightside3_r1 = new ModelPart(this);
-		Helmetrightside3_r1.setPivot(-4.7233F, -1.8877F, -0.9326F);
+		Helmetrightside3_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(Helmetrightside3_r1);
 		setRotationAngle(Helmetrightside3_r1, 0.0061F, -0.0871F, -0.0701F);
-		Helmetrightside3_r1.setTextureOffset(10, 2).addCuboid(-0.5F, -2.0F, -3.0F, 1.0F, 4.0F, 6.0F, 0.0F, false);
+		Helmetrightside3_r1.setTextureOffset(11, 2).addCuboid(-5.6617F, 1.09F, -5.0031F, 1.0F, 4.0F, 6.0F, 0.0F, false);
 
 		Helmetrightside2_r1 = new ModelPart(this);
-		Helmetrightside2_r1.setPivot(-4.8611F, -4.848F, -0.9447F);
+		Helmetrightside2_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(Helmetrightside2_r1);
 		setRotationAngle(Helmetrightside2_r1, 0.0F, -0.0873F, 0.0F);
-		Helmetrightside2_r1.setTextureOffset(10, 3).addCuboid(-0.5F, -1.0F, -3.0F, 1.0F, 2.0F, 6.0F, 0.0F, false);
+		Helmetrightside2_r1.setTextureOffset(11, 3).addCuboid(-5.5719F, -0.5177F, -5.0031F, 1.0F, 2.0F, 6.0F, 0.0F, false);
 
 		Helmetrightside1_r1 = new ModelPart(this);
-		Helmetrightside1_r1.setPivot(-4.7928F, -6.8106F, -0.9387F);
+		Helmetrightside1_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(Helmetrightside1_r1);
 		setRotationAngle(Helmetrightside1_r1, -0.0061F, -0.0871F, 0.0701F);
-		Helmetrightside1_r1.setTextureOffset(10, 3).addCuboid(-0.5F, -1.0F, -3.0F, 1.0F, 2.0F, 6.0F, 0.0F, false);
-
-		HelmetFaceguard8_r1 = new ModelPart(this);
-		HelmetFaceguard8_r1.setPivot(-4.4376F, -4.9379F, -3.9241F);
-		HEAD.addChild(HelmetFaceguard8_r1);
-		setRotationAngle(HelmetFaceguard8_r1, 0.0873F, 0.2182F, 0.0F);
-		HelmetFaceguard8_r1.setTextureOffset(14, 6).addCuboid(-0.5F, -1.0F, -0.5F, 1.0F, 2.0F, 1.0F, 0.0F, false);
-
-		HelmetFaceguard7_r1 = new ModelPart(this);
-		HelmetFaceguard7_r1.setPivot(4.2831F, -4.9379F, -3.9241F);
-		HEAD.addChild(HelmetFaceguard7_r1);
-		setRotationAngle(HelmetFaceguard7_r1, 0.0873F, -0.2182F, 0.0F);
-		HelmetFaceguard7_r1.setTextureOffset(14, 5).addCuboid(-0.5F, -1.0F, -0.5F, 1.0F, 2.0F, 1.0F, 0.0F, false);
+		Helmetrightside1_r1.setTextureOffset(11, 3).addCuboid(-5.5944F, -2.1278F, -5.0031F, 1.0F, 2.0F, 6.0F, 0.0F, false);
 
 		HelmetFaceguard6_r1 = new ModelPart(this);
-		HelmetFaceguard6_r1.setPivot(-2.4592F, -6.7586F, -4.2405F);
+		HelmetFaceguard6_r1.setPivot(0.2043F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetFaceguard6_r1);
 		setRotationAngle(HelmetFaceguard6_r1, -0.7734F, -1.2635F, 0.7974F);
-		HelmetFaceguard6_r1.setTextureOffset(10, 3).addCuboid(-0.5F, -1.0F, -2.5F, 1.0F, 2.0F, 5.0F, 0.0F, false);
+		HelmetFaceguard6_r1.setTextureOffset(10, 3).addCuboid(-6.7971F, -1.067F, -1.3235F, 1.0F, 2.0F, 5.0F, 0.0F, false);
 
 		HelmetFaceguard5_r1 = new ModelPart(this);
-		HelmetFaceguard5_r1.setPivot(2.3047F, -6.7586F, -4.2405F);
+		HelmetFaceguard5_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetFaceguard5_r1);
 		setRotationAngle(HelmetFaceguard5_r1, -0.7734F, 1.2635F, -0.7974F);
-		HelmetFaceguard5_r1.setTextureOffset(10, 4).addCuboid(-0.5F, -1.0F, -2.5F, 1.0F, 2.0F, 5.0F, 0.0F, false);
+		HelmetFaceguard5_r1.setTextureOffset(10, 4).addCuboid(5.7573F, -1.0758F, -1.5074F, 1.0F, 2.0F, 5.0F, 0.0F, false);
 
 		HelmetFaceguard4_r1 = new ModelPart(this);
-		HelmetFaceguard4_r1.setPivot(-2.3275F, -4.3302F, -4.2611F);
+		HelmetFaceguard4_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetFaceguard4_r1);
 		setRotationAngle(HelmetFaceguard4_r1, -0.1561F, -1.3499F, 0.16F);
-		HelmetFaceguard4_r1.setTextureOffset(10, 4).addCuboid(-0.5F, -0.5F, -2.5F, 1.0F, 1.0F, 5.0F, 0.0F, false);
+		HelmetFaceguard4_r1.setTextureOffset(12, 4).addCuboid(-6.5863F, 0.7132F, -1.4565F, 1.0F, 1.0F, 5.0F, 0.0F, false);
 
 		HelmetFaceguard3_r1 = new ModelPart(this);
-		HelmetFaceguard3_r1.setPivot(2.3293F, -4.3257F, -4.2571F);
+		HelmetFaceguard3_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetFaceguard3_r1);
 		setRotationAngle(HelmetFaceguard3_r1, -0.1943F, 1.3484F, -0.1991F);
-		HelmetFaceguard3_r1.setTextureOffset(10, 5).addCuboid(-0.5F, -0.5F, -2.5F, 1.0F, 1.0F, 5.0F, 0.0F, false);
+		HelmetFaceguard3_r1.setTextureOffset(12, 5).addCuboid(5.5644F, 0.7703F, -1.487F, 1.0F, 1.0F, 5.0F, 0.0F, false);
 
 		HelmetFaceguard2_r1 = new ModelPart(this);
-		HelmetFaceguard2_r1.setPivot(2.3284F, -1.9142F, -4.1472F);
+		HelmetFaceguard2_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetFaceguard2_r1);
 		setRotationAngle(HelmetFaceguard2_r1, 2.8529F, -1.3419F, -2.858F);
-		HelmetFaceguard2_r1.setTextureOffset(10, 3).addCuboid(-0.5F, -2.0F, -2.5F, 1.0F, 4.0F, 5.0F, 0.0F, false);
+		HelmetFaceguard2_r1.setTextureOffset(12, 3).addCuboid(-6.7133F, 1.0399F, -3.4878F, 1.0F, 4.0F, 5.0F, 0.0F, false);
 
 		HelmetFaceguard1_r1 = new ModelPart(this);
-		HelmetFaceguard1_r1.setPivot(-2.3012F, -1.8877F, -4.1429F);
+		HelmetFaceguard1_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetFaceguard1_r1);
 		setRotationAngle(HelmetFaceguard1_r1, 0.3048F, -1.3419F, -0.3125F);
-		HelmetFaceguard1_r1.setTextureOffset(10, 3).addCuboid(-0.5F, -2.0F, -2.5F, 1.0F, 4.0F, 5.0F, 0.0F, false);
+		HelmetFaceguard1_r1.setTextureOffset(15, 3).addCuboid(-6.7293F, 1.0154F, -1.4565F, 1.0F, 4.0F, 5.0F, 0.0F, false);
 
 		HelmetBlack2_r1 = new ModelPart(this);
-		HelmetBlack2_r1.setPivot(-1.8582F, -5.3F, -3.9925F);
+		HelmetBlack2_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetBlack2_r1);
 		setRotationAngle(HelmetBlack2_r1, 0.0F, -1.3526F, 0.0F);
-		HelmetBlack2_r1.setTextureOffset(20, 14).addCuboid(-0.5F, -0.5F, -2.0F, 1.0F, 1.0F, 4.0F, 0.0F, false);
+		HelmetBlack2_r1.setTextureOffset(20, 14).addCuboid(-6.2611F, -0.4697F, -1.3565F, 1.0F, 1.0F, 4.0F, 0.0F, false);
 
 		HelmetBlack1_r1 = new ModelPart(this);
-		HelmetBlack1_r1.setPivot(1.8582F, -5.3F, -3.9925F);
+		HelmetBlack1_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetBlack1_r1);
 		setRotationAngle(HelmetBlack1_r1, 0.0F, 1.3526F, 0.0F);
-		HelmetBlack1_r1.setTextureOffset(20, 14).addCuboid(-0.5F, -0.5F, -2.0F, 1.0F, 1.0F, 4.0F, 0.0F, false);
+		HelmetBlack1_r1.setTextureOffset(20, 14).addCuboid(5.2537F, -0.4697F, -1.3897F, 1.0F, 1.0F, 4.0F, 0.0F, false);
 
 		HelmetTop5_r1 = new ModelPart(this);
-		HelmetTop5_r1.setPivot(-4.1017F, -7.7F, 3.7827F);
+		HelmetTop5_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetTop5_r1);
 		setRotationAngle(HelmetTop5_r1, -3.1416F, 1.2392F, -3.1416F);
-		HelmetTop5_r1.setTextureOffset(5, 3).addCuboid(-1.0F, -0.5F, -0.5F, 2.0F, 1.0F, 1.0F, 0.0F, false);
+		HelmetTop5_r1.setTextureOffset(5, 3).addCuboid(-1.7243F, -2.7697F, -5.1398F, 2.0F, 1.0F, 1.0F, 0.0F, false);
 
 		HelmetTop4_r1 = new ModelPart(this);
-		HelmetTop4_r1.setPivot(4.149F, -7.7F, 3.7251F);
+		HelmetTop4_r1.setPivot(0.017F, -5.3303F, 1.4928F);
 		HEAD.addChild(HelmetTop4_r1);
 		setRotationAngle(HelmetTop4_r1, 0.0F, 1.1694F, 0.0F);
-		HelmetTop4_r1.setTextureOffset(5, 3).addCuboid(-1.0F, -0.5F, -0.5F, 2.0F, 1.0F, 1.0F, 0.0F, false);
+		HelmetTop4_r1.setTextureOffset(5, 3).addCuboid(-1.3404F, -2.7697F, 4.1758F, 2.0F, 1.0F, 1.0F, 0.0F, false);
 
 		BODY = new ModelPart(this);
 		BODY.setPivot(0.0F, 0.0F, 0.0F);
-		BODY.setTextureOffset(21, 29).addCuboid(-3.7F, 0.5F, -2.0F, 7.0F, 4.0F, -1.0F, 1.01F, false);
-		BODY.setTextureOffset(21, 34).addCuboid(-3.6F, 3.9F, -1.5F, 7.0F, 4.0F, -1.0F, 1.01F, false);
-		BODY.setTextureOffset(21, 38).addCuboid(-3.5F, 8.5F, -1.35F, 7.0F, 3.0F, -1.0F, 1.01F, false);
-		BODY.setTextureOffset(6, 4).addCuboid(-3.8F, 0.6F, -1.4F, 7.0F, 5.0F, 3.0F, 1.01F, false);
-		BODY.setTextureOffset(7, 6).addCuboid(-3.5F, 7.6F, -0.6F, 7.0F, 3.0F, 2.0F, 1.01F, false);
-		BODY.setTextureOffset(2, 48).addCuboid(-4.0F, 12.65F, -1.5F, 8.0F, -1.0F, 3.0F, 1.01F, false);
+		BODY.setTextureOffset(8, 4).addCuboid(-3.0F, 9.2F, -1.05F, 6.0F, 2.0F, 2.0F, 1.2F, false);
+		BODY.setTextureOffset(2, 2).addCuboid(-3.5F, 0.8F, -1.6F, 7.0F, 7.0F, 3.0F, 1.1F, false);
+		BODY.setTextureOffset(21, 29).addCuboid(-3.5F, 0.8F, -1.8F, 7.0F, 4.0F, -1.0F, 1.2F, false);
 
 		RIGHTARM = new ModelPart(this);
 		RIGHTARM.setPivot(-5.0F, 2.0F, 0.0F);
 		RIGHTARM.setTextureOffset(2, 16).addCuboid(-3.0F, -1.3F, -2.0F, 4.0F, 2.0F, 4.0F, 1.3F, false);
+		RIGHTARM.setTextureOffset(12, 3).addCuboid(-3.0041F, 6.2048F, -2.55F, 4.0F, 3.0F, 5.0F, 0.2F, false);
+		RIGHTARM.setTextureOffset(12, 3).addCuboid(-3.0041F, 1.9548F, -2.6F, 4.0F, 3.0F, 5.0F, 0.2F, false);
+		RIGHTARM.setTextureOffset(41, 32).addCuboid(-3.0541F, 5.1548F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, false);
 		RIGHTARM.setTextureOffset(30, 43).addCuboid(-3.5F, -3.55F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		RIGHTARM.setTextureOffset(8, 1).addCuboid(-3.1541F, 6.2548F, -2.2F, 4.0F, 2.0F, 4.0F, 0.0F, false);
-		RIGHTARM.setTextureOffset(8, 1).addCuboid(-3.2541F, 1.8548F, -2.4F, 4.0F, 3.0F, 4.0F, 0.0F, false);
-		RIGHTARM.setTextureOffset(40, 28).addCuboid(-3.0541F, -2.1452F, -2.1F, 4.0F, 8.0F, 4.0F, 0.0F, false);
+		RIGHTARM.setTextureOffset(31, 44).addCuboid(12.5F, -3.55F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
 
 		LEFTARM = new ModelPart(this);
 		LEFTARM.setPivot(5.0F, 2.0F, 0.0F);
-		LEFTARM.setTextureOffset(2, 16).addCuboid(-1.0F, -1.3F, -2.0F, 4.0F, 2.0F, 4.0F, 1.3F, false);
-		LEFTARM.setTextureOffset(31, 44).addCuboid(2.5F, -3.55F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-		LEFTARM.setTextureOffset(8, 1).addCuboid(-1.1541F, 6.2548F, -2.2F, 4.0F, 2.0F, 4.0F, 0.0F, false);
-		LEFTARM.setTextureOffset(8, 1).addCuboid(-1.2541F, 1.8548F, -2.4F, 4.0F, 3.0F, 4.0F, 0.0F, false);
-		LEFTARM.setTextureOffset(41, 29).addCuboid(-1.0541F, -2.1452F, -2.1F, 4.0F, 8.0F, 4.0F, 0.0F, false);
+		LEFTARM.setTextureOffset(2, 16).addCuboid(-1.0F, -1.3F, -2.0F, 4.0F, 2.0F, 4.0F, 1.3F, true);
+		LEFTARM.setTextureOffset(12, 3).addCuboid(-0.9959F, 6.2048F, -2.55F, 4.0F, 3.0F, 5.0F, 0.2F, true);
+		LEFTARM.setTextureOffset(12, 3).addCuboid(-0.9959F, 1.9548F, -2.6F, 4.0F, 3.0F, 5.0F, 0.2F, true);
+		LEFTARM.setTextureOffset(42, 32).addCuboid(-0.9459F, 5.1548F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, true);
 
 		RIGHTLEG = new ModelPart(this);
 		RIGHTLEG.setPivot(-1.9F, 12.0F, 0.0F);
-		RIGHTLEG.setTextureOffset(2, 14).addCuboid(-1.5F, 1.6F, -1.1F, 2.0F, 7.0F, 2.0F, 1.0F, false);
-		RIGHTLEG.setTextureOffset(15, 6).addCuboid(-1.7F, 4.5F, -2.4F, 3.0F, 2.0F, 0.0F, 0.0F, false);
-		RIGHTLEG.setTextureOffset(12, 6).addCuboid(-1.7F, 5.6F, -1.3F, 3.0F, 0.0F, 2.0F, 1.0F, false);
+		RIGHTLEG.setTextureOffset(10, 1).addCuboid(-1.5F, 0.2F, -1.5F, 3.0F, 10.0F, 3.0F, 0.6F, true);
+		RIGHTLEG.setTextureOffset(7, 17).addCuboid(-1.5F, 4.1F, -2.4F, 3.0F, 3.0F, 0.0F, -0.1F, true);
+		RIGHTLEG.setTextureOffset(4, 17).addCuboid(-1.5F, 5.6F, -1.5F, 3.0F, 0.0F, 3.0F, 0.7F, true);
+		RIGHTLEG.setTextureOffset(2, 48).addCuboid(-1.6F, 0.55F, -1.5F, 3.0F, -1.0F, 3.0F, 1.01F, true);
 
 		LEFTLEG = new ModelPart(this);
 		LEFTLEG.setPivot(1.9F, 12.0F, 0.0F);
-		LEFTLEG.setTextureOffset(2, 14).addCuboid(-1.1F, 1.6F, -1.1F, 2.0F, 7.0F, 2.0F, 1.0F, false);
-		LEFTLEG.setTextureOffset(15, 7).addCuboid(-1.3F, 4.5F, -2.4F, 3.0F, 2.0F, 0.0F, 0.0F, false);
-		LEFTLEG.setTextureOffset(11, 6).addCuboid(-1.3F, 5.6F, -1.3F, 3.0F, 0.0F, 2.0F, 1.0F, false);
+		LEFTLEG.setTextureOffset(10, 1).addCuboid(-1.5F, 0.2F, -1.5F, 3.0F, 10.0F, 3.0F, 0.6F, false);
+		LEFTLEG.setTextureOffset(6, 17).addCuboid(-1.5F, 4.1F, -2.4F, 3.0F, 3.0F, 0.0F, -0.1F, false);
+		LEFTLEG.setTextureOffset(4, 17).addCuboid(-1.5F, 5.6F, -1.5F, 3.0F, 0.0F, 3.0F, 0.7F, false);
+		LEFTLEG.setTextureOffset(2, 48).addCuboid(-1.4F, 0.55F, -1.5F, 3.0F, -1.0F, 3.0F, 1.01F, false);
 
 		RIGHTFOOT = new ModelPart(this);
-		RIGHTFOOT.setPivot(0.0F, 24.0F, 0.0F);
-		RIGHTFOOT.setTextureOffset(4, 42).addCuboid(-3.5F, -0.4F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
-		RIGHTFOOT.setTextureOffset(4, 42).addCuboid(-3.6F, -0.7F, -1.3F, 3.0F, 0.0F, 2.0F, 1.0F, false);
-		RIGHTFOOT.setTextureOffset(31, 44).addCuboid(-2.2F, -2.0F, -3.3F, 0.0F, 0.0F, 0.0F, 0.0F, false);
+		RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
+		RIGHTFOOT.setTextureOffset(4, 42).addCuboid(-1.7F, 11.3F, -1.3F, 3.0F, 0.0F, 2.0F, 1.1F, false);
+		RIGHTFOOT.setTextureOffset(4, 42).addCuboid(-1.6F, 11.6F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
+		RIGHTFOOT.setTextureOffset(31, 44).addCuboid(-0.3F, 10.0F, -3.3F, 0.0F, 0.0F, 0.0F, 0.0F, false);
 
 		LEFTFOOT = new ModelPart(this);
-		LEFTFOOT.setPivot(0.0F, 24.0F, 0.0F);
-		LEFTFOOT.setTextureOffset(4, 42).addCuboid(0.55F, -0.7F, -1.3F, 3.0F, 0.0F, 2.0F, 1.0F, false);
-		LEFTFOOT.setTextureOffset(4, 42).addCuboid(0.65F, -0.4F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
-		LEFTFOOT.setTextureOffset(31, 44).addCuboid(1.6F, -2.0F, -3.3F, 0.0F, 0.0F, 0.0F, 0.0F, false);
+		LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
+		LEFTFOOT.setTextureOffset(4, 42).addCuboid(-1.35F, 11.3F, -1.3F, 3.0F, 0.0F, 2.0F, 1.1F, false);
+		LEFTFOOT.setTextureOffset(4, 42).addCuboid(-1.25F, 11.6F, -2.5F, 2.0F, 0.0F, 3.0F, 1.0F, false);
+		LEFTFOOT.setTextureOffset(31, 44).addCuboid(-0.3F, 10.0F, -3.3F, 0.0F, 0.0F, 0.0F, 0.0F, false);
 }
 @Override
 public void setAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
