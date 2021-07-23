@@ -1,6 +1,9 @@
 package net;
 
 import net.client.model.ItemModelProvider;
+//import net.client.model.renderer.item.VoxelEntity;
+//import net.client.model.renderer.item.VoxelEntityRenderer;
+//import net.client.model.renderer.item.VoxelItems;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.model.ModelResourceProvider;
@@ -8,6 +11,7 @@ import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.minecraft.client.render.entity.ItemEntityRenderer;
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
+import net.minecraft.entity.EntityType;
 import net.registry.RegisterArmor;
 
 public class RuneCraftClient implements ClientModInitializer {
@@ -16,12 +20,16 @@ public class RuneCraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         RegisterArmor.render();
+//
+//        ModelLoadingRegistry.INSTANCE.registerResourceProvider(resourceManager -> new ItemModelProvider());
+//        EntityRendererRegistry.INSTANCE.register(VoxelItems.VOXEL_ITEM, (dispatcher, context) -> {return new VoxelEntityRenderer(dispatcher); });
+//        EntityRendererRegistry.INSTANCE.register(VoxelItems.VOXEL_ITEM, (context) -> {
+//            return new VoxelEntityRenderer(context);
+//        });
+    }
 
-        ModelLoadingRegistry.INSTANCE.registerResourceProvider(resourceManager -> new ItemModelProvider());
-        EntityRendererRegistry.INSTANCE.register(CampanionEntities.WOODEN_SPEAR, (dispatcher, context) -> new SpearEntityRenderer(dispatcher));
-        BuiltinItemRendererRegistry.INSTANCE.register();
 
-        // Built in renderer registry
+    // Built in renderer registry
         // entity renderer registry > campanion
         // see how trident is made in minecraft
 
@@ -33,5 +41,5 @@ public class RuneCraftClient implements ClientModInitializer {
          *
          * Entity Renderers can also manipulate the model before it renders based on entity context (EndermanEntityRenderer#render).
          */
-    }
+
 }
