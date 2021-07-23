@@ -1,4 +1,4 @@
-package net.item.armor;
+package net.client.model.renderer.armor;
 
 import net.minecraft.client.model.Model;
 import net.minecraft.client.model.ModelPart;

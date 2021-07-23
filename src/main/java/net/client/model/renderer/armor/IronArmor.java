@@ -1,4 +1,4 @@
-package net.item.armor;
+package net.client.model.renderer.armor;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -10,13 +10,13 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-public class MithrilArmor extends ArmorItem {
+public class IronArmor extends ArmorItem {
     @Environment(EnvType.CLIENT)
     private BipedEntityModel<LivingEntity> model;
     public final EquipmentSlot type;
 
 
-    public MithrilArmor(ArmorMaterial mat, EquipmentSlot type, Settings props) {
+    public IronArmor(ArmorMaterial mat, EquipmentSlot type, Settings props) {
         super(mat, type, props);
         this.type = type;
     }
@@ -36,6 +36,6 @@ public class MithrilArmor extends ArmorItem {
 
     @NotNull
     public final String getArmorTexture(ItemStack stack, EquipmentSlot slot) {
-        return "runecraft:textures/item/armor/mithril/mithril_model.png";
+        return "runecraft:textures/item/armor/iron/iron_model.png";
     } // textures/models/armor/bronze_model.png
 }

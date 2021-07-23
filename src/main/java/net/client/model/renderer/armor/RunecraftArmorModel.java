@@ -8,7 +8,7 @@
  *
  * Slightly edited for Mythic Metals
  */
-package net.item.armor;
+package net.client.model.renderer.armor;
 
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
@@ -22,6 +22,16 @@ import net.minecraft.entity.decoration.ArmorStandEntity;
 public class RunecraftArmorModel<T extends LivingEntity> extends BipedEntityModel<T>{
 
     protected final EquipmentSlot slot;
+    public enum Type {
+        PLATE,
+        DRAGON,
+        AHRIMS,
+        DHAROKS,
+        GUTHANS,
+        KHARILS,
+        TORAGS,
+        VERACS
+    }
 
     public RunecraftArmorModel(EquipmentSlot slot) {
         super(1);

@@ -1,4 +1,4 @@
-package net.item.armor;
+package net.client.model.renderer.armor;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -10,13 +10,13 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-public class DragonArmor extends ArmorItem {
+public class HallowedArmor extends ArmorItem {
     @Environment(EnvType.CLIENT)
     private BipedEntityModel<LivingEntity> model;
     public final EquipmentSlot type;
 
 
-    public DragonArmor(ArmorMaterial mat, EquipmentSlot type, Settings props) {
+    public HallowedArmor(ArmorMaterial mat, EquipmentSlot type,  Settings props) {
         super(mat, type, props);
         this.type = type;
     }
@@ -31,11 +31,11 @@ public class DragonArmor extends ArmorItem {
 
     @Environment(EnvType.CLIENT)
     protected BipedEntityModel<LivingEntity> provideArmorModelForSlot(EquipmentSlot slot) {
-        return new PlateArmorModel(slot);
+        return new HallowedArmorModel(slot);
     }
 
     @NotNull
     public final String getArmorTexture(ItemStack stack, EquipmentSlot slot) {
-        return "runecraft:textures/item/armor/dragon/dragon_model.png";
-    } // textures/models/armor/bronze_model.png
+        return "textures/models/armor/hallowed_model.png";
+    }
 }

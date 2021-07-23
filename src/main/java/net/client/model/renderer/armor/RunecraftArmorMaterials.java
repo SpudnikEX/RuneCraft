@@ -1,4 +1,4 @@
-package net.item.armor;
+package net.client.model.renderer.armor;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

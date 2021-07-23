@@ -1,6 +1,7 @@
 package net.client.model;
 
 import com.mojang.datafixers.util.Pair;
+import net.fabricmc.fabric.api.client.model.ModelResourceProvider;
 import net.fabricmc.fabric.api.renderer.v1.Renderer;
 import net.fabricmc.fabric.api.renderer.v1.RendererAccess;
 import net.fabricmc.fabric.api.renderer.v1.mesh.Mesh;
@@ -34,6 +35,7 @@ public class ItemModel implements UnbakedModel, BakedModel, FabricBakedModel {
             new SpriteIdentifier(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE, new Identifier("minecraft:block/furnace_front_on")),
             new SpriteIdentifier(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE, new Identifier("minecraft:block/furnace_top"))
     };
+
 
     private Sprite[] SPRITES = new Sprite[2];
     private Mesh mesh;
@@ -135,7 +137,7 @@ public class ItemModel implements UnbakedModel, BakedModel, FabricBakedModel {
      */
     @Override
     public void emitItemQuads(ItemStack stack, Supplier<Random> randomSupplier, RenderContext context) {
-
+        context.fallbackConsumer();
     }
 
     @Override

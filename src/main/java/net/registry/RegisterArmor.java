@@ -1,8 +1,8 @@
 package net.registry;
 
 import net.RuneCraft;
-//import net.item.armor.BronzeArmorModel;
-import net.item.armor.*;
+//import net.client.model.renderer.armor.BronzeArmorModel;
+import net.client.model.renderer.armor.*;
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderingRegistry;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -22,10 +22,10 @@ public class RegisterArmor {
     public static final ArmorItem ADAMANTITE_LEGGINGS = new AdamantiteArmor(RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
     public static final ArmorItem ADAMANTITE_BOOTS = new AdamantiteArmor(RunecraftArmorMaterials.ADAMANTITE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
-    public static final ArmorItem BRONZE_HELMET = new BronzeArmor(RunecraftArmorMaterials.BRONZE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem BRONZE_CHESTPLATE = new BronzeArmor(RunecraftArmorMaterials.BRONZE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem BRONZE_LEGGINGS = new BronzeArmor(RunecraftArmorMaterials.BRONZE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
-    public static final ArmorItem BRONZE_BOOTS = new BronzeArmor(RunecraftArmorMaterials.BRONZE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem BRONZE_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.BRONZE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem BRONZE_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.BRONZE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem BRONZE_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.BRONZE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem BRONZE_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.PLATE, RunecraftArmorMaterials.BRONZE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
     public static final ArmorItem DRAGON_HELMET = new DragonArmor(RunecraftArmorMaterials.DRAGON, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
     public static final ArmorItem DRAGON_CHESTPLATE = new DragonArmor(RunecraftArmorMaterials.DRAGON, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
@@ -150,8 +150,8 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerModel(modelProvider, ADAMANTITE_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, ADAMANTITE_BOOTS);
 
-        modelProvider = (entity, stack, slot, original) -> ((BronzeArmor) stack.getItem()).getArmorModel(entity, stack, slot, original);
-        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((BronzeArmor) stack.getItem()).getArmorTexture(stack, slot));
+        modelProvider = (entity, stack, slot, original) -> ((RuneCraftArmorItem) stack.getItem()).getArmorModel(entity, stack, slot, original);
+        textureProvider = (entity, stack, slot, secondLayer, suffix, original) -> new Identifier(((RuneCraftArmorItem) stack.getItem()).getArmorTexture(stack, slot));
         ArmorRenderingRegistry.registerModel(modelProvider, BRONZE_HELMET);
         ArmorRenderingRegistry.registerTexture(textureProvider, BRONZE_HELMET);
         ArmorRenderingRegistry.registerModel(modelProvider, BRONZE_CHESTPLATE);
