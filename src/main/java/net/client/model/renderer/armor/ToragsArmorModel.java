@@ -332,14 +332,16 @@ public class ToragsArmorModel extends RunecraftArmorModel{
         RIGHTARM = new ModelPart(this);
         RIGHTARM.setPivot(-5.0F, 2.0F, 0.0F);
         RIGHTARM.setTextureOffset(7, 32).addCuboid(-3.0F, -1.3F, -2.0F, 4.0F, 2.0F, 4.0F, 1.1F, false);
-        RIGHTARM.setTextureOffset(7, 33).addCuboid(-3.0541F, 4.4548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.1F, false);
+        RIGHTARM.setTextureOffset(7, 33).addCuboid(-3.0541F, 4.4548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.2F, false);
         RIGHTARM.setTextureOffset(25, 54).addCuboid(-4.0F, 1.1F, -3.0F, 6.0F, 1.0F, 6.0F, -0.1F, true);
+        RIGHTARM.setTextureOffset(35, 34).addCuboid(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.1F, false);
 
         LEFTARM = new ModelPart(this);
         LEFTARM.setPivot(5.0F, 2.0F, 0.0F);
         LEFTARM.setTextureOffset(8, 33).addCuboid(-1.0F, -1.3F, -2.0F, 4.0F, 2.0F, 4.0F, 1.5F, false);
         LEFTARM.setTextureOffset(25, 54).addCuboid(-2.5F, 1.5F, -3.5F, 7.0F, 1.0F, 7.0F, -0.1F, false);
-        LEFTARM.setTextureOffset(7, 33).addCuboid(-0.9459F, 4.4548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.1F, true);
+        LEFTARM.setTextureOffset(7, 33).addCuboid(-0.9459F, 4.4548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.2F, true);
+        LEFTARM.setTextureOffset(35, 34).addCuboid(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.1F, true);
 
         LeftShoulderHorn3_r1 = new ModelPart(this);
         LeftShoulderHorn3_r1.setPivot(4.2253F, -2.475F, 0.2257F);
@@ -375,13 +377,13 @@ public class ToragsArmorModel extends RunecraftArmorModel{
 
         RIGHTFOOT = new ModelPart(this);
         RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
-        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
-        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
+        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.2F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
+        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
 
         LEFTFOOT = new ModelPart(this);
         LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
-        LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
-        LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
+        LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.2F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
+        LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
     }
 
     @Override

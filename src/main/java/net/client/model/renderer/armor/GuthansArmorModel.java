@@ -291,64 +291,69 @@ public class GuthansArmorModel extends RunecraftArmorModel{
         RIGHTARM = new ModelPart(this);
         RIGHTARM.setPivot(-5.0F, 2.0F, 0.0F);
         RIGHTARM.setTextureOffset(7, 33).addCuboid(-3.0541F, 1.9548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.4F, false);
-        RIGHTARM.setTextureOffset(11, 10).addCuboid(-3.0541F, 4.4548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.1F, false);
+        RIGHTARM.setTextureOffset(11, 10).addCuboid(-3.0541F, 4.4548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.2F, false);
+        RIGHTARM.setTextureOffset(35, 34).addCuboid(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.1F, false);
 
         LEFTARM = new ModelPart(this);
         LEFTARM.setPivot(5.0F, 2.0F, 0.0F);
         LEFTARM.setTextureOffset(7, 33).addCuboid(-0.9459F, 1.9548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.4F, true);
-        LEFTARM.setTextureOffset(11, 10).addCuboid(-0.9459F, 4.4548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.1F, true);
+        LEFTARM.setTextureOffset(11, 10).addCuboid(-0.9459F, 4.4548F, -2.0F, 4.0F, 2.0F, 4.0F, 0.2F, true);
+        LEFTARM.setTextureOffset(35, 34).addCuboid(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.1F, true);
 
         RIGHTLEG = new ModelPart(this);
         RIGHTLEG.setPivot(-1.9F, 12.0F, 0.0F);
-        RIGHTLEG.setTextureOffset(10, 34).addCuboid(-1.55F, 1.5F, -1.05F, 3.0F, 4.0F, 2.0F, 1.1F, true);
+        RIGHTLEG.setTextureOffset(10, 34).addCuboid(-1.55F, 1.5F, -1.05F, 3.0F, 4.0F, 2.0F, 1.2F, true);
         RIGHTLEG.setTextureOffset(2, 53).addCuboid(-2.1F, 0.45F, -1.5F, 4.0F, -1.0F, 3.0F, 1.01F, true);
+        RIGHTLEG.setTextureOffset(31, 35).addCuboid(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.1F, false);
         RIGHTLEG.setTextureOffset(5, 31).addCuboid(-2.5F, 8.0F, -2.5F, 5.0F, 1.0F, 5.0F, 0.0F, false);
         RIGHTLEG.setTextureOffset(7, 34).addCuboid(-2.5F, 8.9F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, false);
-        RIGHTLEG.setTextureOffset(8, 33).addCuboid(-2.1F, 9.5F, -2.1F, 4.0F, 1.0F, 4.0F, 0.0F, false);
+        RIGHTLEG.setTextureOffset(8, 33).addCuboid(-2.1F, 9.5F, -2.1F, 4.0F, 1.0F, 4.0F, 0.1F, false);
         RIGHTLEG.setTextureOffset(29, 56).addCuboid(-2.5F, 7.75F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, false);
 
         RightLeg3_r1 = new ModelPart(this);
-        RightLeg3_r1.setPivot(-2.0524F, 5.0258F, -0.25F);
+        RightLeg3_r1.setPivot(-2.1388F, 5.0397F, -0.25F);
         RIGHTLEG.addChild(RightLeg3_r1);
         setRotationAngle(RightLeg3_r1, 0.0F, 0.0F, -0.3927F);
-        RightLeg3_r1.setTextureOffset(10, 34).addCuboid(0.0F, 0.1F, -0.8F, 0.0F, 0.0F, 2.0F, 1.1F, true);
+        RightLeg3_r1.setTextureOffset(10, 34).addCuboid(0.0F, 0.1F, -0.8F, 0.0F, 0.0F, 2.0F, 1.2F, true);
 
         RightLeg1_r1 = new ModelPart(this);
-        RightLeg1_r1.setPivot(-1.9709F, 2.6713F, -0.25F);
+        RightLeg1_r1.setPivot(-2.0707F, 2.5521F, -0.25F);
         RIGHTLEG.addChild(RightLeg1_r1);
         setRotationAngle(RightLeg1_r1, 0.0F, 0.0F, 0.192F);
-        RightLeg1_r1.setTextureOffset(10, 34).addCuboid(0.0F, -1.0F, -0.8F, 0.0F, 2.0F, 2.0F, 1.1F, true);
+        RightLeg1_r1.setTextureOffset(10, 34).addCuboid(0.0F, -1.0F, -0.8F, 0.0F, 2.0F, 2.0F, 1.2F, true);
 
         LEFTLEG = new ModelPart(this);
         LEFTLEG.setPivot(1.9F, 12.0F, 0.0F);
-        LEFTLEG.setTextureOffset(10, 34).addCuboid(-1.45F, 1.5F, -1.05F, 3.0F, 4.0F, 2.0F, 1.1F, false);
+        LEFTLEG.setTextureOffset(10, 34).addCuboid(-1.45F, 1.5F, -1.05F, 3.0F, 4.0F, 2.0F, 1.2F, false);
         LEFTLEG.setTextureOffset(2, 53).addCuboid(-1.9F, 0.45F, -1.5F, 4.0F, -1.0F, 3.0F, 1.01F, false);
+        LEFTLEG.setTextureOffset(31, 35).addCuboid(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.1F, false);
         LEFTLEG.setTextureOffset(5, 31).addCuboid(-2.5F, 8.0F, -2.5F, 5.0F, 1.0F, 5.0F, 0.0F, true);
         LEFTLEG.setTextureOffset(7, 34).addCuboid(-2.5F, 8.9F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, true);
-        LEFTLEG.setTextureOffset(8, 33).addCuboid(-2.1F, 9.5F, -2.1F, 4.0F, 1.0F, 4.0F, 0.0F, true);
+        LEFTLEG.setTextureOffset(8, 33).addCuboid(-2.1F, 9.5F, -2.1F, 4.0F, 1.0F, 4.0F, 0.1F, true);
         LEFTLEG.setTextureOffset(29, 56).addCuboid(-2.5F, 7.75F, -2.5F, 5.0F, 1.0F, 5.0F, -0.1F, true);
 
         LeftLeg3_r1 = new ModelPart(this);
-        LeftLeg3_r1.setPivot(2.0524F, 5.0258F, -0.25F);
+        LeftLeg3_r1.setPivot(2.1388F, 5.0397F, -0.25F);
         LEFTLEG.addChild(LeftLeg3_r1);
         setRotationAngle(LeftLeg3_r1, 0.0F, 0.0F, 0.3927F);
-        LeftLeg3_r1.setTextureOffset(10, 34).addCuboid(0.0F, 0.1F, -0.8F, 0.0F, 0.0F, 2.0F, 1.1F, false);
+        LeftLeg3_r1.setTextureOffset(10, 34).addCuboid(0.0F, 0.1F, -0.8F, 0.0F, 0.0F, 2.0F, 1.2F, false);
 
         LeftLeg1_r1 = new ModelPart(this);
-        LeftLeg1_r1.setPivot(1.9709F, 2.6713F, -0.25F);
+        LeftLeg1_r1.setPivot(2.0707F, 2.5521F, -0.25F);
         LEFTLEG.addChild(LeftLeg1_r1);
         setRotationAngle(LeftLeg1_r1, 0.0F, 0.0F, -0.192F);
-        LeftLeg1_r1.setTextureOffset(10, 34).addCuboid(0.0F, -1.0F, -0.8F, 0.0F, 2.0F, 2.0F, 1.1F, false);
+        LeftLeg1_r1.setTextureOffset(10, 34).addCuboid(0.0F, -1.0F, -0.8F, 0.0F, 2.0F, 2.0F, 1.2F, false);
 
         RIGHTFOOT = new ModelPart(this);
         RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
-        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
-        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
+        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.2F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
+        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
 
         LEFTFOOT = new ModelPart(this);
         LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
-        LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
-        LEFTFOOT.setTextureOffset(5, 58).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
+        LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.2F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
+        LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
+
     }
 
     @Override

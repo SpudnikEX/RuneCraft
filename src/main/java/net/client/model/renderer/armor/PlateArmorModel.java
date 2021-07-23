@@ -153,13 +153,14 @@ public class PlateArmorModel extends RunecraftArmorModel {
 
 		RIGHTFOOT = new ModelPart(this);
 		RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
-		RIGHTFOOT.setTextureOffset(4, 42).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
-		RIGHTFOOT.setTextureOffset(7, 44).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
+		RIGHTFOOT.setTextureOffset(3, 42).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, 1.0F, 3.0F, 1.0F, true);
+		RIGHTFOOT.setTextureOffset(6, 44).addCuboid(-1.5F, 11.5F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
 
 		LEFTFOOT = new ModelPart(this);
 		LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
-		LEFTFOOT.setTextureOffset(4, 42).addCuboid(-1.5F, 11.5F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
-		LEFTFOOT.setTextureOffset(7, 44).addCuboid(-1.5F, 11.8F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
+		LEFTFOOT.setTextureOffset(3, 42).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, 1.0F, 3.0F, 1.0F, false);
+		LEFTFOOT.setTextureOffset(6, 44).addCuboid(-1.5F, 11.5F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
+
 	}
 
 	@Override
