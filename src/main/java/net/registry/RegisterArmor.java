@@ -92,6 +92,39 @@ public class RegisterArmor {
     public static final ArmorItem VERACS_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.VERACS, RunecraftArmorMaterials.VERACS, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
     public static final ArmorItem VERACS_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.VERACS, RunecraftArmorMaterials.VERACS, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
+    public static final ArmorItem LEATHER_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.LEATHER, RunecraftArmorMaterials.LEATHER, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem LEATHER_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.LEATHER, RunecraftArmorMaterials.LEATHER, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem LEATHER_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.LEATHER, RunecraftArmorMaterials.LEATHER, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem LEATHER_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.LEATHER, RunecraftArmorMaterials.LEATHER, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem FROGLEATHER_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.FROGLEATHER, RunecraftArmorMaterials.FROGLEATHER, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem FROGLEATHER_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.FROGLEATHER, RunecraftArmorMaterials.FROGLEATHER, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem FROGLEATHER_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.FROGLEATHER, RunecraftArmorMaterials.FROGLEATHER, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem SNAKESKIN_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.SNAKESKIN, RunecraftArmorMaterials.SNAKESKIN, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SNAKESKIN_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.SNAKESKIN, RunecraftArmorMaterials.SNAKESKIN, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SNAKESKIN_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.SNAKESKIN, RunecraftArmorMaterials.SNAKESKIN, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SNAKESKIN_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.SNAKESKIN, RunecraftArmorMaterials.SNAKESKIN, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem RANGER_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.RANGER, RunecraftArmorMaterials.RANGER, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem RANGER_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.RANGER, RunecraftArmorMaterials.RANGER, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem RANGER_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.RANGER, RunecraftArmorMaterials.RANGER, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem RANGER_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.RANGER, RunecraftArmorMaterials.RANGER, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem SARADOMINGHIDE_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.SARADOMINGHIDE, RunecraftArmorMaterials.SARADOMINGHIDE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SARADOMINGHIDE_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.SARADOMINGHIDE, RunecraftArmorMaterials.SARADOMINGHIDE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SARADOMINGHIDE_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.SARADOMINGHIDE, RunecraftArmorMaterials.SARADOMINGHIDE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem SARADOMINGHIDE_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.SARADOMINGHIDE, RunecraftArmorMaterials.SARADOMINGHIDE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem ZAMORAKGHIDE_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.ZAMORAKGHIDE, RunecraftArmorMaterials.ZAMORAKGHIDE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem ZAMORAKGHIDE_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.ZAMORAKGHIDE, RunecraftArmorMaterials.ZAMORAKGHIDE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem ZAMORAKGHIDE_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.ZAMORAKGHIDE, RunecraftArmorMaterials.ZAMORAKGHIDE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem ZAMORAKGHIDE_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.ZAMORAKGHIDE, RunecraftArmorMaterials.ZAMORAKGHIDE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
+
+    public static final ArmorItem GUTHIXGHIDE_HELMET = new RuneCraftArmorItem(RunecraftArmorModel.Type.GUTHIXGHIDE, RunecraftArmorMaterials.GUTHIXGHIDE, EquipmentSlot.HEAD, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GUTHIXGHIDE_CHESTPLATE = new RuneCraftArmorItem(RunecraftArmorModel.Type.GUTHIXGHIDE, RunecraftArmorMaterials.GUTHIXGHIDE, EquipmentSlot.CHEST, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GUTHIXGHIDE_LEGGINGS = new RuneCraftArmorItem(RunecraftArmorModel.Type.GUTHIXGHIDE, RunecraftArmorMaterials.GUTHIXGHIDE, EquipmentSlot.LEGS, (new Item.Settings().group(RuneCraft.ARMORS)));
+    public static final ArmorItem GUTHIXGHIDE_BOOTS = new RuneCraftArmorItem(RunecraftArmorModel.Type.GUTHIXGHIDE, RunecraftArmorMaterials.GUTHIXGHIDE, EquipmentSlot.FEET, (new Item.Settings().group(RuneCraft.ARMORS)));
 
     public static void register(){
 
@@ -169,6 +202,40 @@ public class RegisterArmor {
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "veracs_chestplate"), VERACS_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "veracs_leggings"), VERACS_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "veracs_boots"), VERACS_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "leather_helmet"), LEATHER_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "leather_chestplate"), LEATHER_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "leather_leggings"), LEATHER_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "leather_boots"), LEATHER_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "frogleather_chestplate"), FROGLEATHER_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "frogleather_leggings"), FROGLEATHER_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "frogleather_boots"), FROGLEATHER_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "snakeskin_helmet"), SNAKESKIN_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "snakeskin_chestplate"), SNAKESKIN_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "snakeskin_leggings"), SNAKESKIN_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "snakeskin_boots"), SNAKESKIN_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "ranger_helmet"), RANGER_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "ranger_chestplate"), RANGER_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "ranger_leggings"), RANGER_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "ranger_boots"), RANGER_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "saradominghide_helmet"), SARADOMINGHIDE_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "saradominghide_chestplate"), SARADOMINGHIDE_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "saradominghide_leggings"), SARADOMINGHIDE_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "saradominghide_boots"), SARADOMINGHIDE_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "zamorakghide_helmet"), ZAMORAKGHIDE_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "zamorakghide_chestplate"), ZAMORAKGHIDE_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "zamorakghide_leggings"), ZAMORAKGHIDE_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "zamorakghide_boots"), ZAMORAKGHIDE_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "guthixghide_helmet"), GUTHIXGHIDE_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "guthixghide_chestplate"), GUTHIXGHIDE_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "guthixghide_leggings"), GUTHIXGHIDE_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(RuneCraft.MOD_ID, "guthixghide_boots"), GUTHIXGHIDE_BOOTS);
     }
 
     // If this is not called, armor will get rendered as normal armor with re-texure!
@@ -313,5 +380,66 @@ public class RegisterArmor {
         ArmorRenderingRegistry.registerTexture(textureProvider, VERACS_LEGGINGS);
         ArmorRenderingRegistry.registerModel(modelProvider, VERACS_BOOTS);
         ArmorRenderingRegistry.registerTexture(textureProvider, VERACS_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, LEATHER_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, LEATHER_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, LEATHER_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, LEATHER_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, LEATHER_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, LEATHER_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, LEATHER_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, LEATHER_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, FROGLEATHER_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, FROGLEATHER_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, FROGLEATHER_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, FROGLEATHER_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, FROGLEATHER_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, FROGLEATHER_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, SNAKESKIN_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, SNAKESKIN_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, SNAKESKIN_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, SNAKESKIN_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, SNAKESKIN_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, SNAKESKIN_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, SNAKESKIN_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, SNAKESKIN_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, RANGER_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, RANGER_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, RANGER_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, RANGER_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, RANGER_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, RANGER_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, RANGER_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, RANGER_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, SARADOMINGHIDE_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, SARADOMINGHIDE_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, SARADOMINGHIDE_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, SARADOMINGHIDE_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, SARADOMINGHIDE_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, SARADOMINGHIDE_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, SARADOMINGHIDE_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, SARADOMINGHIDE_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, ZAMORAKGHIDE_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, ZAMORAKGHIDE_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, ZAMORAKGHIDE_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, ZAMORAKGHIDE_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, ZAMORAKGHIDE_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, ZAMORAKGHIDE_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, ZAMORAKGHIDE_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, ZAMORAKGHIDE_BOOTS);
+
+        ArmorRenderingRegistry.registerModel(modelProvider, GUTHIXGHIDE_HELMET);
+        ArmorRenderingRegistry.registerTexture(textureProvider, GUTHIXGHIDE_HELMET);
+        ArmorRenderingRegistry.registerModel(modelProvider, GUTHIXGHIDE_CHESTPLATE);
+        ArmorRenderingRegistry.registerTexture(textureProvider, GUTHIXGHIDE_CHESTPLATE);
+        ArmorRenderingRegistry.registerModel(modelProvider, GUTHIXGHIDE_LEGGINGS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, GUTHIXGHIDE_LEGGINGS);
+        ArmorRenderingRegistry.registerModel(modelProvider, GUTHIXGHIDE_BOOTS);
+        ArmorRenderingRegistry.registerTexture(textureProvider, GUTHIXGHIDE_BOOTS);
     }
 }

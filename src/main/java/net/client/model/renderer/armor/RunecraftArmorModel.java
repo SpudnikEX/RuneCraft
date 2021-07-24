@@ -30,7 +30,15 @@ public class RunecraftArmorModel<T extends LivingEntity> extends BipedEntityMode
         GUTHANS,
         KHARILS,
         TORAGS,
-        VERACS;
+        VERACS,
+        LEATHER,
+        FROGLEATHER,
+        SNAKESKIN,
+        RANGER,
+        SARADOMINGHIDE,
+        ZAMORAKGHIDE,
+        GUTHIXGHIDE;
+
     }
 
     public RunecraftArmorModel(EquipmentSlot slot) {
