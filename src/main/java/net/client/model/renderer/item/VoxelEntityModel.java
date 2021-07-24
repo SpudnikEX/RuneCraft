@@ -15,7 +15,7 @@ import java.util.function.Function;
 
 public class VoxelEntityModel extends Model {
 
-    public static final Identifier TEXTURE = new Identifier("textures/entity/trident.png");
+    public static final Identifier TEXTURE = new Identifier("minecraft:textures/entity/trident.png");
     private final ModelPart trident = new ModelPart(32, 32, 0, 6);
 
     public VoxelEntityModel() {

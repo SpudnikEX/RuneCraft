@@ -3,6 +3,8 @@ package net;
 import net.block.EdibleComponent;
 import net.block.OreBlock;
 
+import net.client.model.renderer.item.VoxelEntities;
+import net.client.model.renderer.item.VoxelItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.ModInitializer;
@@ -58,6 +60,9 @@ public class RuneCraft implements ModInitializer{
         RegisterMaterials.register();
         RegisterOres.register();
         RegisterTools.register();
+
+        VoxelItems.register();
+        VoxelEntities.register();
 
         Registry.register(Registry.ITEM, new Identifier("runecraft", "debug_item"), DEBUG_ITEM);
     }

@@ -1,9 +1,10 @@
 package net;
 
 import net.client.model.ItemModelProvider;
-//import net.client.model.renderer.item.VoxelEntity;
-//import net.client.model.renderer.item.VoxelEntityRenderer;
-//import net.client.model.renderer.item.VoxelItems;
+import net.client.model.renderer.item.VoxelEntities;
+import net.client.model.renderer.item.VoxelEntity;
+import net.client.model.renderer.item.VoxelEntityRenderer;
+import net.client.model.renderer.item.VoxelItems;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.model.ModelResourceProvider;
@@ -20,12 +21,8 @@ public class RuneCraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         RegisterArmor.render();
-//
-//        ModelLoadingRegistry.INSTANCE.registerResourceProvider(resourceManager -> new ItemModelProvider());
-//        EntityRendererRegistry.INSTANCE.register(VoxelItems.VOXEL_ITEM, (dispatcher, context) -> {return new VoxelEntityRenderer(dispatcher); });
-//        EntityRendererRegistry.INSTANCE.register(VoxelItems.VOXEL_ITEM, (context) -> {
-//            return new VoxelEntityRenderer(context);
-//        });
+
+        VoxelEntities.render();
     }
 
 
@@ -41,5 +38,4 @@ public class RuneCraftClient implements ClientModInitializer {
          *
          * Entity Renderers can also manipulate the model before it renders based on entity context (EndermanEntityRenderer#render).
          */
-
 }
