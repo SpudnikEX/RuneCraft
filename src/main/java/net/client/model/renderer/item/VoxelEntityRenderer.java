@@ -7,9 +7,11 @@ import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.EntityType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3f;
+import net.minecraft.util.registry.Registry;
 
 public class VoxelEntityRenderer extends EntityRenderer<VoxelEntity> {
 
@@ -33,6 +35,14 @@ public class VoxelEntityRenderer extends EntityRenderer<VoxelEntity> {
 
     @Override
     public Identifier getTexture(VoxelEntity entity) {
+        return getTexture(entity.getType());
+    }
+
+    public static Identifier getTexture(EntityType<?> type) {
+//        if (!TEXTURES.containsKey(type)) {
+//            TEXTURES.put(type, new Identifier(Campanion.MOD_ID, "textures/entity/spear/" + Registry.ENTITY_TYPE.getId(type).getPath() + ".png"));
+//        }
+//        return TEXTURES.get(type);
         return TEXTURE;
     }
 }

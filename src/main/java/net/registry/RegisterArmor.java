@@ -4,6 +4,7 @@ import net.RuneCraft;
 //import net.client.model.renderer.armor.BronzeArmorModel;
 import net.client.model.renderer.armor.*;
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderingRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
