@@ -51,15 +51,14 @@ public class KharilsArmorModel extends RunecraftArmorModel{
         HEAD = new ModelPart(this);
         HEAD.setPivot(0.0F, 0.0F, 0.0F);
         HEAD.setTextureOffset(4, 7).addCuboid(-4.5F, -0.65F, -4.25F, 9.0F, 1.0F, 9.0F, -0.1F, false);
-        HEAD.setTextureOffset(4, 7).addCuboid(-3.9787F, -3.6213F, -4.65F, 8.0F, 1.0F, 1.0F, 0.0F, false);
-        HEAD.setTextureOffset(4, 7).addCuboid(-0.4171F, -4.0111F, -4.6F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-        HEAD.setTextureOffset(4, 7).addCuboid(-3.0F, -3.15F, -4.7F, 6.0F, 1.0F, 1.0F, 0.0F, false);
-        HEAD.setTextureOffset(4, 7).addCuboid(-2.45F, -2.15F, -4.7F, 5.0F, 1.0F, 1.0F, 0.0F, false);
-        HEAD.setTextureOffset(4, 7).addCuboid(-2.0F, -1.5F, -4.65F, 4.0F, 1.0F, 1.0F, 0.0F, false);
+        HEAD.setTextureOffset(4, 7).addCuboid(-3.9787F, -3.0213F, -4.65F, 8.0F, 1.0F, 1.0F, 0.0F, false);
+        HEAD.setTextureOffset(4, 7).addCuboid(-0.4171F, -3.4111F, -4.6F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+        HEAD.setTextureOffset(4, 7).addCuboid(-3.0F, -2.55F, -4.7F, 6.0F, 1.0F, 1.0F, 0.0F, false);
+        HEAD.setTextureOffset(4, 7).addCuboid(-2.45F, -1.55F, -4.7F, 5.0F, 1.0F, 1.0F, 0.0F, false);
+        HEAD.setTextureOffset(4, 7).addCuboid(-2.0F, -0.9F, -4.65F, 4.0F, 1.0F, 1.0F, 0.0F, false);
         HEAD.setTextureOffset(10, 10).addCuboid(-2.5F, -9.5F, -2.5F, 5.0F, 1.0F, 5.0F, 0.0F, false);
         HEAD.setTextureOffset(7, 10).addCuboid(-3.5F, -8.85F, -3.5F, 7.0F, 1.0F, 7.0F, 0.0F, false);
         HEAD.setTextureOffset(3, 8).addCuboid(-4.5F, -8.2F, -4.5F, 9.0F, 1.0F, 9.0F, 0.0F, false);
-        HEAD.setTextureOffset(31, 37).addCuboid(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.1F, false);
 
         BackCoif_r1 = new ModelPart(this);
         BackCoif_r1.setPivot(0.0F, -3.5525F, 4.375F);
@@ -80,37 +79,37 @@ public class KharilsArmorModel extends RunecraftArmorModel{
         RightCoif_r1.setTextureOffset(4, 7).addCuboid(-0.5F, -3.5F, -4.5F, 1.0F, 7.0F, 9.0F, 0.0F, false);
 
         Mask5_r1 = new ModelPart(this);
-        Mask5_r1.setPivot(3.4142F, -2.6213F, -4.15F);
+        Mask5_r1.setPivot(3.4142F, -2.0213F, -4.15F);
         HEAD.addChild(Mask5_r1);
         setRotationAngle(Mask5_r1, 0.0F, 0.0F, -0.7854F);
         Mask5_r1.setTextureOffset(4, 7).addCuboid(-2.5F, -0.5F, -0.5F, 3.0F, 1.0F, 1.0F, 0.0F, false);
 
         Mask4_r1 = new ModelPart(this);
-        Mask4_r1.setPivot(-3.4142F, -2.6213F, -4.15F);
+        Mask4_r1.setPivot(-3.4142F, -2.0213F, -4.15F);
         HEAD.addChild(Mask4_r1);
         setRotationAngle(Mask4_r1, 0.0F, 0.0F, 0.7854F);
         Mask4_r1.setTextureOffset(4, 7).addCuboid(-0.5F, -0.5F, -0.5F, 3.0F, 1.0F, 1.0F, 0.0F, true);
 
         Mask6_r1 = new ModelPart(this);
-        Mask6_r1.setPivot(3.7699F, -3.1213F, -3.9505F);
+        Mask6_r1.setPivot(3.7699F, -2.5213F, -3.9505F);
         HEAD.addChild(Mask6_r1);
         setRotationAngle(Mask6_r1, 0.0F, 0.3927F, 0.0F);
         Mask6_r1.setTextureOffset(4, 7).addCuboid(-0.5F, -0.5F, -0.55F, 1.0F, 1.0F, 2.0F, 0.0F, false);
 
         Mask5_r2 = new ModelPart(this);
-        Mask5_r2.setPivot(-3.7272F, -3.1213F, -3.9505F);
+        Mask5_r2.setPivot(-3.7272F, -2.5213F, -3.9505F);
         HEAD.addChild(Mask5_r2);
         setRotationAngle(Mask5_r2, 0.0F, -0.3927F, 0.0F);
         Mask5_r2.setTextureOffset(4, 7).addCuboid(-0.5F, -0.5F, -0.55F, 1.0F, 1.0F, 2.0F, 0.0F, false);
 
         Mask3_r1 = new ModelPart(this);
-        Mask3_r1.setPivot(-0.7484F, -3.4631F, -5.1F);
+        Mask3_r1.setPivot(-0.7484F, -2.8631F, -5.1F);
         HEAD.addChild(Mask3_r1);
         setRotationAngle(Mask3_r1, 0.0F, 0.0F, -0.1309F);
         Mask3_r1.setTextureOffset(4, 7).addCuboid(-1.6F, -0.5F, 0.5F, 2.0F, 1.0F, 1.0F, 0.0F, true);
 
         Mask2_r1 = new ModelPart(this);
-        Mask2_r1.setPivot(0.9142F, -3.4631F, -5.1F);
+        Mask2_r1.setPivot(0.9142F, -2.8631F, -5.1F);
         HEAD.addChild(Mask2_r1);
         setRotationAngle(Mask2_r1, 0.0F, 0.0F, 0.1309F);
         Mask2_r1.setTextureOffset(4, 7).addCuboid(-0.4F, -0.5F, 0.5F, 2.0F, 1.0F, 1.0F, 0.0F, false);
@@ -129,18 +128,18 @@ public class KharilsArmorModel extends RunecraftArmorModel{
         BODY.setTextureOffset(37, 57).addCuboid(-2.8496F, 2.8389F, -4.0833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-2.8496F, 2.8389F, -3.7833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-2.8496F, 2.8389F, -3.3833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
-        BODY.setTextureOffset(37, 57).addCuboid(-4.0496F, 10.1389F, -3.3833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
-        BODY.setTextureOffset(37, 57).addCuboid(-4.0496F, 10.1389F, -3.0833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
-        BODY.setTextureOffset(37, 57).addCuboid(-4.0496F, 10.1389F, -2.6833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
+        BODY.setTextureOffset(37, 57).addCuboid(-2.9496F, 9.7389F, -3.3833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
+        BODY.setTextureOffset(37, 57).addCuboid(-2.9496F, 9.7389F, -3.0833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
+        BODY.setTextureOffset(37, 57).addCuboid(-2.9496F, 9.7389F, -2.6833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-3.4496F, 6.3389F, -3.7833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-3.4496F, 6.3389F, -3.4833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-3.4496F, 6.3389F, -3.0833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-0.2496F, 4.7389F, -3.9833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-0.2496F, 4.7389F, -3.6833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-0.2496F, 4.7389F, -3.2833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
-        BODY.setTextureOffset(37, 57).addCuboid(-0.7496F, 8.3389F, -3.5833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
-        BODY.setTextureOffset(37, 57).addCuboid(-0.7496F, 8.3389F, -3.2833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
-        BODY.setTextureOffset(37, 57).addCuboid(-0.7496F, 8.3389F, -2.8833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
+        BODY.setTextureOffset(37, 57).addCuboid(-0.4496F, 7.8389F, -3.5833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
+        BODY.setTextureOffset(37, 57).addCuboid(-0.4496F, 7.8389F, -3.2833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
+        BODY.setTextureOffset(37, 57).addCuboid(-0.4496F, 7.8389F, -2.8833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
         BODY.setTextureOffset(9, 8).addCuboid(-3.0F, 9.2F, -1.05F, 6.0F, 2.0F, 2.0F, 1.2F, false);
         BODY.setTextureOffset(7, 3).addCuboid(-3.5F, 0.8F, -1.6F, 7.0F, 7.0F, 3.0F, 1.1F, false);
         BODY.setTextureOffset(9, 7).addCuboid(-3.5F, 0.8F, -1.8F, 7.0F, 4.0F, -1.0F, 1.2F, false);

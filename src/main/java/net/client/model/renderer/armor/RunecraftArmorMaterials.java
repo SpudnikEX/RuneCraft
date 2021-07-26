@@ -63,6 +63,27 @@ public enum RunecraftArmorMaterials implements ArmorMaterial {
     }),
     VERACS("veracs", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    LEATHER("leather", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    FROGLEATHER("frogleather", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    SNAKESKIN("snakeskin", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    RANGER("ranger", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    SARADOMINGHIDE("saradominghide", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    ZAMORAKGHIDE("zamorakghide", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
+    }),
+    GUTHIXGHIDE("guthixghide", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(RegisterMaterials.BRONZE_BAR);
     });
 
 

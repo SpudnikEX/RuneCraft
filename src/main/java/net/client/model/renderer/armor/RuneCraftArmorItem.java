@@ -75,6 +75,27 @@ public class RuneCraftArmorItem extends ArmorItem {
             case VERACS -> {
                 return new VeracsArmorModel(slot);
             }
+            case LEATHER -> {
+                return new LeatherArmorModel(slot);
+            }
+            case FROGLEATHER -> {
+                return new FrogleatherArmorModel(slot);
+            }
+            case SNAKESKIN -> {
+                return new SnakeskinArmorModel(slot);
+            }
+            case RANGER -> {
+                return new RangerArmorModel(slot);
+            }
+            case SARADOMINGHIDE -> {
+                return new SaradominghideArmorModel(slot);
+            }
+            case ZAMORAKGHIDE -> {
+                return new ZamorakghideArmorModel(slot);
+            }
+            case GUTHIXGHIDE -> {
+                return new GuthixghideArmorModel(slot);
+            }
             default -> {
                 return new RunecraftArmorModel(slot);
             }

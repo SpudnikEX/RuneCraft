@@ -41,11 +41,6 @@ public class DharoksArmorModel extends RunecraftArmorModel{
     private final ModelPart BODY;
     private final ModelPart BodyHorn2_r1;
     private final ModelPart BodyHorn1_r1;
-    private final ModelPart LeftArmHorn3_r1;
-    private final ModelPart LeftArmHorn2_r1;
-    private final ModelPart LeftArmHorn1_r1;
-    private final ModelPart LeftArmHorn2_r2;
-    private final ModelPart LeftArmHorn1_r2;
     private final ModelPart BodyHorn2_r2;
     private final ModelPart BodyHorn1_r2;
     private final ModelPart RIGHTARM;
@@ -64,6 +59,11 @@ public class DharoksArmorModel extends RunecraftArmorModel{
     private final ModelPart RightShoulderHorn2_r3;
     private final ModelPart RightShoulderHorn1_r2;
     private final ModelPart LEFTARM;
+    private final ModelPart LeftArmHorn3_r1;
+    private final ModelPart LeftArmHorn2_r1;
+    private final ModelPart LeftArmHorn1_r1;
+    private final ModelPart LeftArmHorn2_r2;
+    private final ModelPart LeftArmHorn1_r2;
     private final ModelPart RIGHTLEG;
     private final ModelPart LeftKneecapHorn2_r1;
     private final ModelPart LeftKneecapHorn1_r1;
@@ -88,8 +88,7 @@ public class DharoksArmorModel extends RunecraftArmorModel{
         HEAD.setTextureOffset(5, 11).addCuboid(-3.0F, -7.5F, -2.75F, 6.0F, -1.0F, 6.0F, 1.0F, false);
         HEAD.setTextureOffset(5, 11).addCuboid(-2.5F, -7.75F, -1.75F, 5.0F, -1.0F, 5.0F, 1.0F, false);
         HEAD.setTextureOffset(3, 3).addCuboid(-3.5F, 0.15F, -3.0F, 7.0F, -1.0F, 6.0F, 1.0F, false);
-        HEAD.setTextureOffset(10, 2).addCuboid(-0.1141F, -7.917F, 3.9153F, 4.0F, 8.0F, 1.0F, 0.0F, false);
-        HEAD.setTextureOffset(11, 2).addCuboid(-4.3141F, -7.917F, 3.9153F, 4.0F, 8.0F, 1.0F, 0.0F, false);
+        HEAD.setTextureOffset(10, 2).addCuboid(-4.5141F, -7.717F, 3.1153F, 9.0F, 8.0F, 2.0F, -0.2F, false);
 
         Helmetrightside6_r1 = new ModelPart(this);
         Helmetrightside6_r1.setPivot(-4.5078F, -1.8877F, 3.1916F);
