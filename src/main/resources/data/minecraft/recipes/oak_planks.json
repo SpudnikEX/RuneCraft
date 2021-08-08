@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "## ",
+    "## ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:oak_plank"
+    }
+  },
+  "result": {
+    "item": "minecraft:oak_planks",
+    "count": 1
+  },
+  "group": "Materials"
+}

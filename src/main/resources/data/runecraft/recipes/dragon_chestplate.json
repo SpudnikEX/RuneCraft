@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:dragonite_bar"
+    }
+  },
+  "result": {
+    "item": "runecraft:dragon_chestplate",
+    "count": 1
+  },
+  "group": "Armor"
+}

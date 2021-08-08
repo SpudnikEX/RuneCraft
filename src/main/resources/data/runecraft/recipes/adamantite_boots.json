@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:adamantite_bar"
+    }
+  },
+  "result": {
+    "item": "runecraft:adamantite_boots",
+    "count": 1
+  },
+  "group": "Armor"
+}

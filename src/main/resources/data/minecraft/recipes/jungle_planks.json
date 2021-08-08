@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "## ",
+    "## ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:jungle_plank"
+    }
+  },
+  "result": {
+    "item": "minecraft:jungle_planks",
+    "count": 1
+  },
+  "group": "Materials"
+}

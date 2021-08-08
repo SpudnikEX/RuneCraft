@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "runecraft:dark_oak_logs"
+  },
+  "result": "runecraft:dark_oak_plank",
+  "group": "Materials",
+  "count": 1
+}

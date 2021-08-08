@@ -1,0 +1,106 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "runecraft:oak_logs",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "item": "minecraft:wooden_axe"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "item": "minecraft:stone_axe"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "item": "minecraft:iron_axe"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 6
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "item": "minecraft:golden_axe"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 8
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "item": "minecraft:diamond_axe"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 10
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "item": "minecraft:netherite_axe"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

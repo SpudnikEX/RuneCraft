@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "## ",
+    "## ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:acacia_plank"
+    }
+  },
+  "result": {
+    "item": "minecraft:acacia_planks",
+    "count": 1
+  },
+  "group": "Materials"
+}

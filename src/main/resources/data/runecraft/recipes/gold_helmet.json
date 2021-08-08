@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:gold_bar"
+    }
+  },
+  "result": {
+    "item": "runecraft:gold_helmet",
+    "count": 1
+  },
+  "group": "Armor"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "## ",
+    "## ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:birch_plank"
+    }
+  },
+  "result": {
+    "item": "minecraft:birch_planks",
+    "count": 1
+  },
+  "group": "Materials"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "runecraft:crimson_logs"
+  },
+  "result": "runecraft:crimson_plank",
+  "group": "Materials",
+  "count": 1
+}

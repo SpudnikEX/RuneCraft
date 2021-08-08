@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:iron_bar"
+    }
+  },
+  "result": {
+    "item": "runecraft:iron_boots",
+    "count": 1
+  },
+  "group": "Armor"
+}

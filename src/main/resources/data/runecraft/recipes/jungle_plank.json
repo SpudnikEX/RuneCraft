@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "runecraft:jungle_logs"
+  },
+  "result": "runecraft:jungle_plank",
+  "group": "Materials",
+  "count": 1
+}

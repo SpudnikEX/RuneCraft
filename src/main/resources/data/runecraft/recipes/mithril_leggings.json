@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "runecraft:mithril_bar"
+    }
+  },
+  "result": {
+    "item": "runecraft:mithril_leggings",
+    "count": 1
+  },
+  "group": "Armor"
+}

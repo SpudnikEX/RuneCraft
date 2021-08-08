@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "runecraft:block/iron_ore_block"
+    }
+  }
+}

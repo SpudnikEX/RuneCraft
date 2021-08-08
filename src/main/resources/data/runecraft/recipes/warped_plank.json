@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "runecraft:warped_logs"
+  },
+  "result": "runecraft:warped_plank",
+  "group": "Materials",
+  "count": 1
+}

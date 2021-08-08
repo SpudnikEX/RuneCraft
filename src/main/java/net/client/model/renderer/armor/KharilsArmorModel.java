@@ -40,7 +40,13 @@ public class KharilsArmorModel extends RunecraftArmorModel{
     private final ModelPart LeftLeg3_r1;
     private final ModelPart LeftLeg1_r1;
     private final ModelPart RIGHTFOOT;
+    private final ModelPart RightBoot6_r1;
+    private final ModelPart RightBoot5_r1;
+    private final ModelPart RightBoot3_r1;
     private final ModelPart LEFTFOOT;
+    private final ModelPart LeftBoot6_r1;
+    private final ModelPart LeftBoot5_r1;
+    private final ModelPart LeftBoot3_r1;
 
     public KharilsArmorModel(EquipmentSlot slot) {
         super(slot);
@@ -140,18 +146,21 @@ public class KharilsArmorModel extends RunecraftArmorModel{
         BODY.setTextureOffset(37, 57).addCuboid(-0.4496F, 7.8389F, -3.5833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-0.4496F, 7.8389F, -3.2833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
         BODY.setTextureOffset(37, 57).addCuboid(-0.4496F, 7.8389F, -2.8833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
-        BODY.setTextureOffset(9, 8).addCuboid(-3.0F, 9.2F, -1.05F, 6.0F, 2.0F, 2.0F, 1.2F, false);
+        BODY.setTextureOffset(9, 8).addCuboid(-3.0F, 9.2F, -1.05F, 6.0F, 1.0F, 2.0F, 1.2F, false);
         BODY.setTextureOffset(7, 3).addCuboid(-3.5F, 0.8F, -1.6F, 7.0F, 7.0F, 3.0F, 1.1F, false);
         BODY.setTextureOffset(9, 7).addCuboid(-3.5F, 0.8F, -1.8F, 7.0F, 4.0F, -1.0F, 1.2F, false);
+        BODY.setTextureOffset(3, 53).addCuboid(-3.5F, 12.05F, -1.5F, 7.0F, -1.0F, 3.0F, 1.0F, false);
 
         RIGHTARM = new ModelPart(this);
         RIGHTARM.setPivot(-5.0F, 2.0F, 0.0F);
         RIGHTARM.setTextureOffset(9, 33).addCuboid(-2.5F, -1.1F, -2.0F, 3.0F, 2.0F, 4.0F, 1.1F, true);
-        RIGHTARM.setTextureOffset(12, 10).addCuboid(-3.0F, 5.25F, -2.0F, 4.0F, 4.0F, 4.0F, 0.1F, true);
+        RIGHTARM.setTextureOffset(12, 10).addCuboid(-3.0F, 4.75F, -2.0F, 4.0F, 4.0F, 4.0F, 0.1F, true);
         RIGHTARM.setTextureOffset(12, 10).addCuboid(-3.0F, 1.05F, -2.0F, 4.0F, 4.0F, 4.0F, 0.4F, true);
         RIGHTARM.setTextureOffset(36, 57).addCuboid(-4.4829F, -3.6611F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, true);
         RIGHTARM.setTextureOffset(36, 57).addCuboid(-4.2829F, -3.2611F, -0.5F, 1.0F, 1.0F, 1.0F, -0.2F, true);
         RIGHTARM.setTextureOffset(36, 57).addCuboid(-4.0329F, -2.7611F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, true);
+        RIGHTARM.setTextureOffset(6, 32).addCuboid(-3.0541F, 8.6548F, -2.0F, 4.0F, 2.0F, 4.0F, -0.3F, false);
+        RIGHTARM.setTextureOffset(6, 32).addCuboid(-3.0541F, 8.9048F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, false);
 
         RightShoulderSpike3_r1 = new ModelPart(this);
         RightShoulderSpike3_r1.setPivot(-3.2329F, -1.7521F, -2.8816F);
@@ -192,11 +201,13 @@ public class KharilsArmorModel extends RunecraftArmorModel{
         LEFTARM = new ModelPart(this);
         LEFTARM.setPivot(5.0F, 2.0F, 0.0F);
         LEFTARM.setTextureOffset(9, 33).addCuboid(-0.5F, -1.1F, -2.0F, 3.0F, 2.0F, 4.0F, 1.1F, false);
-        LEFTARM.setTextureOffset(12, 10).addCuboid(-1.0F, 5.25F, -2.0F, 4.0F, 4.0F, 4.0F, 0.1F, false);
+        LEFTARM.setTextureOffset(12, 10).addCuboid(-1.0F, 4.75F, -2.0F, 4.0F, 4.0F, 4.0F, 0.1F, false);
         LEFTARM.setTextureOffset(12, 10).addCuboid(-1.0F, 1.05F, -2.0F, 4.0F, 4.0F, 4.0F, 0.4F, false);
         LEFTARM.setTextureOffset(36, 57).addCuboid(3.4829F, -3.6611F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, false);
         LEFTARM.setTextureOffset(36, 57).addCuboid(3.2829F, -3.2611F, -0.5F, 1.0F, 1.0F, 1.0F, -0.2F, false);
         LEFTARM.setTextureOffset(36, 57).addCuboid(3.0329F, -2.7611F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
+        LEFTARM.setTextureOffset(6, 32).addCuboid(-0.9459F, 8.6548F, -2.0F, 4.0F, 2.0F, 4.0F, -0.3F, true);
+        LEFTARM.setTextureOffset(6, 32).addCuboid(-0.9459F, 8.9048F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, true);
 
         LeftShoulderSpike3_r1 = new ModelPart(this);
         LeftShoulderSpike3_r1.setPivot(3.2329F, -1.7521F, -2.8816F);
@@ -238,13 +249,13 @@ public class KharilsArmorModel extends RunecraftArmorModel{
         RIGHTLEG.setPivot(-1.9F, 12.0F, 0.0F);
         RIGHTLEG.setTextureOffset(10, 34).addCuboid(-1.65F, 1.5F, -0.95F, 3.0F, 4.0F, 2.0F, 1.2F, true);
         RIGHTLEG.setTextureOffset(12, 7).addCuboid(-2.0F, 6.7F, -2.0F, 4.0F, 4.0F, 4.0F, 0.1F, false);
-        RIGHTLEG.setTextureOffset(2, 53).addCuboid(-2.1F, 0.45F, -1.5F, 4.0F, -1.0F, 3.0F, 1.01F, true);
         RIGHTLEG.setTextureOffset(37, 57).addCuboid(-1.1496F, 0.9389F, -3.3833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
         RIGHTLEG.setTextureOffset(37, 57).addCuboid(-1.1496F, 0.9389F, -3.0833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
         RIGHTLEG.setTextureOffset(37, 57).addCuboid(-1.1496F, 0.9389F, -2.6833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
         RIGHTLEG.setTextureOffset(37, 57).addCuboid(-2.0496F, 3.5389F, -3.3833F, 1.0F, 1.0F, 1.0F, -0.3F, true);
         RIGHTLEG.setTextureOffset(37, 57).addCuboid(-2.0496F, 3.5389F, -3.0833F, 1.0F, 1.0F, 1.0F, -0.2F, true);
         RIGHTLEG.setTextureOffset(37, 57).addCuboid(-2.0496F, 3.5389F, -2.6833F, 1.0F, 1.0F, 1.0F, -0.1F, true);
+        RIGHTLEG.setTextureOffset(7, 53).addCuboid(-1.6F, 0.75F, -1.5F, 3.0F, -1.0F, 3.0F, 0.8F, true);
 
         RightLeg3_r1 = new ModelPart(this);
         RightLeg3_r1.setPivot(-2.16F, 5.1762F, -0.15F);
@@ -262,13 +273,13 @@ public class KharilsArmorModel extends RunecraftArmorModel{
         LEFTLEG.setPivot(1.9F, 12.0F, 0.0F);
         LEFTLEG.setTextureOffset(10, 34).addCuboid(-1.35F, 1.5F, -0.95F, 3.0F, 4.0F, 2.0F, 1.2F, false);
         LEFTLEG.setTextureOffset(12, 7).addCuboid(-2.0F, 6.7F, -2.0F, 4.0F, 4.0F, 4.0F, 0.1F, true);
-        LEFTLEG.setTextureOffset(2, 53).addCuboid(-1.9F, 0.45F, -1.5F, 4.0F, -1.0F, 3.0F, 1.01F, false);
         LEFTLEG.setTextureOffset(37, 57).addCuboid(0.1496F, 0.9389F, -3.3833F, 1.0F, 1.0F, 1.0F, -0.3F, false);
         LEFTLEG.setTextureOffset(37, 57).addCuboid(0.1496F, 0.9389F, -3.0833F, 1.0F, 1.0F, 1.0F, -0.2F, false);
         LEFTLEG.setTextureOffset(37, 57).addCuboid(0.1496F, 0.9389F, -2.6833F, 1.0F, 1.0F, 1.0F, -0.1F, false);
         LEFTLEG.setTextureOffset(37, 57).addCuboid(1.0496F, 3.5389F, -3.3833F, 1.0F, 1.0F, 1.0F, -0.3F, false);
         LEFTLEG.setTextureOffset(37, 57).addCuboid(1.0496F, 3.5389F, -3.0833F, 1.0F, 1.0F, 1.0F, -0.2F, false);
         LEFTLEG.setTextureOffset(37, 57).addCuboid(1.0496F, 3.5389F, -2.6833F, 1.0F, 1.0F, 1.0F, -0.1F, false);
+        LEFTLEG.setTextureOffset(7, 53).addCuboid(-1.4F, 0.75F, -1.5F, 3.0F, -1.0F, 3.0F, 0.8F, false);
 
         LeftLeg3_r1 = new ModelPart(this);
         LeftLeg3_r1.setPivot(2.16F, 5.1762F, -0.15F);
@@ -284,13 +295,51 @@ public class KharilsArmorModel extends RunecraftArmorModel{
 
         RIGHTFOOT = new ModelPart(this);
         RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
-        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.2F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, true);
-        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, true);
+        RIGHTFOOT.setTextureOffset(4, 57).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, 1.0F, 3.0F, 1.0F, true);
+        RIGHTFOOT.setTextureOffset(6, 60).addCuboid(-1.0F, 11.3F, -3.15F, 2.0F, 0.0F, 0.0F, 0.9F, true);
+        RIGHTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, -2.0F, 3.0F, 1.2F, true);
+
+        RightBoot6_r1 = new ModelPart(this);
+        RightBoot6_r1.setPivot(-8.7017F, 11.2F, 0.2364F);
+        RIGHTFOOT.addChild(RightBoot6_r1);
+        setRotationAngle(RightBoot6_r1, 0.0F, 0.3054F, 0.0F);
+        RightBoot6_r1.setTextureOffset(10, 59).addCuboid(11.5F, 0.1F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, true);
+
+        RightBoot5_r1 = new ModelPart(this);
+        RightBoot5_r1.setPivot(-1.7891F, 11.2F, -3.0714F);
+        RIGHTFOOT.addChild(RightBoot5_r1);
+        setRotationAngle(RightBoot5_r1, 0.0F, -0.3054F, 0.0F);
+        RightBoot5_r1.setTextureOffset(10, 59).addCuboid(0.5F, 0.1F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, true);
+
+        RightBoot3_r1 = new ModelPart(this);
+        RightBoot3_r1.setPivot(0.5F, 11.1815F, -2.9549F);
+        RIGHTFOOT.addChild(RightBoot3_r1);
+        setRotationAngle(RightBoot3_r1, -1.3526F, 0.0F, 0.0F);
+        RightBoot3_r1.setTextureOffset(10, 54).addCuboid(-1.5F, 0.1F, -0.2F, 2.0F, 0.0F, 0.0F, 0.8F, true);
 
         LEFTFOOT = new ModelPart(this);
         LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
-        LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.2F, -1.5F, 3.0F, 0.0F, 3.0F, 1.0F, false);
-        LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 11.5F, -3.15F, 3.0F, 0.0F, 0.0F, 0.7F, false);
+        LEFTFOOT.setTextureOffset(4, 57).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, 1.0F, 3.0F, 1.0F, false);
+        LEFTFOOT.setTextureOffset(7, 60).addCuboid(-1.0F, 11.3F, -3.15F, 2.0F, 0.0F, 0.0F, 0.9F, false);
+        LEFTFOOT.setTextureOffset(4, 58).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, -2.0F, 3.0F, 1.2F, false);
+
+        LeftBoot6_r1 = new ModelPart(this);
+        LeftBoot6_r1.setPivot(8.7017F, 11.3F, 0.2364F);
+        LEFTFOOT.addChild(LeftBoot6_r1);
+        setRotationAngle(LeftBoot6_r1, 0.0F, -0.3054F, 0.0F);
+        LeftBoot6_r1.setTextureOffset(9, 59).addCuboid(-10.5F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, false);
+
+        LeftBoot5_r1 = new ModelPart(this);
+        LeftBoot5_r1.setPivot(1.7891F, 11.3F, -3.0714F);
+        LEFTFOOT.addChild(LeftBoot5_r1);
+        setRotationAngle(LeftBoot5_r1, 0.0F, 0.3054F, 0.0F);
+        LeftBoot5_r1.setTextureOffset(9, 59).addCuboid(0.5F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, false);
+
+        LeftBoot3_r1 = new ModelPart(this);
+        LeftBoot3_r1.setPivot(-0.5F, 11.1815F, -2.9549F);
+        LEFTFOOT.addChild(LeftBoot3_r1);
+        setRotationAngle(LeftBoot3_r1, -1.3526F, 0.0F, 0.0F);
+        LeftBoot3_r1.setTextureOffset(11, 54).addCuboid(-0.5F, 0.1F, -0.2F, 2.0F, 0.0F, 0.0F, 0.8F, false);
 
     }
 
