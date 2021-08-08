@@ -1,12 +1,13 @@
-package net.client.model.renderer.armor;
+package net.client.model.renderer.armor.model;
 
+import net.client.model.renderer.armor.RunecraftArmorModel;
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 
-public class DragonArmorModel extends RunecraftArmorModel{
+public class DragonArmorModel extends RunecraftArmorModel {
 
     private final ModelPart HEAD;
     private final ModelPart HelmetLeftFeather6_r1;
@@ -143,12 +144,8 @@ public class DragonArmorModel extends RunecraftArmorModel{
     private final ModelPart LeftLeg_r11;
     private final ModelPart LeftLeg_r12;
     private final ModelPart RIGHTFOOT;
-    private final ModelPart RightBoot6_r1;
-    private final ModelPart RightBoot5_r1;
     private final ModelPart RightBoot3_r1;
     private final ModelPart LEFTFOOT;
-    private final ModelPart LeftBoot6_r1;
-    private final ModelPart LeftBoot5_r1;
     private final ModelPart LeftBoot3_r1;
 
     public DragonArmorModel(EquipmentSlot slot) {
@@ -581,42 +578,43 @@ public class DragonArmorModel extends RunecraftArmorModel{
         BODY.setTextureOffset(39, 34).addCuboid(-3.5F, 12.05F, -1.5F, 7.0F, -1.0F, 3.0F, 1.0F, false);
 
         CenterCrest_r1 = new ModelPart(this);
-        CenterCrest_r1.setPivot(2.813F, 2.9322F, -3.25F);
+        CenterCrest_r1.setPivot(-2.7679F, 2.987F, -3.25F);
         BODY.addChild(CenterCrest_r1);
-        setRotationAngle(CenterCrest_r1, 0.0F, 0.0F, -1.3526F);
-        CenterCrest_r1.setTextureOffset(5, 58).addCuboid(-0.2F, -3.1F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, true);
+        setRotationAngle(CenterCrest_r1, 0.0F, 0.0F, 1.3526F);
+        CenterCrest_r1.setTextureOffset(5, 58).addCuboid(-0.3F, -2.8F, -0.5F, 2.0F, 1.0F, 1.0F, -0.3F, false);
+        CenterCrest_r1.setTextureOffset(5, 58).addCuboid(-0.3F, -2.8F, -0.5F, 3.0F, 1.0F, 1.0F, -0.3F, false);
 
         CenterCrest_r2 = new ModelPart(this);
-        CenterCrest_r2.setPivot(2.801F, 2.9999F, -3.25F);
+        CenterCrest_r2.setPivot(2.813F, 2.9322F, -3.25F);
         BODY.addChild(CenterCrest_r2);
-        setRotationAngle(CenterCrest_r2, 0.0F, 0.0F, 1.3526F);
-        CenterCrest_r2.setTextureOffset(5, 58).addCuboid(-2.0F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, true);
-        CenterCrest_r2.setTextureOffset(5, 58).addCuboid(-1.6F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, true);
+        setRotationAngle(CenterCrest_r2, 0.0F, 0.0F, -1.3526F);
+        CenterCrest_r2.setTextureOffset(5, 58).addCuboid(-0.2F, -3.1F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, true);
 
         CenterCrest_r3 = new ModelPart(this);
-        CenterCrest_r3.setPivot(2.8015F, 2.987F, -3.25F);
+        CenterCrest_r3.setPivot(2.801F, 2.9999F, -3.25F);
         BODY.addChild(CenterCrest_r3);
-        setRotationAngle(CenterCrest_r3, 0.0F, 0.0F, -1.3526F);
-        CenterCrest_r3.setTextureOffset(5, 58).addCuboid(-2.7F, -2.8F, -0.5F, 3.0F, 1.0F, 1.0F, -0.3F, true);
+        setRotationAngle(CenterCrest_r3, 0.0F, 0.0F, 1.3526F);
+        CenterCrest_r3.setTextureOffset(5, 58).addCuboid(-2.0F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, true);
+        CenterCrest_r3.setTextureOffset(5, 58).addCuboid(-1.6F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, true);
 
         CenterCrest_r4 = new ModelPart(this);
-        CenterCrest_r4.setPivot(-2.7794F, 2.9322F, -3.25F);
+        CenterCrest_r4.setPivot(2.8015F, 2.987F, -3.25F);
         BODY.addChild(CenterCrest_r4);
-        setRotationAngle(CenterCrest_r4, 0.0F, 0.0F, 1.3526F);
-        CenterCrest_r4.setTextureOffset(5, 58).addCuboid(-0.8F, -3.1F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, false);
+        setRotationAngle(CenterCrest_r4, 0.0F, 0.0F, -1.3526F);
+        CenterCrest_r4.setTextureOffset(5, 58).addCuboid(-2.7F, -2.8F, -0.5F, 3.0F, 1.0F, 1.0F, -0.3F, true);
 
         CenterCrest_r5 = new ModelPart(this);
-        CenterCrest_r5.setPivot(-2.7674F, 2.9999F, -3.25F);
+        CenterCrest_r5.setPivot(-2.7794F, 2.9322F, -3.25F);
         BODY.addChild(CenterCrest_r5);
-        setRotationAngle(CenterCrest_r5, 0.0F, 0.0F, -1.3526F);
-        CenterCrest_r5.setTextureOffset(5, 58).addCuboid(1.0F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, false);
-        CenterCrest_r5.setTextureOffset(5, 58).addCuboid(0.6F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, false);
+        setRotationAngle(CenterCrest_r5, 0.0F, 0.0F, 1.3526F);
+        CenterCrest_r5.setTextureOffset(5, 58).addCuboid(-0.8F, -3.1F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, false);
 
         CenterCrest_r6 = new ModelPart(this);
-        CenterCrest_r6.setPivot(-2.7679F, 2.987F, -3.25F);
+        CenterCrest_r6.setPivot(-2.7674F, 2.9999F, -3.25F);
         BODY.addChild(CenterCrest_r6);
-        setRotationAngle(CenterCrest_r6, 0.0F, 0.0F, 1.3526F);
-        CenterCrest_r6.setTextureOffset(5, 58).addCuboid(-0.3F, -2.8F, -0.5F, 3.0F, 1.0F, 1.0F, -0.3F, false);
+        setRotationAngle(CenterCrest_r6, 0.0F, 0.0F, -1.3526F);
+        CenterCrest_r6.setTextureOffset(5, 58).addCuboid(1.0F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, false);
+        CenterCrest_r6.setTextureOffset(5, 58).addCuboid(0.6F, 1.6F, -0.5F, 1.0F, 1.0F, 1.0F, -0.3F, false);
 
         Crest_r1 = new ModelPart(this);
         Crest_r1.setPivot(1.8266F, 3.6583F, -3.25F);
@@ -727,8 +725,6 @@ public class DragonArmorModel extends RunecraftArmorModel{
         RIGHTARM.setTextureOffset(12, 3).addCuboid(-3.0041F, 6.3548F, -2.0F, 4.0F, 3.0F, 4.0F, 0.2F, false);
         RIGHTARM.setTextureOffset(42, 32).addCuboid(-3.0541F, 5.1548F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, false);
         RIGHTARM.setTextureOffset(31, 44).addCuboid(-4.1F, -3.55F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, true);
-        RIGHTARM.setTextureOffset(41, 32).addCuboid(-3.0541F, 8.9048F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, false);
-        RIGHTARM.setTextureOffset(41, 32).addCuboid(-3.0541F, 8.6548F, -2.0F, 4.0F, 2.0F, 4.0F, -0.3F, false);
 
         LeftShoulderTooth3_r1 = new ModelPart(this);
         LeftShoulderTooth3_r1.setPivot(-3.0F, -2.85F, 0.0F);
@@ -785,8 +781,6 @@ public class DragonArmorModel extends RunecraftArmorModel{
         LEFTARM.setTextureOffset(12, 3).addCuboid(-0.9959F, 1.9548F, -2.0F, 4.0F, 3.0F, 4.0F, 0.2F, true);
         LEFTARM.setTextureOffset(42, 32).addCuboid(-0.9459F, 5.1548F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, true);
         LEFTARM.setTextureOffset(31, 44).addCuboid(3.1F, -3.55F, -0.5F, 1.0F, 1.0F, 1.0F, 0.0F, false);
-        LEFTARM.setTextureOffset(40, 31).addCuboid(-0.9459F, 8.9048F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, true);
-        LEFTARM.setTextureOffset(40, 31).addCuboid(-0.9459F, 8.6548F, -2.0F, 4.0F, 2.0F, 4.0F, -0.3F, true);
 
         LeftShoulderTooth3_r2 = new ModelPart(this);
         LeftShoulderTooth3_r2.setPivot(3.0F, -2.85F, 0.0F);
@@ -995,56 +989,32 @@ public class DragonArmorModel extends RunecraftArmorModel{
         RIGHTFOOT = new ModelPart(this);
         RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
         RIGHTFOOT.setTextureOffset(3, 42).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, 1.0F, 3.0F, 1.0F, true);
-        RIGHTFOOT.setTextureOffset(5, 44).addCuboid(-1.0F, 11.3F, -3.15F, 2.0F, 0.0F, 0.0F, 0.9F, true);
+        RIGHTFOOT.setTextureOffset(5, 44).addCuboid(-1.5F, 11.2F, -3.15F, 3.0F, 0.0F, 0.0F, 0.9F, true);
         RIGHTFOOT.setTextureOffset(2, 27).addCuboid(-2.0F, 9.8F, -2.0F, 4.0F, -1.0F, 4.0F, 0.7F, true);
-        RIGHTFOOT.setTextureOffset(31, 44).addCuboid(-0.3F, 9.9F, -4.15F, 1.0F, 1.0F, 1.0F, -0.2F, true);
-        RIGHTFOOT.setTextureOffset(31, 44).addCuboid(-0.3F, 9.6F, -4.15F, 1.0F, 1.0F, 1.0F, -0.3F, true);
-        RIGHTFOOT.setTextureOffset(31, 44).addCuboid(-0.3F, 9.3F, -4.15F, 1.0F, 1.0F, 1.0F, -0.4F, true);
-
-        RightBoot6_r1 = new ModelPart(this);
-        RightBoot6_r1.setPivot(-8.7017F, 11.2F, 0.2364F);
-        RIGHTFOOT.addChild(RightBoot6_r1);
-        setRotationAngle(RightBoot6_r1, 0.0F, 0.3054F, 0.0F);
-        RightBoot6_r1.setTextureOffset(8, 43).addCuboid(11.5F, 0.1F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, true);
-
-        RightBoot5_r1 = new ModelPart(this);
-        RightBoot5_r1.setPivot(-1.7891F, 11.2F, -3.0714F);
-        RIGHTFOOT.addChild(RightBoot5_r1);
-        setRotationAngle(RightBoot5_r1, 0.0F, -0.3054F, 0.0F);
-        RightBoot5_r1.setTextureOffset(8, 43).addCuboid(0.5F, 0.1F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, true);
+        RIGHTFOOT.setTextureOffset(31, 44).addCuboid(-0.3F, 9.8F, -4.15F, 1.0F, 1.0F, 1.0F, -0.2F, true);
+        RIGHTFOOT.setTextureOffset(31, 44).addCuboid(-0.3F, 9.5F, -4.15F, 1.0F, 1.0F, 1.0F, -0.3F, true);
+        RIGHTFOOT.setTextureOffset(31, 44).addCuboid(-0.3F, 9.2F, -4.15F, 1.0F, 1.0F, 1.0F, -0.4F, true);
 
         RightBoot3_r1 = new ModelPart(this);
-        RightBoot3_r1.setPivot(0.5F, 11.1815F, -2.9549F);
+        RightBoot3_r1.setPivot(0.0F, 11.0815F, -2.9549F);
         RIGHTFOOT.addChild(RightBoot3_r1);
         setRotationAngle(RightBoot3_r1, -1.3526F, 0.0F, 0.0F);
-        RightBoot3_r1.setTextureOffset(5, 44).addCuboid(-1.5F, 0.1F, -0.2F, 2.0F, 0.0F, 0.0F, 0.8F, true);
+        RightBoot3_r1.setTextureOffset(5, 44).addCuboid(-1.5F, 0.1F, -0.2F, 3.0F, 0.0F, 0.0F, 0.8F, true);
 
         LEFTFOOT = new ModelPart(this);
         LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
         LEFTFOOT.setTextureOffset(3, 42).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, 1.0F, 3.0F, 1.0F, false);
-        LEFTFOOT.setTextureOffset(5, 44).addCuboid(-1.0F, 11.3F, -3.15F, 2.0F, 0.0F, 0.0F, 0.9F, false);
+        LEFTFOOT.setTextureOffset(5, 44).addCuboid(-1.5F, 11.2F, -3.15F, 3.0F, 0.0F, 0.0F, 0.9F, false);
         LEFTFOOT.setTextureOffset(2, 27).addCuboid(-2.0F, 9.8F, -2.0F, 4.0F, -1.0F, 4.0F, 0.7F, false);
-        LEFTFOOT.setTextureOffset(31, 44).addCuboid(-0.7F, 9.9F, -4.15F, 1.0F, 1.0F, 1.0F, -0.2F, false);
-        LEFTFOOT.setTextureOffset(31, 44).addCuboid(-0.7F, 9.6F, -4.15F, 1.0F, 1.0F, 1.0F, -0.3F, false);
-        LEFTFOOT.setTextureOffset(31, 44).addCuboid(-0.7F, 9.3F, -4.15F, 1.0F, 1.0F, 1.0F, -0.4F, false);
-
-        LeftBoot6_r1 = new ModelPart(this);
-        LeftBoot6_r1.setPivot(8.7017F, 11.3F, 0.2364F);
-        LEFTFOOT.addChild(LeftBoot6_r1);
-        setRotationAngle(LeftBoot6_r1, 0.0F, -0.3054F, 0.0F);
-        LeftBoot6_r1.setTextureOffset(9, 44).addCuboid(-10.5F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, false);
-
-        LeftBoot5_r1 = new ModelPart(this);
-        LeftBoot5_r1.setPivot(1.7891F, 11.3F, -3.0714F);
-        LEFTFOOT.addChild(LeftBoot5_r1);
-        setRotationAngle(LeftBoot5_r1, 0.0F, 0.3054F, 0.0F);
-        LeftBoot5_r1.setTextureOffset(9, 44).addCuboid(0.5F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, false);
+        LEFTFOOT.setTextureOffset(31, 44).addCuboid(-0.7F, 9.8F, -4.15F, 1.0F, 1.0F, 1.0F, -0.2F, false);
+        LEFTFOOT.setTextureOffset(31, 44).addCuboid(-0.7F, 9.5F, -4.15F, 1.0F, 1.0F, 1.0F, -0.3F, false);
+        LEFTFOOT.setTextureOffset(31, 44).addCuboid(-0.7F, 9.2F, -4.15F, 1.0F, 1.0F, 1.0F, -0.4F, false);
 
         LeftBoot3_r1 = new ModelPart(this);
-        LeftBoot3_r1.setPivot(-0.5F, 11.1815F, -2.9549F);
+        LeftBoot3_r1.setPivot(0.0F, 11.0815F, -2.9549F);
         LEFTFOOT.addChild(LeftBoot3_r1);
         setRotationAngle(LeftBoot3_r1, -1.3526F, 0.0F, 0.0F);
-        LeftBoot3_r1.setTextureOffset(5, 44).addCuboid(-0.5F, 0.1F, -0.2F, 2.0F, 0.0F, 0.0F, 0.8F, false);
+        LeftBoot3_r1.setTextureOffset(5, 44).addCuboid(-1.5F, 0.1F, -0.2F, 3.0F, 0.0F, 0.0F, 0.8F, false);
 
     }
 

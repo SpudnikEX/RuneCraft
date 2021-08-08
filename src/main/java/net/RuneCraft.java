@@ -61,6 +61,8 @@ public class RuneCraft implements ModInitializer{
         RegisterOres.register();
         RegisterTools.register();
 
+        RegisterDebug.register();
+
         VoxelItems.register();
         VoxelEntities.register();
 

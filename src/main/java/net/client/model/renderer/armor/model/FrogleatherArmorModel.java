@@ -1,27 +1,28 @@
-package net.client.model.renderer.armor;
+package net.client.model.renderer.armor.model;
 
+import net.client.model.renderer.armor.RunecraftArmorModel;
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 
-public class SnakeskinArmorModel extends RunecraftArmorModel{
+public class FrogleatherArmorModel extends RunecraftArmorModel {
 
     private final ModelPart HEAD;
     private final ModelPart BODY;
     private final ModelPart RIGHTARM;
-    private final ModelPart RightShoulder3_r1;
     private final ModelPart RightShoulder2_r1;
     private final ModelPart LEFTARM;
-    private final ModelPart LeftShoulder3_r1;
     private final ModelPart LeftShoulder2_r1;
     private final ModelPart RIGHTLEG;
+    private final ModelPart RightLegKneecap_r1;
     private final ModelPart LEFTLEG;
+    private final ModelPart LeftLegKneecap_r1;
     private final ModelPart RIGHTFOOT;
     private final ModelPart LEFTFOOT;
 
-    public SnakeskinArmorModel(EquipmentSlot slot) {
+    public FrogleatherArmorModel(EquipmentSlot slot) {
         super(slot);
 
         textureWidth = 64;
@@ -29,8 +30,7 @@ public class SnakeskinArmorModel extends RunecraftArmorModel{
 
         HEAD = new ModelPart(this);
         HEAD.setPivot(0.0F, 0.0F, 0.0F);
-        HEAD.setTextureOffset(3, 8).addCuboid(-4.5F, -8.2F, -4.5F, 9.0F, 2.0F, 9.0F, 0.0F, false);
-        HEAD.setTextureOffset(7, 10).addCuboid(-3.5F, -8.85F, -3.5F, 7.0F, 1.0F, 7.0F, 0.0F, false);
+
 
         BODY = new ModelPart(this);
         BODY.setPivot(0.0F, 0.0F, 0.0F);
@@ -40,45 +40,45 @@ public class SnakeskinArmorModel extends RunecraftArmorModel{
 
         RIGHTARM = new ModelPart(this);
         RIGHTARM.setPivot(-5.0F, 2.0F, 0.0F);
-        RIGHTARM.setTextureOffset(20, 11).addCuboid(-2.5F, -1.6F, -2.0F, 3.0F, 1.0F, 4.0F, 0.7F, true);
-
-        RightShoulder3_r1 = new ModelPart(this);
-        RightShoulder3_r1.setPivot(0.5796F, -0.37F, 0.0F);
-        RIGHTARM.addChild(RightShoulder3_r1);
-        setRotationAngle(RightShoulder3_r1, 0.0F, 0.0F, -0.2618F);
-        RightShoulder3_r1.setTextureOffset(20, 11).addCuboid(0.0F, 0.0F, -2.0F, 0.0F, 0.0F, 4.0F, 0.6F, true);
+        RIGHTARM.setTextureOffset(22, 9).addCuboid(-2.5F, -1.1F, -2.0F, 3.0F, 2.0F, 4.0F, 1.1F, true);
 
         RightShoulder2_r1 = new ModelPart(this);
-        RightShoulder2_r1.setPivot(-1.325F, -1.3F, 0.0F);
+        RightShoulder2_r1.setPivot(-1.325F, -0.2F, 0.0F);
         RIGHTARM.addChild(RightShoulder2_r1);
-        setRotationAngle(RightShoulder2_r1, 0.0F, 0.0F, -1.309F);
-        RightShoulder2_r1.setTextureOffset(20, 11).addCuboid(-1.225F, -0.7F, -2.0F, 0.0F, 3.0F, 4.0F, 0.6F, true);
+        setRotationAngle(RightShoulder2_r1, 0.0F, 0.0F, -0.6981F);
+        RightShoulder2_r1.setTextureOffset(20, 11).addCuboid(-2.075F, -0.9F, -2.0F, 1.0F, 1.0F, 4.0F, 1.0F, true);
 
         LEFTARM = new ModelPart(this);
         LEFTARM.setPivot(5.0F, 2.0F, 0.0F);
-        LEFTARM.setTextureOffset(20, 11).addCuboid(-0.5F, -1.6F, -2.0F, 3.0F, 1.0F, 4.0F, 0.7F, false);
-
-        LeftShoulder3_r1 = new ModelPart(this);
-        LeftShoulder3_r1.setPivot(-0.5796F, -0.37F, 0.0F);
-        LEFTARM.addChild(LeftShoulder3_r1);
-        setRotationAngle(LeftShoulder3_r1, 0.0F, 0.0F, 0.2618F);
-        LeftShoulder3_r1.setTextureOffset(20, 11).addCuboid(0.0F, 0.0F, -2.0F, 0.0F, 0.0F, 4.0F, 0.6F, false);
+        LEFTARM.setTextureOffset(20, 11).addCuboid(-0.5F, -1.1F, -2.0F, 3.0F, 2.0F, 4.0F, 1.1F, false);
 
         LeftShoulder2_r1 = new ModelPart(this);
-        LeftShoulder2_r1.setPivot(1.325F, -1.3F, 0.0F);
+        LeftShoulder2_r1.setPivot(1.325F, -0.2F, 0.0F);
         LEFTARM.addChild(LeftShoulder2_r1);
-        setRotationAngle(LeftShoulder2_r1, 0.0F, 0.0F, 1.309F);
-        LeftShoulder2_r1.setTextureOffset(20, 11).addCuboid(1.225F, -0.7F, -2.0F, 0.0F, 3.0F, 4.0F, 0.6F, false);
+        setRotationAngle(LeftShoulder2_r1, 0.0F, 0.0F, 0.6981F);
+        LeftShoulder2_r1.setTextureOffset(20, 11).addCuboid(1.075F, -0.9F, -2.0F, 1.0F, 1.0F, 4.0F, 1.0F, false);
 
         RIGHTLEG = new ModelPart(this);
         RIGHTLEG.setPivot(-1.9F, 12.0F, 0.0F);
         RIGHTLEG.setTextureOffset(6, 53).addCuboid(-2.1F, 0.45F, -1.5F, 4.0F, -1.0F, 3.0F, 1.01F, true);
         RIGHTLEG.setTextureOffset(22, 5).addCuboid(-2.0F, 0.55F, -2.0F, 4.0F, 10.0F, 4.0F, 0.1F, false);
 
+        RightLegKneecap_r1 = new ModelPart(this);
+        RightLegKneecap_r1.setPivot(-0.1671F, 5.8269F, -1.5F);
+        RIGHTLEG.addChild(RightLegKneecap_r1);
+        setRotationAngle(RightLegKneecap_r1, -0.6981F, 0.0F, 0.0F);
+        RightLegKneecap_r1.setTextureOffset(5, 3).addCuboid(-0.5F, 0.1F, -0.5F, 1.0F, 0.0F, 0.0F, 0.9F, false);
+
         LEFTLEG = new ModelPart(this);
         LEFTLEG.setPivot(1.9F, 12.0F, 0.0F);
         LEFTLEG.setTextureOffset(23, 6).addCuboid(-2.0F, 0.55F, -2.0F, 4.0F, 10.0F, 4.0F, 0.1F, true);
         LEFTLEG.setTextureOffset(6, 53).addCuboid(-1.9F, 0.45F, -1.5F, 4.0F, -1.0F, 3.0F, 1.01F, false);
+
+        LeftLegKneecap_r1 = new ModelPart(this);
+        LeftLegKneecap_r1.setPivot(0.1671F, 5.8269F, -1.5F);
+        LEFTLEG.addChild(LeftLegKneecap_r1);
+        setRotationAngle(LeftLegKneecap_r1, -0.6981F, 0.0F, 0.0F);
+        LeftLegKneecap_r1.setTextureOffset(4, 3).addCuboid(-0.5F, 0.1F, -0.5F, 1.0F, 0.0F, 0.0F, 0.9F, true);
 
         RIGHTFOOT = new ModelPart(this);
         RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);

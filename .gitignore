@@ -32,3 +32,6 @@ bin/
 
 run/
 
+wrapper/gradle-wrapper.jar
+wrapper/gradle-wrapper.properties
+.github/workflows/build.yml

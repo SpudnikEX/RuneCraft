@@ -14,6 +14,7 @@ import net.minecraft.client.render.entity.ItemEntityRenderer;
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.entity.EntityType;
 import net.registry.RegisterArmor;
+import net.registry.RegisterDebug;
 
 public class RuneCraftClient implements ClientModInitializer {
     // Rendering only happens client side, register client models in a client initializer //
@@ -23,6 +24,7 @@ public class RuneCraftClient implements ClientModInitializer {
         RegisterArmor.render();
 
         VoxelEntities.render();
+        RegisterDebug.render();
     }
 
 

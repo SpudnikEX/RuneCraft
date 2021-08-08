@@ -1,12 +1,13 @@
-package net.client.model.renderer.armor;
+package net.client.model.renderer.armor.model;
 
+import net.client.model.renderer.armor.RunecraftArmorModel;
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 
-public class SaradominghideArmorModel extends RunecraftArmorModel{
+public class SaradominghideArmorModel extends RunecraftArmorModel {
 
     private final ModelPart HEAD;
     private final ModelPart HeadDiamond_r1;

@@ -2,8 +2,9 @@
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
 
-package net.client.model.renderer.armor;
+package net.client.model.renderer.armor.model;
 
+import net.client.model.renderer.armor.RunecraftArmorModel;
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.util.math.MatrixStack;
@@ -57,12 +58,8 @@ public class PlateArmorModel extends RunecraftArmorModel {
 	private final ModelPart LeftLeg_r7;
 	private final ModelPart LeftLeg_r8;
 	private final ModelPart RIGHTFOOT;
-	private final ModelPart RightBoot6_r1;
-	private final ModelPart RightBoot5_r1;
 	private final ModelPart RightBoot3_r1;
 	private final ModelPart LEFTFOOT;
-	private final ModelPart LeftBoot6_r1;
-	private final ModelPart LeftBoot5_r1;
 	private final ModelPart LeftBoot3_r1;
 
 	public PlateArmorModel(EquipmentSlot slot) {
@@ -79,7 +76,7 @@ public class PlateArmorModel extends RunecraftArmorModel {
 		HEAD.setTextureOffset(13, 54).addCuboid(1.75F, -5.0F, -4.0F, -1.0F, 2.0F, -1.0F, 1.0F, false);
 		HEAD.setTextureOffset(13, 54).addCuboid(4.0F, -5.0F, -4.0F, -1.0F, 2.0F, -1.0F, 1.0F, false);
 		HEAD.setTextureOffset(9, 4).addCuboid(-3.5F, -7.0F, -3.6F, 7.0F, 6.0F, 0.0F, 1.0F, false);
-		HEAD.setTextureOffset(22, 24).addCuboid(0.0F, -11.1397F, 7.3096F, 0.0F, -1.0F, 1.0F, 1.0F, false);
+		HEAD.setTextureOffset(22, 24).addCuboid(0.0F, -10.9397F, 7.2096F, 0.0F, -1.0F, 1.0F, 1.0F, false);
 		HEAD.setTextureOffset(18, 42).addCuboid(-0.5F, -8.0F, -0.75F, 1.0F, -1.0F, 4.0F, 1.0F, false);
 		HEAD.setTextureOffset(22, 45).addCuboid(-0.5F, -8.25F, 4.25F, 1.0F, 0.0F, 0.0F, 1.0F, false);
 		HEAD.setTextureOffset(2, 4).addCuboid(-3.5F, 0.25F, -3.5F, 7.0F, -1.0F, 7.0F, 1.0F, false);
@@ -116,25 +113,25 @@ public class PlateArmorModel extends RunecraftArmorModel {
 		TasleMount2_r1.setTextureOffset(22, 44).addCuboid(-0.5F, 0.5F, 0.0F, 1.0F, -1.0F, 0.0F, 1.0F, false);
 
 		Tasle1_r1 = new ModelPart(this);
-		Tasle1_r1.setPivot(0.0F, -10.5626F, 6.1975F);
+		Tasle1_r1.setPivot(0.0F, -10.3626F, 6.0975F);
 		HEAD.addChild(Tasle1_r1);
 		setRotationAngle(Tasle1_r1, 1.1781F, 0.0F, 0.0F);
 		Tasle1_r1.setTextureOffset(22, 25).addCuboid(0.0F, 0.5F, -0.5F, 0.0F, -1.0F, 1.0F, 1.0F, false);
 
 		Tasle3_r1 = new ModelPart(this);
-		Tasle3_r1.setPivot(0.0F, -10.5873F, 9.0096F);
+		Tasle3_r1.setPivot(0.0F, -10.3873F, 8.9096F);
 		HEAD.addChild(Tasle3_r1);
 		setRotationAngle(Tasle3_r1, 1.7017F, 0.0F, 0.0F);
 		Tasle3_r1.setTextureOffset(23, 24).addCuboid(0.0F, 0.5F, -0.5F, 0.0F, -1.0F, 1.0F, 1.0F, false);
 
 		Tasle4_r1 = new ModelPart(this);
-		Tasle4_r1.setPivot(0.0F, -7.8852F, 8.7732F);
+		Tasle4_r1.setPivot(0.0F, -7.6852F, 8.6732F);
 		HEAD.addChild(Tasle4_r1);
 		setRotationAngle(Tasle4_r1, 1.2654F, 0.0F, 0.0F);
 		Tasle4_r1.setTextureOffset(22, 23).addCuboid(0.0F, 0.5F, -0.5F, 0.0F, -1.0F, 1.0F, 1.0F, false);
 
 		Tasle5_r1 = new ModelPart(this);
-		Tasle5_r1.setPivot(0.0F, -6.2514F, 8.906F);
+		Tasle5_r1.setPivot(0.0F, -6.0514F, 8.806F);
 		HEAD.addChild(Tasle5_r1);
 		setRotationAngle(Tasle5_r1, 2.3562F, 0.0F, 0.0F);
 		Tasle5_r1.setTextureOffset(23, 25).addCuboid(0.0F, 0.5F, 0.0F, 0.0F, -1.0F, 0.0F, 1.0F, false);
@@ -164,8 +161,6 @@ public class PlateArmorModel extends RunecraftArmorModel {
 		RIGHTARM.setTextureOffset(12, 3).addCuboid(-3.0041F, 1.9548F, -2.0F, 4.0F, 3.0F, 4.0F, 0.2F, false);
 		RIGHTARM.setTextureOffset(12, 3).addCuboid(-3.0041F, 6.3548F, -2.0F, 4.0F, 3.0F, 4.0F, 0.2F, false);
 		RIGHTARM.setTextureOffset(2, 16).addCuboid(-3.0541F, 5.1548F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, false);
-		RIGHTARM.setTextureOffset(20, 31).addCuboid(-3.0541F, 8.9048F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, false);
-		RIGHTARM.setTextureOffset(20, 31).addCuboid(-3.0541F, 8.6548F, -2.0F, 4.0F, 2.0F, 4.0F, -0.3F, false);
 
 		RightShoulder_r1 = new ModelPart(this);
 		RightShoulder_r1.setPivot(-1.4715F, 1.443F, 0.0F);
@@ -209,8 +204,6 @@ public class PlateArmorModel extends RunecraftArmorModel {
 		LEFTARM.setTextureOffset(12, 3).addCuboid(-0.9959F, 6.3548F, -2.0F, 4.0F, 3.0F, 4.0F, 0.2F, true);
 		LEFTARM.setTextureOffset(12, 3).addCuboid(-0.9959F, 1.9548F, -2.0F, 4.0F, 3.0F, 4.0F, 0.2F, true);
 		LEFTARM.setTextureOffset(2, 16).addCuboid(-0.9459F, 5.1548F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, true);
-		LEFTARM.setTextureOffset(20, 32).addCuboid(-0.9459F, 8.9048F, -2.0F, 4.0F, 1.0F, 4.0F, 0.1F, true);
-		LEFTARM.setTextureOffset(20, 32).addCuboid(-0.9459F, 8.6548F, -2.0F, 4.0F, 2.0F, 4.0F, -0.3F, true);
 
 		LeftShoulder_r1 = new ModelPart(this);
 		LeftShoulder_r1.setPivot(1.4715F, 1.443F, 0.0F);
@@ -359,50 +352,26 @@ public class PlateArmorModel extends RunecraftArmorModel {
 		RIGHTFOOT = new ModelPart(this);
 		RIGHTFOOT.setPivot(-1.9F, 12.0F, 0.0F);
 		RIGHTFOOT.setTextureOffset(3, 42).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, 1.0F, 3.0F, 1.0F, true);
-		RIGHTFOOT.setTextureOffset(5, 44).addCuboid(-1.0F, 11.3F, -3.15F, 2.0F, 0.0F, 0.0F, 0.9F, true);
-		RIGHTFOOT.setTextureOffset(10, 7).addCuboid(-1.5F, 10.3F, -1.5F, 3.0F, -2.0F, 3.0F, 1.2F, true);
-
-		RightBoot6_r1 = new ModelPart(this);
-		RightBoot6_r1.setPivot(-8.7017F, 11.2F, 0.2364F);
-		RIGHTFOOT.addChild(RightBoot6_r1);
-		setRotationAngle(RightBoot6_r1, 0.0F, 0.3054F, 0.0F);
-		RightBoot6_r1.setTextureOffset(5, 44).addCuboid(11.5F, 0.1F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, true);
-
-		RightBoot5_r1 = new ModelPart(this);
-		RightBoot5_r1.setPivot(-1.7891F, 11.2F, -3.0714F);
-		RIGHTFOOT.addChild(RightBoot5_r1);
-		setRotationAngle(RightBoot5_r1, 0.0F, -0.3054F, 0.0F);
-		RightBoot5_r1.setTextureOffset(5, 44).addCuboid(0.5F, 0.1F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, true);
+		RIGHTFOOT.setTextureOffset(5, 44).addCuboid(-1.5F, 11.2F, -3.15F, 3.0F, 0.0F, 0.0F, 0.9F, true);
+		RIGHTFOOT.setTextureOffset(1, 42).addCuboid(-2.0F, 9.8F, -2.0F, 4.0F, -1.0F, 4.0F, 0.7F, true);
 
 		RightBoot3_r1 = new ModelPart(this);
-		RightBoot3_r1.setPivot(0.5F, 11.1815F, -2.9549F);
+		RightBoot3_r1.setPivot(0.0F, 11.0815F, -2.9549F);
 		RIGHTFOOT.addChild(RightBoot3_r1);
 		setRotationAngle(RightBoot3_r1, -1.3526F, 0.0F, 0.0F);
-		RightBoot3_r1.setTextureOffset(14, 7).addCuboid(-1.5F, 0.1F, -0.2F, 2.0F, 0.0F, 0.0F, 0.8F, true);
+		RightBoot3_r1.setTextureOffset(14, 7).addCuboid(-1.5F, 0.1F, -0.2F, 3.0F, 0.0F, 0.0F, 0.8F, true);
 
 		LEFTFOOT = new ModelPart(this);
 		LEFTFOOT.setPivot(1.9F, 12.0F, 0.0F);
 		LEFTFOOT.setTextureOffset(3, 42).addCuboid(-1.5F, 10.2F, -1.5F, 3.0F, 1.0F, 3.0F, 1.0F, false);
-		LEFTFOOT.setTextureOffset(5, 44).addCuboid(-1.0F, 11.3F, -3.15F, 2.0F, 0.0F, 0.0F, 0.9F, false);
-		LEFTFOOT.setTextureOffset(10, 7).addCuboid(-1.5F, 10.3F, -1.5F, 3.0F, -2.0F, 3.0F, 1.2F, false);
-
-		LeftBoot6_r1 = new ModelPart(this);
-		LeftBoot6_r1.setPivot(8.7017F, 11.3F, 0.2364F);
-		LEFTFOOT.addChild(LeftBoot6_r1);
-		setRotationAngle(LeftBoot6_r1, 0.0F, -0.3054F, 0.0F);
-		LeftBoot6_r1.setTextureOffset(5, 44).addCuboid(-10.5F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, false);
-
-		LeftBoot5_r1 = new ModelPart(this);
-		LeftBoot5_r1.setPivot(1.7891F, 11.3F, -3.0714F);
-		LEFTFOOT.addChild(LeftBoot5_r1);
-		setRotationAngle(LeftBoot5_r1, 0.0F, 0.3054F, 0.0F);
-		LeftBoot5_r1.setTextureOffset(5, 44).addCuboid(0.5F, 0.0F, 0.0F, -1.0F, 0.0F, 0.0F, 0.9F, false);
+		LEFTFOOT.setTextureOffset(5, 44).addCuboid(-1.5F, 11.2F, -3.15F, 3.0F, 0.0F, 0.0F, 0.9F, false);
+		LEFTFOOT.setTextureOffset(0, 42).addCuboid(-2.0F, 9.8F, -2.0F, 4.0F, -1.0F, 4.0F, 0.7F, false);
 
 		LeftBoot3_r1 = new ModelPart(this);
-		LeftBoot3_r1.setPivot(-0.5F, 11.1815F, -2.9549F);
+		LeftBoot3_r1.setPivot(0.0F, 11.0815F, -2.9549F);
 		LEFTFOOT.addChild(LeftBoot3_r1);
 		setRotationAngle(LeftBoot3_r1, -1.3526F, 0.0F, 0.0F);
-		LeftBoot3_r1.setTextureOffset(14, 7).addCuboid(-0.5F, 0.1F, -0.2F, 2.0F, 0.0F, 0.0F, 0.8F, false);
+		LeftBoot3_r1.setTextureOffset(14, 7).addCuboid(-1.5F, 0.1F, -0.2F, 3.0F, 0.0F, 0.0F, 0.8F, false);
 
 	}
 
@@ -468,11 +437,5 @@ public class PlateArmorModel extends RunecraftArmorModel {
 //		LEFTLEG.render(matrixStack, buffer, packedLight, packedOverlay);
 //		LEFTFOOT.render(matrixStack, buffer, packedLight, packedOverlay);
 //		RIGHTFOOT.render(matrixStack, buffer, packedLight, packedOverlay);
-	}
-
-	public void setRotationAngle(ModelPart bone, float x, float y, float z) {
-		bone.pitch = x;
-		bone.yaw = y;
-		bone.roll = z;
 	}
 }

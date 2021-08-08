@@ -1,5 +1,6 @@
 package net.client.model.renderer.armor;
 
+import net.client.model.renderer.armor.model.PlateArmorModel;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.entity.model.BipedEntityModel;

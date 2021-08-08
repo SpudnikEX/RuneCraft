@@ -1,12 +1,13 @@
-package net.client.model.renderer.armor;
+package net.client.model.renderer.armor.model;
 
+import net.client.model.renderer.armor.RunecraftArmorModel;
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 
-public class GuthixghideArmorModel extends RunecraftArmorModel{
+public class ZamorakghideArmorModel extends RunecraftArmorModel {
 
     private final ModelPart HEAD;
     private final ModelPart HeadDiamond_r1;
@@ -14,12 +15,14 @@ public class GuthixghideArmorModel extends RunecraftArmorModel{
     private final ModelPart RightCoif_r1;
     private final ModelPart LeftCoif_r1;
     private final ModelPart BODY;
-    private final ModelPart GuthixSymbol_r1;
-    private final ModelPart GuthixSymbol_r2;
-    private final ModelPart GuthixSymbol_r3;
-    private final ModelPart GuthixSymbol_r4;
-    private final ModelPart GuthixSymbol_r5;
-    private final ModelPart GuthixSymbol_r6;
+    private final ModelPart ZamorakSymbol_r1;
+    private final ModelPart ZamorakSymbol_r2;
+    private final ModelPart ZamorakSymbol_r3;
+    private final ModelPart ZamorakSymbol_r4;
+    private final ModelPart ZamorakSymbol_r5;
+    private final ModelPart ZamorakSymbol_r6;
+    private final ModelPart ZamorakSymbol_r7;
+    private final ModelPart ZamorakSymbol_r8;
     private final ModelPart ChestDiamond_r1;
     private final ModelPart RIGHTARM;
     private final ModelPart LEFTARM;
@@ -31,7 +34,7 @@ public class GuthixghideArmorModel extends RunecraftArmorModel{
     private final ModelPart RIGHTFOOT;
     private final ModelPart LEFTFOOT;
 
-    public GuthixghideArmorModel(EquipmentSlot slot) {
+    public ZamorakghideArmorModel(EquipmentSlot slot) {
         super(slot);
 
         textureWidth = 64;
@@ -77,51 +80,64 @@ public class GuthixghideArmorModel extends RunecraftArmorModel{
         BODY.setTextureOffset(2, 11).addCuboid(-3.0F, 9.2F, -1.05F, 6.0F, 2.0F, 2.0F, 1.2F, false);
         BODY.setTextureOffset(2, 14).addCuboid(-3.5F, 0.8F, -1.6F, 7.0F, 7.0F, 3.0F, 1.1F, false);
         BODY.setTextureOffset(3, 3).addCuboid(-3.5F, 0.8F, -1.8F, 7.0F, 4.0F, -1.0F, 1.2F, false);
-        BODY.setTextureOffset(40, 40).addCuboid(-0.2121F, 1.8776F, -3.1F, 0.0F, 0.0F, 0.0F, 0.2F, false);
-        BODY.setTextureOffset(40, 40).addCuboid(-0.2121F, 2.2149F, -3.1F, 0.0F, 0.0F, 0.0F, 0.2F, false);
-        BODY.setTextureOffset(40, 40).addCuboid(-0.0586F, 3.7927F, -3.1F, 0.0F, 0.0F, 0.0F, 0.2F, false);
 
-        GuthixSymbol_r1 = new ModelPart(this);
-        GuthixSymbol_r1.setPivot(-0.495F, 5.0533F, -3.0F);
-        BODY.addChild(GuthixSymbol_r1);
-        setRotationAngle(GuthixSymbol_r1, 0.0F, 0.0F, 0.7854F);
-        GuthixSymbol_r1.setTextureOffset(40, 40).addCuboid(-0.6F, -0.9F, 0.0F, 0.0F, 0.0F, 0.0F, 0.3F, false);
-        GuthixSymbol_r1.setTextureOffset(40, 40).addCuboid(-0.6F, -0.6F, 0.0F, 0.0F, 0.0F, 0.0F, 0.3F, false);
-        GuthixSymbol_r1.setTextureOffset(40, 40).addCuboid(-0.5F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.3F, false);
-        GuthixSymbol_r1.setTextureOffset(40, 40).addCuboid(-0.2F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.3F, false);
-        GuthixSymbol_r1.setTextureOffset(40, 40).addCuboid(0.4F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.3F, false);
+        ZamorakSymbol_r1 = new ModelPart(this);
+        ZamorakSymbol_r1.setPivot(-1.0873F, 2.5866F, -2.8F);
+        BODY.addChild(ZamorakSymbol_r1);
+        setRotationAngle(ZamorakSymbol_r1, 0.0F, 0.0F, -0.2618F);
+        ZamorakSymbol_r1.setTextureOffset(40, 40).addCuboid(-0.75F, 0.45F, -0.3F, 1.0F, 0.0F, 0.0F, 0.2F, true);
 
-        GuthixSymbol_r2 = new ModelPart(this);
-        GuthixSymbol_r2.setPivot(-0.8383F, 4.6213F, -3.0F);
-        BODY.addChild(GuthixSymbol_r2);
-        setRotationAngle(GuthixSymbol_r2, 0.0F, 0.0F, 2.1642F);
-        GuthixSymbol_r2.setTextureOffset(40, 40).addCuboid(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.3F, false);
+        ZamorakSymbol_r2 = new ModelPart(this);
+        ZamorakSymbol_r2.setPivot(0.6761F, 2.5941F, -2.8F);
+        BODY.addChild(ZamorakSymbol_r2);
+        setRotationAngle(ZamorakSymbol_r2, 0.0F, 0.0F, 0.2618F);
+        ZamorakSymbol_r2.setTextureOffset(40, 40).addCuboid(-0.25F, 0.45F, -0.3F, 1.0F, 0.0F, 0.0F, 0.2F, false);
 
-        GuthixSymbol_r3 = new ModelPart(this);
-        GuthixSymbol_r3.setPivot(-0.7827F, 2.9696F, -3.1F);
-        BODY.addChild(GuthixSymbol_r3);
-        setRotationAngle(GuthixSymbol_r3, 0.0F, 0.0F, 0.5061F);
-        GuthixSymbol_r3.setTextureOffset(40, 40).addCuboid(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r3 = new ModelPart(this);
+        ZamorakSymbol_r3.setPivot(-2.9354F, 1.0504F, -2.8F);
+        BODY.addChild(ZamorakSymbol_r3);
+        setRotationAngle(ZamorakSymbol_r3, 0.0F, 0.0F, -0.5236F);
+        ZamorakSymbol_r3.setTextureOffset(40, 40).addCuboid(-0.35F, 2.45F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, true);
+        ZamorakSymbol_r3.setTextureOffset(40, 40).addCuboid(-0.35F, 3.25F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, true);
+        ZamorakSymbol_r3.setTextureOffset(40, 40).addCuboid(-0.35F, 2.85F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, true);
 
-        GuthixSymbol_r4 = new ModelPart(this);
-        GuthixSymbol_r4.setPivot(-0.3657F, 5.5968F, -3.1F);
-        BODY.addChild(GuthixSymbol_r4);
-        setRotationAngle(GuthixSymbol_r4, 0.0F, 0.0F, 0.7854F);
-        GuthixSymbol_r4.setTextureOffset(40, 40).addCuboid(-2.2F, -2.3F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r4 = new ModelPart(this);
+        ZamorakSymbol_r4.setPivot(2.0241F, 1.9239F, -2.8F);
+        BODY.addChild(ZamorakSymbol_r4);
+        setRotationAngle(ZamorakSymbol_r4, 0.0F, 0.0F, 0.5236F);
+        ZamorakSymbol_r4.setTextureOffset(40, 40).addCuboid(0.35F, 2.25F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r4.setTextureOffset(40, 40).addCuboid(0.35F, 1.85F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r4.setTextureOffset(40, 40).addCuboid(0.35F, 1.45F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
 
-        GuthixSymbol_r5 = new ModelPart(this);
-        GuthixSymbol_r5.setPivot(-0.4364F, 5.6676F, -3.1F);
-        BODY.addChild(GuthixSymbol_r5);
-        setRotationAngle(GuthixSymbol_r5, 0.0F, 0.0F, 0.7854F);
-        GuthixSymbol_r5.setTextureOffset(40, 40).addCuboid(-2.2F, -2.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r5 = new ModelPart(this);
+        ZamorakSymbol_r5.setPivot(1.0379F, 2.9276F, -2.8F);
+        BODY.addChild(ZamorakSymbol_r5);
+        setRotationAngle(ZamorakSymbol_r5, 0.0F, 0.0F, 0.5236F);
+        ZamorakSymbol_r5.setTextureOffset(40, 40).addCuboid(-0.65F, 0.45F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r5.setTextureOffset(40, 40).addCuboid(-0.65F, 1.25F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r5.setTextureOffset(40, 40).addCuboid(-0.65F, 0.85F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
 
-        GuthixSymbol_r6 = new ModelPart(this);
-        GuthixSymbol_r6.setPivot(-0.2121F, 5.6433F, -3.1F);
-        BODY.addChild(GuthixSymbol_r6);
-        setRotationAngle(GuthixSymbol_r6, 0.0F, 0.0F, 0.7854F);
-        GuthixSymbol_r6.setTextureOffset(40, 40).addCuboid(-2.2F, -1.5F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2F, false);
-        GuthixSymbol_r6.setTextureOffset(40, 40).addCuboid(-1.8F, -1.5F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2F, false);
-        GuthixSymbol_r6.setTextureOffset(40, 40).addCuboid(-1.4F, -1.5F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r6 = new ModelPart(this);
+        ZamorakSymbol_r6.setPivot(-0.0262F, 2.6865F, -2.8F);
+        BODY.addChild(ZamorakSymbol_r6);
+        setRotationAngle(ZamorakSymbol_r6, 0.0F, 0.0F, -0.3054F);
+        ZamorakSymbol_r6.setTextureOffset(40, 40).addCuboid(0.55F, 1.75F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, true);
+        ZamorakSymbol_r6.setTextureOffset(40, 40).addCuboid(0.15F, 1.75F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, true);
+
+        ZamorakSymbol_r7 = new ModelPart(this);
+        ZamorakSymbol_r7.setPivot(0.2826F, 2.8894F, -2.8F);
+        BODY.addChild(ZamorakSymbol_r7);
+        setRotationAngle(ZamorakSymbol_r7, 0.0F, 0.0F, 0.3054F);
+        ZamorakSymbol_r7.setTextureOffset(40, 40).addCuboid(-0.85F, 1.75F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r7.setTextureOffset(40, 40).addCuboid(-1.25F, 1.75F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+
+        ZamorakSymbol_r8 = new ModelPart(this);
+        ZamorakSymbol_r8.setPivot(1.0379F, 2.9276F, -2.8F);
+        BODY.addChild(ZamorakSymbol_r8);
+        setRotationAngle(ZamorakSymbol_r8, 0.0F, 0.0F, -0.5236F);
+        ZamorakSymbol_r8.setTextureOffset(40, 40).addCuboid(-1.5F, 0.0F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r8.setTextureOffset(40, 40).addCuboid(-1.5F, -0.4F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
+        ZamorakSymbol_r8.setTextureOffset(40, 40).addCuboid(-1.5F, -0.8F, -0.3F, 0.0F, 0.0F, 0.0F, 0.2F, false);
 
         ChestDiamond_r1 = new ModelPart(this);
         ChestDiamond_r1.setPivot(-0.2121F, 2.9989F, -3.0F);
